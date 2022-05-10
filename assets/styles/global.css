@@ -1,0 +1,65 @@
+:root {
+  /* colors */
+  --primary-color: #426DA9;
+  --primary-color-1: #5F9EF5;
+  --primary-color-0: #294369;
+  --secondary-color: #6558B1;
+  --secondary-color-1: #917EFC;
+  --secondary-color-0: #413870;
+  --text-color: #132937;
+  --neutral: #DFE6EF;
+  --error: #F94646;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  font-family: MuseoModerno;
+  
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+a, p {
+  font-family: Mitr;
+  font-style: normal;
+  font-weight: 300;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+p.body {
+  font-size: 16px;
+}
+
+p.body-2 {
+  font-size: 14px;
+}
+
+button {
+  font-size: 14px;
+}
+
+p.caption {
+  font-size: 12px;
+}
+/*# sourceMappingURL=global.css.map */
