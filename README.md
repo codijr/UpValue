@@ -1,20 +1,23 @@
 <h1 align="center">
-<img src="./assets/icons/logo.svg"/>
+<img src="./assets/icons/logo_extended.svg"/>
 </h1>
 
 <p align="center"><b>🆙 Wordpress theme developed for UpValue, a Data Management company</b>
 <ul align="center">
-    <img src="https://img.shields.io/static/v1?label=Status&message=2%&labelColor=%2306121f&style=flat-square&color=%23fc0303">
+    <img src="https://img.shields.io/static/v1?label=Status&message=10%&labelColor=%2306121f&style=flat-square&color=%23fc0303">
     <img src="https://img.shields.io/static/v1?label=License&message=GPL-3.0&labelColor=%2306121f&style=flat-square&color=%23e60000">
 </ul>
 
 ## 🎲 PROJECT DESCRIPTION
 Project architected and developed by:
 <ul>
-    <li>Fernando Henrique Sousa Campos (Designer UX/UI)</li>
-    <li>Erick Gomes Monteiro (Designer UX/UI)</li>
-    <li>Alice Fortes Pereira (Developer)</li>
-    <li>Iago Wesley Irineu Costa (Developer)</li>
+    <li>Paulo Sérgio Gomes Alves Filho (Visual Indetity Designer)</li>
+    <li>Jordy Muniz Araújo (Visual Indetity Designer)</li>
+    <li>Arthur Anthunes Rangel da Silva (Designer UX/UI)</li>
+    <li>Maria Eduarda Ferreira Leandro (Designer UX/UI)</li>
+    <li>Yann Passarini (Designer UX/UI)</li>
+    <li>Reinaldo da Silva Nascimento (Developer)</li>
+    <li>Caio Brandão da Costa (Developer)</li>
 </ul> 
 
 ## 💻 TECHNOLOGIES
