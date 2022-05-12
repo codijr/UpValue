@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="./assets/icons/logo_extended.svg"/>
+<img src="./assets/icons/logo.svg"/>
 </h1>
 
 <p align="center"><b>🆙 Wordpress theme developed for UpValue, a Data Management company</b>
