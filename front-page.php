@@ -76,6 +76,23 @@
             </div>
         </div>
     </section>
+
+    <section id="solutions">
+        <div class="container py-5">
+            <div class="mb-5" id="category">
+                <div class=" w-50 d-flex align-items-center">
+                    <h4 class="me-3">NOSSAS SOLUÇÕES</h4>
+                    <hr class="w-25 neutral"> 
+                </div>
+            </div>
+
+            <h3 class="mb-4" id="title">Conheça os UPCombos</h3>
+
+            <p class="body">
+                Os UpCombos são compostos por painéis gerenciais que permitem o acompanhamento dos resultados do seu negócio, sem restrição de horário e lugar, sem a necessidade de estar exportando e tratando dados de sistemas.
+            </p>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

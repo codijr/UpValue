@@ -64,7 +64,11 @@ p.caption {
 }
 
 hr {
-    border: 0px;
-    border-top: 3px solid var(--text-color);
-    opacity: 1;
+  border: 0px;
+  border-top: 3px solid var(--text-color);
+  opacity: 1;
+}
+
+hr.neutral {
+  border-top: 3px solid var(--neutral);
 }

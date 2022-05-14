@@ -1,6 +1,8 @@
 main #banner {
   height: 100vh;
   background-image: url("../img/banner.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 main #banner .container h1 {
@@ -26,6 +28,14 @@ main #about .container #concepts .col-12 .card-concepts {
 }
 
 main #about .container #concepts .col-12 .card-concepts h4, main #about .container #concepts .col-12 .card-concepts p {
+  color: var(--neutral);
+}
+
+main #solutions {
+  background-color: var(--secondary-color);
+}
+
+main #solutions .container h3, main #solutions .container h4, main #solutions .container p {
   color: var(--neutral);
 }
 
