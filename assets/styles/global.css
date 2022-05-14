@@ -62,4 +62,9 @@ p.body-2 {
 p.caption {
   font-size: 12px;
 }
-/*# sourceMappingURL=global.css.map */
+
+hr {
+    border: 0px;
+    border-top: 3px solid var(--text-color);
+    opacity: 1;
+}
