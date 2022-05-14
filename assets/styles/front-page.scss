@@ -42,3 +42,15 @@ main {
         }
     }
 }
+
+@media (min-width: 768px) {
+    main {
+        #banner {
+            .container {
+                .w-100 {
+                    width: 60% !important;
+                }
+            }
+        }
+    }
+}

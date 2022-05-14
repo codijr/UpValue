@@ -28,4 +28,10 @@ main #about .container #concepts .col-12 .card-concepts {
 main #about .container #concepts .col-12 .card-concepts h4, main #about .container #concepts .col-12 .card-concepts p {
   color: var(--neutral);
 }
+
+@media (min-width: 768px) {
+  main #banner .container .w-100 {
+    width: 60% !important;
+  }
+}
 /*# sourceMappingURL=front-page.css.map */
