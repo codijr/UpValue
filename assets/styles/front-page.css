@@ -1,0 +1,14 @@
+main #banner {
+  height: 100vh;
+  background-image: url("../img/banner.jpg");
+}
+
+main #banner .container h1 {
+  color: var(--neutral);
+}
+
+main #banner .container h4 {
+  color: var(--neutral);
+  font-weight: 300;
+}
+/*# sourceMappingURL=front-page.css.map */
