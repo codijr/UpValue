@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img id="neutral-logo" src="<?php echo get_template_directory_uri(); ?>/assets/icons/logo-neutral.svg" alt="UpValue Logo">
+                    <img id="neutral-logo" src="<?php echo get_template_directory_uri(); ?>/assets/icons/neutral-logo.svg" alt="UpValue Logo">
 
                     <img id="logo" src="<?php echo get_template_directory_uri(); ?>/assets/icons/logo.svg" alt="UpValue Logo">
 
