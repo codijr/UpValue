@@ -40,7 +40,13 @@
                         </li>
                         
                         <li class="nav-item">
-                            <button>Área do cliente</button>
+                            <?php 
+                                includeFile('components/button.php', 
+                                    array(
+                                        'title' => 'Área do cliente'
+                                    )
+                                ); 
+                            ?>
                         </li>
                     </ul>
                 </div>
