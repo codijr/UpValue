@@ -5,12 +5,7 @@ main #banner {
   background-repeat: no-repeat;
 }
 
-main #banner .container h1 {
-  color: var(--neutral);
-}
-
 main #banner .container h4 {
-  color: var(--neutral);
   font-weight: 300;
 }
 
@@ -27,16 +22,8 @@ main #about .container #concepts .col-12 .card-concepts {
   background-color: var(--primary-color);
 }
 
-main #about .container #concepts .col-12 .card-concepts h4, main #about .container #concepts .col-12 .card-concepts p {
-  color: var(--neutral);
-}
-
 main #solutions {
   background-color: var(--secondary-color);
-}
-
-main #solutions .container h3, main #solutions .container h4, main #solutions .container p {
-  color: var(--neutral);
 }
 
 @media (min-width: 768px) {

@@ -6,12 +6,7 @@ main {
         background-repeat: no-repeat;
 
         .container {
-            h1 {
-                color: var(--neutral);
-            }
-
             h4 {
-                color: var(--neutral);
                 font-weight: 300;
             }
         }
@@ -34,10 +29,6 @@ main {
 
                     .card-concepts {
                         background-color: var(--primary-color);
-
-                        h4, p {
-                            color: var(--neutral);
-                        }
                     }
                 }
             }
@@ -46,12 +37,6 @@ main {
 
     #solutions {
         background-color: var(--secondary-color);
-
-        .container {
-            h3, h4, p {
-                color: var(--neutral);
-            } 
-        }
     }
 }
 
