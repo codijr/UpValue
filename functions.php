@@ -19,7 +19,7 @@
 
         //fonts
         wp_enqueue_style('museo', 'https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500&display=swap', array(), '1.0.0', 'all');
-        wp_enqueue_style('mitr', 'https://fonts.googleapis.com/css2?family=Mitr:wght@200;300&display=swap', array(), '1.0.0', 'all');
+        wp_enqueue_style('mitr', 'https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500&display=swap', array(), '1.0.0', 'all');
 
         wp_enqueue_style('global', get_template_directory_uri().'/assets/styles/global.css', array(),'1.0.0', 'all');
         wp_enqueue_style('header', get_template_directory_uri().'/assets/styles/header.css', array(),'1.0.0', 'all');

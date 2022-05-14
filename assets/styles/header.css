@@ -1,0 +1,39 @@
+header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--primary-color-0);
+}
+
+header nav .container .navbar-brand {
+  width: 20%;
+}
+
+header nav .container .navbar-brand img {
+  width: 100%;
+}
+
+header nav .container .navbar-brand #reduced-logo, header nav .container .navbar-brand #logo, header nav .container .navbar-brand #neutral-logo {
+  display: none;
+}
+
+header nav .container .navbar-collapse .navbar-nav .nav-item {
+  padding: 12px 16px;
+}
+
+header nav .container .navbar-collapse .navbar-nav .nav-item a h4 {
+  color: var(--neutral);
+}
+
+header nav .container .navbar-collapse .navbar-nav .nav-item:hover a h4 {
+  color: var(--primary-color-1);
+}
+
+@media (min-width: 768px) {
+  header nav .container .navbar-brand #neutral-logo {
+    display: block;
+  }
+  header nav .container .navbar-brand #reduced-neutral-logo, header nav .container .navbar-brand #reduced-logo, header nav .container .navbar-brand #logo {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.css.map */
