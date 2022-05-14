@@ -1,33 +1,34 @@
-<footer class="bg-secondary">
-    <div class="container">
-        <div class="py-3 border-bottom row">
+<footer>
+    <div class="container py-3">
+        <div class="py-4 border-bottom row" id="top-section">
             <div class="col-3">
                 <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/logo.svg" alt="UpValue Logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/neutral-logo.svg" alt="UpValue Logo">
                 </a>
             </div>
+        </div>
 
-            <div class="col-6">
-                <p class="mb-0">Frase tema da UpValue</p>
+        <div class="py-4 border-bottom d-flex justify-content-between w-100" id="middle-section">
+            <div class="d-flex">
+                <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/map-pointer.svg" alt="Endereço ícone">
+                <p>Fortaleza-CE</p>
             </div>
-
-            <div class="col-3">
-                <ul class="collapse nav navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
-                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
-                </ul>
+            <div class="d-flex">
+                <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/email.svg" alt="Email ícone">
+                <p>atendimento@upvalue.com.br</p>
+            </div>
+            <div class="d-flex">
+                <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/phone.svg" alt="Telefone ícone">
+                <p>Telefone</p>
+            </div>
+            <div class="d-flex">
+                <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram.svg" alt="Instagram ícone">
+                <p>@up_value</p>
             </div>
         </div>
 
-        <div class="py-3 row border-bottom">
-            <div class="col-3">Endereço</div>
-            <div class="col-3">Telefone</div>
-            <div class="col-3">E-mail</div>
-            <div class="col-3">Social</div>
-        </div>
-
-        <p class="py-3 text-center mb-0">
-            ©Up Value 2019-2022. Todos os Direitos reservados. Desenvolvido pela <a href="http://www.codijr.ufc.br">Container Digital Jr.</a>
+        <p class="py-4 text-center mb-0" id="bottom-section">
+            ©UpValue 2019-2022. Todos os Direitos reservados. Desenvolvido pela <a href="http://www.codijr.ufc.br" target="_blank">Container Digital Jr.</a>
         </p>
     </div>
 </footer>
