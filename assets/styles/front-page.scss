@@ -2,6 +2,7 @@ main {
     #banner {
         height: 100vh;
         background-image: url('../img/banner.jpg');
+
         .container {
             h1 {
                 color: var(--neutral);
@@ -10,6 +11,33 @@ main {
             h4 {
                 color: var(--neutral);
                 font-weight: 300;
+            }
+        }
+    }
+
+    #about {
+        .container {
+            #info-about {
+                #image {
+                    img {
+                        border-radius: 7px;
+                        border: 1px solid var(--text-color);
+                    }
+                }
+            }
+
+            #concepts {
+                .col-12 {
+                    margin-bottom: 10px;
+
+                    .card-concepts {
+                        background-color: var(--primary-color);
+
+                        h4, p {
+                            color: var(--neutral);
+                        }
+                    }
+                }
             }
         }
     }
