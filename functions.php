@@ -49,7 +49,11 @@
 		wp_enqueue_script( 'swiperinit', get_template_directory_uri() . '/assets/scripts/swiper-init.js', array(), '8.0.7', true );
     }
     add_action('wp_enqueue_scripts', 'scripts_files'); 
-    
+
+    //CUstom Post Types
+    require_once(get_template_directory().'/app/cpt/partners-cpt.php');
+    require_once(get_template_directory().'/app/cpt/testimonial-cpt.php');
+
     //função para fazer componentização
     function includeFile($fileName, $variables) {
         extract($variables);
