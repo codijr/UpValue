@@ -26,6 +26,17 @@ main #solutions {
   background-color: var(--secondary-color);
 }
 
+main #partners {
+  background-image: url("../img/partners-bgc.jpg");
+  background-size: 100%;
+  -webkit-backdrop-filter: opacity(10%);
+          backdrop-filter: opacity(10%);
+}
+
+main #blog {
+  background-color: var(--primary-color-0);
+}
+
 @media (min-width: 768px) {
   main #banner .container .w-100 {
     width: 60% !important;

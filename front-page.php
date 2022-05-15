@@ -80,7 +80,7 @@
     <section id="solutions">
         <div class="container py-5">
             <div class="mb-5" id="category">
-                <div class=" w-50 d-flex align-items-center">
+                <div class="w-50 d-flex align-items-center">
                     <h4 class="me-3 f-neutral">NOSSAS SOLUÇÕES</h4>
                     <hr class="w-25 neutral"> 
                 </div>
@@ -97,8 +97,8 @@
     <section id="contact">
         <div class="container py-5">
             <div class="mb-5" id="category">
-                <div class="d-flex align-items-center">
-                    <h4 class="me-3 ">CONTATO</h4>
+                <div class="w-50 d-flex align-items-center">
+                    <h4 class="me-3">CONTATO</h4>
                     <hr class="w-25"> 
                 </div>
             </div>
@@ -114,6 +114,84 @@
                 </div>
                 <div class="col-12 col-md-6" id="form">
                     
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="partners">
+        <div class="container py-5">
+            <div class="mb-5" id="category">
+                <div class=" w-50 d-flex align-items-center">
+                    <h4 class="me-3 f-neutral">NOSSOS PARCEIROS</h4>
+                    <hr class="w-25 neutral"> 
+                </div>
+            </div>
+
+            <h3 class="mb-4 f-neutral" id="title">Conheça as empresas que estão alinhadas ao nosso propósito e que nos ajudam a entregar as melhores soluções.</h3>
+        </div>
+    </section>
+
+    <section id="clients">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-md-6" id="info-clients">
+                    <div class="mb-5" id="category">
+                        <div class="d-flex align-items-center">
+                            <h4 class="me-3 ">NOSSOS CLIENTES</h4>
+                            <hr class="w-25"> 
+                        </div>
+                    </div>
+                    <h3 class="mb-4" id="title">Acompanhe a opinião de clientes parceiros</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container py-5">
+            <div class="row mb-3" id="info-blog">
+                <div class="col-12 col-md-8" id="info">
+                    <div class="mb-5" id="category">
+                        <div class="d-flex align-items-center">
+                            <h4 class="me-3 f-neutral">BLOG</h4>
+                            <hr class="w-25 neutral"> 
+                        </div>
+                    </div>
+
+                    <h3 class="mb-4 f-neutral" id="title">Acompanhe as novidades da UpValue</h3>
+
+                    <?php
+                        includeFile('components/button.php',
+                            array(
+                                'title' => 'Acesse nosso Blog'
+                            )
+                        )
+                    ?>
+                </div>
+
+                <div class="col-12 col-md-4 p-3" id="cards-blog"> 
+                    <?php includeFile('components/card-blog.php', array(
+                        'imgUrl' => get_template_directory_uri() . '/assets/img/test.jpg',
+                        'title' => 'Lorem Ipsum Dolor Sit Amet',
+                        'author' => 'Maria',
+                        'date' => '03 de maio',
+                        'readingTime' => '2min'
+                    )) ?>
+
+                    <hr class="thin"> 
+
+                    <?php includeFile('components/card-blog.php', array(
+                        'imgUrl' => get_template_directory_uri() . '/assets/img/test.jpg',
+                        'title' => 'Lorem Ipsum Dolor Sit Amet',
+                        'author' => 'Maria',
+                        'date' => '03 de maio',
+                        'readingTime' => '2min'
+                    )) ?>
                 </div>
             </div>
         </div>

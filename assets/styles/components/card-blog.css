@@ -1,0 +1,16 @@
+.card-blog #image img {
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid var(--neutral);
+}
+
+.card-blog #info h4 {
+  text-align: justify;
+}
+
+.card-blog:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=card-blog.css.map */

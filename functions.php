@@ -31,6 +31,7 @@
 
         //components
         wp_enqueue_style('button', get_template_directory_uri().'/assets/styles/components/button.css');
+        wp_enqueue_style('card-blog', get_template_directory_uri().'/assets/styles/components/card-blog.css');
     }
     add_action('wp_enqueue_scripts', 'css_files');
 
@@ -39,6 +40,11 @@
         wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.6.0.js', false, null, false); 
         wp_enqueue_script('popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js', array('jquery'));
         wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js', array('popper'));
+
+        wp_enqueue_script('header', get_template_directory_uri() . '/assets/scripts/header.js');
+
+        wp_enqueue_script( 'swiperjsbundle', get_template_directory_uri() . '/assets/scripts/swiper-bundle.min.js', array(), '8.0.7', true );
+		wp_enqueue_script( 'swiperinit', get_template_directory_uri() . '/assets/scripts/swiper-init.js', array(), '8.0.7', true );
     }
     add_action('wp_enqueue_scripts', 'scripts_files'); 
     

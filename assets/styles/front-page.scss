@@ -38,6 +38,16 @@ main {
     #solutions {
         background-color: var(--secondary-color);
     }
+
+    #partners {
+        background-image: url('../img/partners-bgc.jpg');
+        background-size: 100%;
+        backdrop-filter: opacity(10%);
+    }
+
+    #blog {
+        background-color: var(--primary-color-0);
+    }
 }
 
 @media (min-width: 768px) {

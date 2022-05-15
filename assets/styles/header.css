@@ -1,7 +1,7 @@
 header {
   position: fixed;
   width: 100%;
-  background-color: var(--primary-color-0);
+  background-color: transparent;
 }
 
 header nav .container .navbar-brand {
