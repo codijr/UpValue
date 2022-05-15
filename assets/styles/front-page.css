@@ -26,6 +26,72 @@ main #solutions {
   background-color: var(--secondary-color);
 }
 
+main #contact .container .row #form {
+  background-color: var(--secondary-color);
+}
+
+main #contact .container .row #form input {
+  font-size: 16px;
+  font-weight: 200;
+  width: 100% !important;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--neutral);
+  color: var(--neutral);
+  padding: 3px 1px;
+}
+
+main #contact .container .row #form input:focus {
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid var(--neutral);
+}
+
+main #contact .container .row #form input::-webkit-input-placeholder {
+  color: #dfe6ef85;
+}
+
+main #contact .container .row #form input:-ms-input-placeholder {
+  color: #dfe6ef85;
+}
+
+main #contact .container .row #form input::-ms-input-placeholder {
+  color: #dfe6ef85;
+}
+
+main #contact .container .row #form input::placeholder {
+  color: #dfe6ef85;
+}
+
+main #contact .container .row #form input[type="submit"] {
+  width: 25% !important;
+  font-family: Mitr;
+  font-style: normal;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: var(--neutral);
+  margin-bottom: 5%;
+  border-radius: 4px;
+  padding: 12px 16px;
+  letter-spacing: 1px;
+  border: 0;
+  color: var(--secondary-color);
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
+main #contact .container .row #form input[type="submit"]:hover {
+  background-color: var(--secondary-color-0);
+  color: var(--neutral);
+}
+
+main #contact .container .row #form .wpcf7-not-valid-tip {
+  color: var(--error);
+}
+
 main #partners {
   background-image: url("../img/partners-bgc.jpg");
   background-size: 100%;

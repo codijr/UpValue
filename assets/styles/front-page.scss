@@ -39,6 +39,63 @@ main {
         background-color: var(--secondary-color);
     }
 
+    #contact {
+        .container {
+            .row {
+                #form {
+                    background-color: var(--secondary-color);
+
+                    input {
+                        font-size: 16px;
+                        font-weight: 200;
+                        width: 100% !important;
+                        background-color: transparent;
+                        border: 0;
+                        border-bottom: 1px solid var(--neutral);
+                        color: var(--neutral);
+                        padding: 3px 1px;
+                    }
+
+                    input:focus {
+                        border: 0;
+                        outline: none;
+                        border-bottom: 1px solid var(--neutral);
+                    }
+
+                    input::placeholder {
+                        color: #dfe6ef85;
+                    }
+
+                    input[type="submit"] {
+                        width: 25% !important;
+                        font-family: Mitr;
+                        font-style: normal;
+                        height: fit-content;
+                        font-weight: 400;
+                        font-size: 14px;
+                        background-color: var(--neutral);
+                        margin-bottom: 5%;
+                        border-radius: 4px;
+                        padding: 12px 16px;
+                        letter-spacing: 1px;
+                        border: 0;
+                        color: var(--secondary-color);
+                        transition-duration: 200ms;
+                    }
+
+                    input[type="submit"]:hover {
+                        background-color: var(--secondary-color-0);
+                        color: var(--neutral);
+                    }
+
+                    .wpcf7-not-valid-tip {
+                        color: var(--error);
+                    }
+                }
+            }
+        }
+    }
+
     #partners {
         background-image: url('../img/partners-bgc.jpg');
         background-size: 100%;
