@@ -180,7 +180,7 @@
     <section id="blog">
         <div class="container py-5">
             <div class="row mb-3" id="info-blog">
-                <div class="col-12 col-md-8" id="info">
+                <div class="col-12 col-md-6" id="info">
                     <div class="mb-5" id="category">
                         <div class="d-flex align-items-center">
                             <h4 class="me-3 f-neutral">BLOG</h4>
@@ -199,24 +199,45 @@
                     ?>
                 </div>
 
-                <div class="col-12 col-md-4 p-3" id="cards-blog"> 
-                    <?php includeFile('components/card-blog.php', array(
-                        'imgUrl' => get_template_directory_uri() . '/assets/img/test.jpg',
-                        'title' => 'Lorem Ipsum Dolor Sit Amet',
-                        'author' => 'Maria',
-                        'date' => '03 de maio',
-                        'readingTime' => '2min'
-                    )) ?>
-
-                    <hr class="thin"> 
-
-                    <?php includeFile('components/card-blog.php', array(
-                        'imgUrl' => get_template_directory_uri() . '/assets/img/test.jpg',
-                        'title' => 'Lorem Ipsum Dolor Sit Amet',
-                        'author' => 'Maria',
-                        'date' => '03 de maio',
-                        'readingTime' => '2min'
-                    )) ?>
+                <div class="col-12 col-md-6 p-3" id="cards-blog"> 
+                <?php
+                        $count = 1;
+                        $args = array(
+                            'post_type' => 'post',
+                            'posts_per_page' => 3,
+                            'offset' => 1
+                        );
+                        $relate_query = new WP_Query($args);
+                        if($relate_query->have_posts()) : while ($relate_query->have_posts()) : $relate_query->the_post();
+                    ?>
+                    <div class="col-12 ">
+                        <?php 
+                            $titulo = '';
+                            if (strlen($post->post_title) > 53) {
+                                $titulo = substr(the_title($before = '', $after = '', FALSE), 0, 56) . '...'; } 
+                            else {
+                                $titulo= esc_html( get_the_title() );
+                            }
+                            if($count == 2){
+                                echo '<hr class="w-100 mt-4 mb-4" style="border: 0; height: 2px;
+                                background-color: var(--neutral);">';
+                            }
+                            includeFile('components/card-blog.php', array(
+                                'imgUrl' => $post->ID,
+                                'title' => $titulo,
+                                'author' => esc_html( get_the_author() ),
+                                'date' => get_the_date('d-m-Y'),
+                                'readingTime' => '?',
+                                'color' => 'f-neutral',
+                            ));
+                            if($count == 2){
+                                echo '<hr class="w-100 mt-4 mb-4" style="border: 0; height: 2px;
+                                background-color: var(--neutral); ">';
+                            }
+                            $count+=1;
+                        ?>
+                    </div>
+                    <?php endwhile; else: endif; wp_reset_postdata();?>
                 </div>
             </div>
         </div>
