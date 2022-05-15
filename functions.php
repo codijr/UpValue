@@ -29,6 +29,11 @@
             wp_enqueue_style('home', get_template_directory_uri() . '/assets/styles/front-page.css');
         }
 
+        if ( is_category() == true || is_single()  && 'post' == get_post_type() ) {
+            // só vai carregar se estiver em uma das categorias do blog
+            wp_enqueue_style('blog', get_template_directory_uri() . '/assets/styles/blog.css');
+        } 
+
         //components
         wp_enqueue_style('button', get_template_directory_uri().'/assets/styles/components/button.css');
         wp_enqueue_style('card-blog', get_template_directory_uri().'/assets/styles/components/card-blog.css');
