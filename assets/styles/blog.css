@@ -1,0 +1,44 @@
+/*--------------------------------------------------------
+| Highlight - first post
+|---------------------------------------------------------*/
+.post-frame{
+    height: 420px;
+    width: 100%;
+}
+
+.thumb{
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .post-frame{
+        height: 360px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .post-frame{
+        height: 320px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .post-frame{
+        height: 360px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/*margin wrap*/
+@media (max-width: 991.98px){
+    #highlight-post{
+        margin-bottom: 4rem;
+    }
+}
+
