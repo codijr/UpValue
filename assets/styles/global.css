@@ -21,6 +21,7 @@
 h1, h2, h3, h4 {
   font-family: MuseoModerno;
   margin-bottom: 0;
+  color: var(--text-color);
 }
 
 h1 {
@@ -49,22 +50,47 @@ a, p {
   font-weight: 300;
   text-decoration: none;
   margin-bottom: 0;
+  color: var(--text-color);
 }
 
 p.body {
   font-size: 16px;
+  font-weight: 300;
 }
 
 p.body-2 {
   font-size: 14px;
+  font-weight: 300;
 }
 
 p.caption {
   font-size: 12px;
+  font-weight: 200;
+}
+
+p.overline {
+  font-size: 10px;
+  font-weight: 200;
 }
 
 hr {
-    border: 0px;
-    border-top: 3px solid var(--text-color);
-    opacity: 1;
+  border: 0px;
+  border-top: 3px solid var(--text-color);
+  opacity: 1;
+}
+
+.f-neutral {
+  color: var(--neutral);
+}
+
+.bg-neutral {
+  background-color: var(--neutral);
+}
+
+hr.neutral {
+  border-top: 2px solid var(--neutral);
+}
+
+hr.thin {
+  border-top: 1px solid var(--neutral);
 }

@@ -1,14 +1,11 @@
 main #banner {
   height: 100vh;
   background-image: url("../img/banner.jpg");
-}
-
-main #banner .container h1 {
-  color: var(--neutral);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 main #banner .container h4 {
-  color: var(--neutral);
   font-weight: 300;
 }
 
@@ -25,8 +22,19 @@ main #about .container #concepts .col-12 .card-concepts {
   background-color: var(--primary-color);
 }
 
-main #about .container #concepts .col-12 .card-concepts h4, main #about .container #concepts .col-12 .card-concepts p {
-  color: var(--neutral);
+main #solutions {
+  background-color: var(--secondary-color);
+}
+
+main #partners {
+  background-image: url("../img/partners-bgc.jpg");
+  background-size: 100%;
+  -webkit-backdrop-filter: opacity(10%);
+          backdrop-filter: opacity(10%);
+}
+
+main #blog {
+  background-color: var(--primary-color-0);
 }
 
 @media (min-width: 768px) {
