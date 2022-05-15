@@ -146,9 +146,34 @@
                 </div>
             </div>
 
-            <div class="row">
-                
-            </div>
+            <div class="swiper swiper-testimonial">
+                <div class="swiper-wrapper d-flex">
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <?php 
+                            includeFile('components/card-testimonial.php', array(
+                                'testimonial' => '“ Com a visão do faturamento dos contratos pude entender o real motivo da queda na arrecadação. Eu não sabia por onde começar, até que com os gráficos e comparativos mês a mês, pude entender que por um descuido alguns contratos não estavam sendo faturados. Problema resolvido e agora, de forma fácil, posso realizar o monitoramento. ”',
+                                'imgUrl' => get_template_directory_uri() . '/assets/img/executive.jpg',
+                                'person' => 'Gustavo Alex',
+                                'occupation' => 'Analista',
+                                'location' => 'Fortaleza - CE'
+                            ))
+                        ?>
+                    </div>
+
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <?php 
+                            includeFile('components/card-testimonial.php', array(
+                                'testimonial' => '“ Com a visão do faturamento dos contratos pude entender o real motivo da queda na arrecadação. Eu não sabia por onde começar, até que com os gráficos e comparativos mês a mês, pude entender que por um descuido alguns contratos não estavam sendo faturados. Problema resolvido e agora, de forma fácil, posso realizar o monitoramento. ”',
+                                'imgUrl' => get_template_directory_uri() . '/assets/img/executive.jpg',
+                                'person' => 'Gustavo Alex',
+                                'occupation' => 'Analista',
+                                'location' => 'Fortaleza - CE'
+                            ))
+                        ?>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                </div>
         </div>
     </section>
 

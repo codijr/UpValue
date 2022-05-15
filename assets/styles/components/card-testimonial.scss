@@ -1,0 +1,13 @@
+.card-testimonial {
+    background-color: var(--primary-color);
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    h4 {
+        font-weight: 100;
+    }
+}

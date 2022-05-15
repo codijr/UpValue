@@ -2,6 +2,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: transparent;
+  z-index: 100;
 }
 
 header nav .container .navbar-brand {

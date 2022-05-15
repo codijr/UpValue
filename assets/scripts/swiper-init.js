@@ -1,19 +1,19 @@
 var swiper = new Swiper('.swiper-testimonial', {
+  effect: 'slide',
+  speed: 800,
+  fadeEffect: {
+    crossFade: false
+  },
   observer: true,
   observeParents: true,
   setWrapperSize:true,
   centeredSlides: true,
-  loop:true,
   slidesPerView: 1,
   spaceBetween: 0,
   autoplay: {
-    delay: 4000,
+    enabled: true,
+    delay: 3000,
     disableOnInteraction:false,
-  },
-  breakpoints: {
-    992: {
-      slidesPerView: 3,
-    }
   },
   pagination: {
     el: ".swiper-pagination",
