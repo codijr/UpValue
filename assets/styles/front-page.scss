@@ -29,6 +29,12 @@ main {
 
                     .card-concepts {
                         background-color: var(--primary-color);
+                        min-height: 200px;
+
+                        ul, li {
+                            list-style: inside;
+                            color: var(--neutral);
+                        }
                     }
                 }
             }

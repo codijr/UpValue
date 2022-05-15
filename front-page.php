@@ -58,15 +58,20 @@
                 <div class="col-12 col-md-4">
                     <div class="card-concepts py-3 px-4 rounded-3">
                         <h4 class="mb-3 f-neutral">Valores</h4>
-                        <p class="body-2 f-neutral">
-                            Criatividade<br>
-                            Confiança<br>
-                            Profissionalismo<br>
-                            Inovação<br>
-                            Agilidade<br>
-                            Resiliência<br>
-                            Ética<br>
-                        </p>
+                        <ul class="row p-0">
+                            <div class="col-6 d-flex flex-column align-items-start">
+                                <p class="body-2 f-neutral"><li>Criatividade</li></p>
+                                <p class="body-2 f-neutral"><li>Confiança</li></p>
+                                <p class="body-2 f-neutral"><li>Profissionalismo</li></p>
+                                <p class="body-2 f-neutral"><li>Inovação</li></p>
+                            </div>
+
+                            <div class="col-6 d-flex flex-column align-items-start">
+                                <p class="body-2 f-neutral"><li>Agilidade</li></p>
+                                <p class="body-2 f-neutral"><li>Resiliência</li></p>
+                                <p class="body-2 f-neutral"><li>Ética</li></p>
+                            </div>
+                        </ul>
                     </div>
                 </div>
             </div>
