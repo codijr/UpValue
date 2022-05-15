@@ -2,7 +2,7 @@ main {
     #banner {
         height: 100vh;
         background-image: url('../img/banner.jpg');
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
 
         .container {
@@ -29,6 +29,12 @@ main {
 
                     .card-concepts {
                         background-color: var(--primary-color);
+                        min-height: 200px;
+
+                        ul, li {
+                            list-style: inside;
+                            color: var(--neutral);
+                        }
                     }
                 }
             }
@@ -98,7 +104,8 @@ main {
 
     #partners {
         background-image: url('../img/partners-bgc.jpg');
-        background-size: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
         backdrop-filter: opacity(10%);
     }
 

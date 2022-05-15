@@ -98,3 +98,34 @@ hr.neutral {
 hr.thin {
   border-top: 1px solid var(--neutral);
 }
+
+button {
+  font-family: Mitr;
+  font-style: normal;
+  height: fit-content;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 12px 16px;
+  letter-spacing: 1px;
+  border: 1px solid var(--neutral);
+  color: var(--neutral);
+}
+
+button:hover {
+  background-color: var(--neutral);
+  color: var(--primary-color);
+}
+
+button.neutral {
+  background-color: var(--neutral);
+  border: 0;
+  color: var(--primary-color-0);
+}
+
+button.neutral:hover {
+  background-color: var(--primary-color-0);
+  border: 0;
+  color: var(--neutral);
+}

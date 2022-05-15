@@ -1,7 +1,7 @@
 main #banner {
   height: 100vh;
   background-image: url("../img/banner.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -20,6 +20,12 @@ main #about .container #concepts .col-12 {
 
 main #about .container #concepts .col-12 .card-concepts {
   background-color: var(--primary-color);
+  min-height: 200px;
+}
+
+main #about .container #concepts .col-12 .card-concepts ul, main #about .container #concepts .col-12 .card-concepts li {
+  list-style: inside;
+  color: var(--neutral);
 }
 
 main #solutions {
@@ -94,7 +100,8 @@ main #contact .container .row #form .wpcf7-not-valid-tip {
 
 main #partners {
   background-image: url("../img/partners-bgc.jpg");
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-backdrop-filter: opacity(10%);
           backdrop-filter: opacity(10%);
 }

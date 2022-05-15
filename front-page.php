@@ -6,13 +6,9 @@
             <div class="w-100">
                 <h1 class="mb-2 f-neutral">Potencializamos negócios</h1>
                 <h4 class="mb-4 f-neutral">Aliados a tecnologia, estruturamos dados e geramos visões que auxiliam na gestão do seu negócio, guiando a transformação de processos e pessoas para alavancar os resultados.</h4>
-                <?php
-                    includeFile('components/button.php',
-                        array(
-                            'title' => 'Fale conosco'
-                        )
-                    )
-                ?>
+                <a href="#contact">
+                    <button class="neutral">Fale conosco</button>
+                </a>
             </div>
         </div>
     </section>
@@ -62,15 +58,20 @@
                 <div class="col-12 col-md-4">
                     <div class="card-concepts py-3 px-4 rounded-3">
                         <h4 class="mb-3 f-neutral">Valores</h4>
-                        <p class="body-2 f-neutral">
-                            Criatividade<br>
-                            Confiança<br>
-                            Profissionalismo<br>
-                            Inovação<br>
-                            Agilidade<br>
-                            Resiliência<br>
-                            Ética<br>
-                        </p>
+                        <ul class="row p-0">
+                            <div class="col-6 d-flex flex-column align-items-start">
+                                <p class="body-2 f-neutral"><li>Criatividade</li></p>
+                                <p class="body-2 f-neutral"><li>Confiança</li></p>
+                                <p class="body-2 f-neutral"><li>Profissionalismo</li></p>
+                                <p class="body-2 f-neutral"><li>Inovação</li></p>
+                            </div>
+
+                            <div class="col-6 d-flex flex-column align-items-start">
+                                <p class="body-2 f-neutral"><li>Agilidade</li></p>
+                                <p class="body-2 f-neutral"><li>Resiliência</li></p>
+                                <p class="body-2 f-neutral"><li>Ética</li></p>
+                            </div>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -80,7 +81,7 @@
     <section id="solutions">
         <div class="container py-5">
             <div class="mb-5" id="category">
-                <div class="w-50 d-flex align-items-center">
+                <div class="d-flex align-items-center">
                     <h4 class="me-3 f-neutral">NOSSAS SOLUÇÕES</h4>
                     <hr class="w-25 neutral"> 
                 </div>
@@ -108,18 +109,18 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row w-100 justify-content-center">
                 <div class="col-12 col-md-6" id="info-contact">
                     <h3 class="mb-4" id="title">Temos soluções que irão 
                     ajudar o seu negócio a alcançar resultados exponenciais!</h3>
 
-                    <p class="body">
-                        Preencha o formulário ao lado para entrar em contato.
+                    <p class="body mb-4">
+                        Preencha o formulário para entrar em contato.
                     </p>
                 </div>
 
                 <div class="col-12 col-md-6 rounded-3 px-4 py-2" id="form">
-                    <?php echo do_shortcode('[contact-form-7 id="6" title="Formulário de contato"]');?>
+                    <?php echo do_shortcode('[contact-form-7 id="6" title="Formulário de contato" class="w-100"]');?>
                 </div>
             </div>
         </div>
@@ -128,7 +129,7 @@
     <section id="partners">
         <div class="container py-5">
             <div class="mb-5" id="category">
-                <div class=" w-50 d-flex align-items-center">
+                <div class="d-flex align-items-center">
                     <h4 class="me-3 f-neutral">NOSSOS PARCEIROS</h4>
                     <hr class="w-25 neutral"> 
                 </div>
@@ -136,8 +137,44 @@
 
             <h3 class="mb-4 f-neutral" id="title">Conheça as empresas que estão alinhadas ao nosso propósito e que nos ajudam a entregar as melhores soluções.</h3>
 
-            <div class="swiper swiper-partners">
+            <div class="swiper swiper-partners w-100">
                 <div class="swiper-wrapper d-flex">
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <?php 
+                            includeFile('components/card-partners.php', array(
+                                'imgUrl' => get_template_directory_uri() . '/assets/img/executive.jpg',
+                                'partner' => 'Brisanet'
+                            ))
+                        ?>
+                    </div>
+
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <?php 
+                            includeFile('components/card-partners.php', array(
+                                'imgUrl' => get_template_directory_uri() . '/assets/img/executive.jpg',
+                                'partner' => 'Brisanet'
+                            ))
+                        ?>
+                    </div>
+
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <?php 
+                            includeFile('components/card-partners.php', array(
+                                'imgUrl' => get_template_directory_uri() . '/assets/img/executive.jpg',
+                                'partner' => 'Brisanet'
+                            ))
+                        ?>
+                    </div>
+
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <?php 
+                            includeFile('components/card-partners.php', array(
+                                'imgUrl' => get_template_directory_uri() . '/assets/img/executive.jpg',
+                                'partner' => 'Brisanet'
+                            ))
+                        ?>
+                    </div>
+
                     <div class="swiper-slide d-flex justify-content-center">
                         <?php 
                             includeFile('components/card-partners.php', array(
@@ -166,9 +203,9 @@
                 </div>
             </div>
 
-            <div class="swiper swiper-testimonial">
+            <div class="swiper swiper-testimonial w-100">
                 <div class="swiper-wrapper d-flex">
-                    <div class="swiper-slide d-flex justify-content-center">
+                    <div class="swiper-slide d-flex justify-content-center p-3">
                         <?php 
                             includeFile('components/card-testimonial.php', array(
                                 'testimonial' => '“ Com a visão do faturamento dos contratos pude entender o real motivo da queda na arrecadação. Eu não sabia por onde começar, até que com os gráficos e comparativos mês a mês, pude entender que por um descuido alguns contratos não estavam sendo faturados. Problema resolvido e agora, de forma fácil, posso realizar o monitoramento. ”',
@@ -180,7 +217,7 @@
                         ?>
                     </div>
 
-                    <div class="swiper-slide d-flex justify-content-center">
+                    <div class="swiper-slide d-flex justify-content-center p-3">
                         <?php 
                             includeFile('components/card-testimonial.php', array(
                                 'testimonial' => '“ Com a visão do faturamento dos contratos pude entender o real motivo da queda na arrecadação. Eu não sabia por onde começar, até que com os gráficos e comparativos mês a mês, pude entender que por um descuido alguns contratos não estavam sendo faturados. Problema resolvido e agora, de forma fácil, posso realizar o monitoramento. ”',
@@ -209,14 +246,10 @@
                     </div>
 
                     <h3 class="mb-4 f-neutral" id="title">Acompanhe as novidades da UpValue</h3>
-
-                    <?php
-                        includeFile('components/button.php',
-                            array(
-                                'title' => 'Acesse nosso Blog'
-                            )
-                        )
-                    ?>
+                    
+                    <a href="<?php echo get_home_url(); ?>/blog">
+                        <button>Acesse nosso Blog</button>
+                    </a>
                 </div>
 
                 <div class="col-12 col-md-4 p-3" id="cards-blog"> 

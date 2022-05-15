@@ -4,16 +4,22 @@ var swiper = new Swiper('.swiper-partners', {
   fadeEffect: {
     crossFade: false
   },
-  observer: true,
-  observeParents: true,
+  loop: true,
+  // observer: true,
+  // observeParents: true,
   setWrapperSize:true,
   centeredSlides: true,
-  slidesPerView: 5,
+  slidesPerView: 2,
   spaceBetween: 0,
   autoplay: {
     enabled: true,
     delay: 3000,
     disableOnInteraction:false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 5,
+    }
   },
   pagination: {
     el: ".swiper-pagination",
@@ -28,6 +34,7 @@ var swiper = new Swiper('.swiper-testimonial', {
     crossFade: false
   },
   observer: true,
+  loop: true,
   observeParents: true,
   setWrapperSize:true,
   centeredSlides: true,
