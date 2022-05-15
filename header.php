@@ -32,21 +32,17 @@
                 <div class="collapse navbar-collapse justify-content-end d-md-flex" id="navBar">
                     <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="/" href="<?php echo get_home_url(); ?>"><h4 class="f-neutral">Home</h4></a>
+                            <a class="nav-link active" aria-current="home" href="<?php echo get_home_url(); ?>"><h4 class="f-neutral">Home</h4></a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="blog" href="/blog"><h4 class="f-neutral">Blog</h4></a>
+                            <a class="nav-link" aria-current="blog" href="<?php echo get_home_url(); ?>/blog"><h4 class="f-neutral">Blog</h4></a>
                         </li>
                         
                         <li class="nav-item">
-                            <?php 
-                                includeFile('components/button.php', 
-                                    array(
-                                        'title' => 'Área do cliente'
-                                    )
-                                ); 
-                            ?>
+                            <a href="https://upvalue.dados.app.br/login" target="_blank">
+                                <button>Área do cliente</button>
+                            </a>
                         </li>
                     </ul>
                 </div>

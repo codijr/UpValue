@@ -6,13 +6,9 @@
             <div class="w-100">
                 <h1 class="mb-2 f-neutral">Potencializamos negócios</h1>
                 <h4 class="mb-4 f-neutral">Aliados a tecnologia, estruturamos dados e geramos visões que auxiliam na gestão do seu negócio, guiando a transformação de processos e pessoas para alavancar os resultados.</h4>
-                <?php
-                    includeFile('components/button.php',
-                        array(
-                            'title' => 'Fale conosco'
-                        )
-                    )
-                ?>
+                <a href="#contact">
+                    <button>Fale conosco</button>
+                </a>
             </div>
         </div>
     </section>
