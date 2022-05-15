@@ -73,6 +73,10 @@ p.overline {
   font-weight: 200;
 }
 
+ul, li {
+  list-style: none;
+}
+
 hr {
   border: 0px;
   border-top: 3px solid var(--text-color);

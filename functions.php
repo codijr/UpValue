@@ -33,6 +33,7 @@
         wp_enqueue_style('button', get_template_directory_uri().'/assets/styles/components/button.css');
         wp_enqueue_style('card-blog', get_template_directory_uri().'/assets/styles/components/card-blog.css');
         wp_enqueue_style('card-testimonial', get_template_directory_uri().'/assets/styles/components/card-testimonial.css');
+        wp_enqueue_style('card-solutions', get_template_directory_uri().'/assets/styles/components/card-solutions.css');
     }
     add_action('wp_enqueue_scripts', 'css_files');
 

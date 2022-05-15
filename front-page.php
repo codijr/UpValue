@@ -88,9 +88,14 @@
 
             <h3 class="mb-4 f-neutral" id="title">Conheça os UPCombos</h3>
 
-            <p class="body f-neutral">
+            <p class="body f-neutral mb-5">
                 Os UpCombos são compostos por painéis gerenciais que permitem o acompanhamento dos resultados do seu negócio, sem restrição de horário e lugar, sem a necessidade de estar exportando e tratando dados de sistemas.
             </p>
+
+            <?php includeFile('components/card-solutions.php', array(
+                'title' => 'Distribuidoras',
+                'imgUrl' => get_template_directory_uri() . '/assets/icons/transport.svg',
+            )) ?>
         </div>
     </section>
 
