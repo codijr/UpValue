@@ -3,7 +3,7 @@
         background-color: transparent !important;
     }
 
-    // button:focus {
-
-    // }
+    button::after {
+        margin-left: 8px !important;
+    }
 }

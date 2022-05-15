@@ -134,6 +134,20 @@
             </div>
 
             <h3 class="mb-4 f-neutral" id="title">Conheça as empresas que estão alinhadas ao nosso propósito e que nos ajudam a entregar as melhores soluções.</h3>
+
+            <div class="swiper swiper-partners">
+                <div class="swiper-wrapper d-flex">
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <?php 
+                            includeFile('components/card-partners.php', array(
+                                'imgUrl' => get_template_directory_uri() . '/assets/img/executive.jpg',
+                                'partner' => 'Brisanet'
+                            ))
+                        ?>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </section>
 
@@ -178,7 +192,7 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-                </div>
+            </div>
         </div>
     </section>
 

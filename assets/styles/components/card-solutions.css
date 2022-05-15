@@ -1,4 +1,8 @@
 .card-solutions button {
   background-color: transparent !important;
 }
+
+.card-solutions button::after {
+  margin-left: 8px !important;
+}
 /*# sourceMappingURL=card-solutions.css.map */
