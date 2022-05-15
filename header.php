@@ -25,7 +25,7 @@
                     <img id="reduced-logo" src="<?php echo get_template_directory_uri(); ?>/assets/icons/logo-reduced.svg" alt="UpValue Logo">
                 </a>
 
-                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler d-md-none border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 

@@ -117,3 +117,15 @@ button:hover {
   background-color: var(--neutral);
   color: var(--primary-color);
 }
+
+button.neutral {
+  background-color: var(--neutral);
+  border: 0;
+  color: var(--primary-color-0);
+}
+
+button.neutral:hover {
+  background-color: var(--primary-color-0);
+  border: 0;
+  color: var(--neutral);
+}

@@ -1,4 +1,4 @@
-<div class="card-solutions bg-neutral d-flex flex-column align-items-center px-3 w-25">
+<div class="card-solutions bg-neutral d-flex flex-column align-items-center px-3 w-100 rounded-3">
     <div class="my-2 py-2  d-flex flex-column align-items-center">
         <img class="mb-3" src="<?php echo $imgUrl ?>" alt="">
         <h4><?php echo $title ?></h4>
