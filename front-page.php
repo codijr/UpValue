@@ -88,9 +88,14 @@
 
             <h3 class="mb-4 f-neutral" id="title">Conheça os UPCombos</h3>
 
-            <p class="body f-neutral">
+            <p class="body f-neutral mb-5">
                 Os UpCombos são compostos por painéis gerenciais que permitem o acompanhamento dos resultados do seu negócio, sem restrição de horário e lugar, sem a necessidade de estar exportando e tratando dados de sistemas.
             </p>
+
+            <?php includeFile('components/card-solutions.php', array(
+                'title' => 'Distribuidoras',
+                'imgUrl' => get_template_directory_uri() . '/assets/icons/transport.svg',
+            )) ?>
         </div>
     </section>
 
@@ -112,8 +117,9 @@
                         Preencha o formulário ao lado para entrar em contato.
                     </p>
                 </div>
-                <div class="col-12 col-md-6" id="form">
-                    
+
+                <div class="col-12 col-md-6 rounded-3 px-4 py-2" id="form">
+                    <?php echo do_shortcode('[contact-form-7 id="6" title="Formulário de contato"]');?>
                 </div>
             </div>
         </div>
@@ -129,6 +135,20 @@
             </div>
 
             <h3 class="mb-4 f-neutral" id="title">Conheça as empresas que estão alinhadas ao nosso propósito e que nos ajudam a entregar as melhores soluções.</h3>
+
+            <div class="swiper swiper-partners">
+                <div class="swiper-wrapper d-flex">
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <?php 
+                            includeFile('components/card-partners.php', array(
+                                'imgUrl' => get_template_directory_uri() . '/assets/img/executive.jpg',
+                                'partner' => 'Brisanet'
+                            ))
+                        ?>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </section>
 
@@ -173,7 +193,7 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-                </div>
+            </div>
         </div>
     </section>
 

@@ -1,0 +1,11 @@
+.card-partners {
+  width: 100px;
+  height: 100px;
+  background-color: var(--neutral);
+}
+
+.card-partners img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=card-partners.css.map */
