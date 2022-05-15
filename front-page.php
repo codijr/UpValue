@@ -205,14 +205,10 @@
                     </div>
 
                     <h3 class="mb-4 f-neutral" id="title">Acompanhe as novidades da UpValue</h3>
-
-                    <?php
-                        includeFile('components/button.php',
-                            array(
-                                'title' => 'Acesse nosso Blog'
-                            )
-                        )
-                    ?>
+                    
+                    <a href="<?php echo get_home_url(); ?>/blog">
+                        <button>Acesse nosso Blog</button>
+                    </a>
                 </div>
 
                 <div class="col-12 col-md-4 p-3" id="cards-blog"> 
