@@ -1,6 +1,6 @@
 .card-blog #image img {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px solid var(--neutral);
@@ -12,5 +12,26 @@
 
 .card-blog:hover {
   cursor: pointer;
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .card-blog #image img{
+    height: 130px;
+    width: 130px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .card-blog #image img{
+    height: 130px;
+    width: 130px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-blog #image img{
+    height: 200px;
+    width: 200px;
+  }
 }
 /*# sourceMappingURL=card-blog.css.map */
