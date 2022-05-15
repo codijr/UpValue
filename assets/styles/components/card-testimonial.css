@@ -1,0 +1,15 @@
+.card-testimonial {
+  background-color: var(--primary-color);
+}
+
+.card-testimonial img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-testimonial h4 {
+  font-weight: 100;
+}
+/*# sourceMappingURL=card-testimonial.css.map */
