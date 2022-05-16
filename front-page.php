@@ -207,7 +207,7 @@
                     </p>
                 </div>
 
-                <div class="col-12 col-md-6 rounded-3 px-4 py-2" id="form">
+                <div class="col-12 col-md-6 rounded-3 me-3 px-4 py-2" id="form">
                     <?php echo do_shortcode('[contact-form-7 id="7" title="Formulário de contato"]');?>
                 </div>
             </div>
