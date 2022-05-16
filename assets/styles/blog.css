@@ -1,0 +1,86 @@
+/*--------------------------------------------------------
+| Highlight - Most Recenter : thumb and frame
+|---------------------------------------------------------*/
+#highlight .post-frame{
+    height: 420px;
+    width: 100%;
+}
+
+.thumb{
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+#most-recent .post-frame{
+    height: 260px;
+    width: 100%;
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    #highlight .post-frame{
+        height: 360px;
+    }
+    #most-recent .post-frame{
+        height: 230px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #highlight .post-frame{
+        height: 320px;
+    }
+    #most-recent .post-frame{
+        height: 200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #highlight .post-frame{
+        height: 360px;
+    }
+    #most-recent .post-frame{
+        height: 220px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #highlight .post-frame{
+        height: 280px;
+    }
+    #most-recent .post-frame{
+        height: 170px;
+    }
+}
+
+@media (max-width: 575.98px){
+    #highlight .post-frame{
+        max-height: 400px;
+        height: auto;
+    }
+    #most-recent .post-frame{
+        max-height: 400px;
+        height: auto;
+    }
+    #highlight .first-title{
+        font-size: 28px;
+    }
+}
+
+/*margin wrap*/
+@media (max-width: 991.98px){
+    #highlight-post{
+        margin-bottom: 4rem;
+    }
+}
+
+/*--------------------------------------------------------
+| Most Recenter : Pagination
+|---------------------------------------------------------*/
+
+#most-recent .active{
+    font-weight: 700;
+    background-color: var(--neutral);
+    border-radius: 50%;
+}
