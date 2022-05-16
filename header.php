@@ -36,7 +36,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="blog" href="<?php echo get_home_url(); ?>/blog"><h4 class="f-neutral">Blog</h4></a>
+                            <a class="nav-link" aria-current="blog" href="<?php echo get_home_url(); ?>/category/geral"><h4 class="f-neutral">Blog</h4></a>
                         </li>
                         
                         <li class="nav-item">

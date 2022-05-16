@@ -48,6 +48,9 @@
                 ?>
                 <div class="col-12 col-lg-7">
                     <a href="<?php echo get_permalink();?>">
+                        <!------------------
+                        | Featured Image
+                        |------------------>
                         <div class="d-flex flex-wrap" id="highlight-post">
                             <div class="col-12 post-frame">
                                 <img class="thumb h-100 w-100 rounded-3" <?php if(!has_post_thumbnail( $post->ID )){
@@ -63,6 +66,9 @@
                                     " 
                                     alt="<?php the_title();?>"
                                 >
+                                <div class="bt-h">
+                                    <button>Ver postagem</button>
+                                </div>
                             </div>
 
                             <div class="d-flex flex-column justify-content-between col-12 mt-3" id="post-info">
@@ -72,13 +78,30 @@
                                         <img class="me-2" src="<?php echo get_template_directory_uri(); ?>/assets/icons/author.svg" alt="Author icone">
                                         <p class="body-2"><?php the_author();?></p>
                                     </div>
-
-                                    <div class="d-flex justify-content-between">
+                                    
+                                    <div class="d-flex justify-content-between ">
                                         <?php the_date( 'd-m-Y', '<p class="body-2">', '</p>' ); ?>
-                                        <p class="body-2">? de leitura</p>
+
+                                        <p class="body-2 mx-2">/</p>
+
+                                        <p class="body-2">
+                                            <?php $content = get_post_field( 'post_content', $post->ID );
+                                                $quantidade_palavras = str_word_count( strip_tags( $content ) );
+                                                $tempo_leitura = ceil($quantidade_palavras / 250);
+                                                if($tempo_leitura == 1){
+                                                    echo $tempo_leitura." min de leitura";
+                                                }
+                                                else{
+                                                    echo strval($tempo_leitura)." min de leitura";
+                                                }
+                                            ?>
+                                        </p>
                                     </div>
                                 </div>
-
+                                
+                                <!------------------
+                                | Titulo
+                                |------------------>
                                 <h3 class="first-title">
                                     <?php 
                                         if (strlen($post->post_title) > 75) {
@@ -112,6 +135,9 @@
                     <div class="col-12 ">
                         <a href="<?php echo get_permalink();?>">
                             <?php 
+                                /*------------------
+                                | Titulo
+                                |------------------*/
                                 $titulo = '';
                                 if (strlen($post->post_title) > 56) {
                                     $titulo = substr(the_title($before = '', $after = '', FALSE), 0, 56) . '...'; } 
@@ -122,12 +148,26 @@
                                     echo '<hr class="w-100 mt-4 mb-4" style="border: 0; height: 2px;
                                     background-color: var(--neutral);">';
                                 }
+                                
+                                /*------------------
+                                | Tempo de leitura
+                                |------------------*/
+                                $tempo = '';
+                                $content = get_post_field( 'post_content', $post->ID );
+                                $quantidade_palavras = str_word_count( strip_tags( $content ) );
+                                $tempo_leitura = ceil($quantidade_palavras / 250);
+                                if($tempo_leitura == 1){
+                                    $tempo = $tempo_leitura." min de leitura";
+                                }
+                                else{
+                                    $tempo = strval($tempo_leitura)." min de leitura";
+                                }
                                 includeFile('components/card-blog.php', array(
                                     'imgUrl' => $post->ID,
                                     'title' => $titulo,
                                     'author' => esc_html( get_the_author() ),
                                     'date' => get_the_date('d-m-Y'),
-                                    'readingTime' => '?',
+                                    'readingTime' => $tempo,
                                     'color' => '',
                                     'class' => '',
                                 ));
@@ -211,20 +251,33 @@
                                     " 
                                     alt="<?php the_title();?>"
                                 >
+                                <div class="bt-h">
+                                    <button>Ver postagem</button>
+                                </div>
                             </div>
 
                             <div class="d-flex flex-column justify-content-between col-12 mt-3" id="post-info">
 
                                 <div class="d-flex flex-wrap justify-content-between mb-2">
-
-                                    <div class="d-flex justify-content-between">
-                                        <p class="body-2">
-                                            <?php setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
-                                            date_default_timezone_set('America/Sao_Paulo');
-                                            echo strftime('%d/%m/%Y', strtotime($post->post_date));?>
-                                        </p>
-                                        <p class="body-2">? de leitura</p>
-                                    </div>
+                                    <p class="body-2">
+                                        <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/icons/calendar.svg" alt="Calendario icone">
+                                        <?php setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+                                        date_default_timezone_set('America/Sao_Paulo');
+                                        echo strftime('%d/%m/%Y', strtotime($post->post_date));?>
+                                    </p>
+                                    <p class="body-2">
+                                        <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/icons/clock.svg" alt="Relogio icone">
+                                        <?php $content = get_post_field( 'post_content', $post->ID );
+                                            $quantidade_palavras = str_word_count( strip_tags( $content ) );
+                                            $tempo_leitura = ceil($quantidade_palavras / 250);
+                                            if($tempo_leitura == 1){
+                                                echo $tempo_leitura."min de leitura";
+                                            }
+                                            else{
+                                                echo strval($tempo_leitura)."min de leitura";
+                                            }
+                                        ?>
+                                    </p>
                                 </div>
 
                                 <h4 class="first-title">

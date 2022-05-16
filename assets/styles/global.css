@@ -199,3 +199,11 @@ button.neutral:hover {
   border: 0;
   color: var(--neutral);
 }
+
+.not-found{
+  color: var(--primary-color);
+}
+
+.not-found-light{
+  color: var(--neutral);
+}
