@@ -36,7 +36,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="blog" href="<?php echo get_home_url(); ?>/category/geral"><h4 class="f-neutral">Blog</h4></a>
+                            <a class="nav-link <?php if(is_category() == true || is_single()) { echo 'border-bottom';} ?>" aria-current="blog" href="<?php echo get_home_url(); ?>/category/geral"><h4 class="f-neutral">Blog</h4></a>
                         </li>
                         
                         <li class="nav-item">

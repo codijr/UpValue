@@ -59,14 +59,14 @@
                     <div class="card-concepts py-3 px-4 rounded-3">
                         <h4 class="mb-3 f-neutral">Valores</h4>
                         <ul class="row p-0">
-                            <div class="col-12 d-flex flex-column align-items-start">
+                            <div class="col-6 col-md-12 col-xl-6 mb-0 d-flex flex-column align-items-start">
                                 <p class="body-2 f-neutral"><li>Criatividade</li></p>
                                 <p class="body-2 f-neutral"><li>Confiança</li></p>
                                 <p class="body-2 f-neutral"><li>Profissionalismo</li></p>
                                 <p class="body-2 f-neutral"><li>Inovação</li></p>
                             </div>
 
-                            <div class="col-12 d-flex flex-column align-items-start">
+                            <div class="col-6 col-md-12 col-xl-6 d-flex flex-column align-items-start">
                                 <p class="body-2 f-neutral"><li>Agilidade</li></p>
                                 <p class="body-2 f-neutral"><li>Resiliência</li></p>
                                 <p class="body-2 f-neutral"><li>Ética</li></p>
@@ -198,7 +198,7 @@
             </div>
 
             <div class="row w-100 justify-content-center">
-                <div class="col-12 col-md-6" id="info-contact">
+                <div class="col-12 col-lg-6" id="info-contact">
                     <h3 class="mb-4" id="title">Temos soluções que irão 
                     ajudar o seu negócio a alcançar resultados exponenciais!</h3>
 
@@ -206,8 +206,8 @@
                         Preencha o formulário para entrar em contato.
                     </p>
                 </div>
-
-                <div class="col-12 col-md-6 rounded-3 me-3 px-4 py-2" id="form">
+                
+                <div class="col-12 col-lg-6 d-flex justify-content-center" id="form">
                     <?php echo do_shortcode('[contact-form-7 id="7" title="Formulário de contato"]');?>
                 </div>
             </div>

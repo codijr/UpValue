@@ -36,27 +36,30 @@ main #solutions {
   background-color: var(--secondary-color);
 }
 
-main #contact .container .row #form {
+main #contact .container .row #form form {
   background-color: var(--secondary-color);
+  border-radius: 7px;
+  padding: 10px 25px;
+  margin: 0 auto;
 }
 
-main #contact .container .row #form select {
+main #contact .container .row #form form select {
   cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
-main #contact .container .row #form select option {
+main #contact .container .row #form form select option {
   background-color: var(--neutral);
   color: var(--secondary-color);
 }
 
-main #contact .container .row #form select:focus {
+main #contact .container .row #form form select:focus {
   outline: none;
 }
 
-main #contact .container .row #form input, main #contact .container .row #form select {
+main #contact .container .row #form form input, main #contact .container .row #form form select {
   font-size: 16px;
   font-weight: 200;
   width: 100% !important;
@@ -67,29 +70,29 @@ main #contact .container .row #form input, main #contact .container .row #form s
   padding: 3px 1px;
 }
 
-main #contact .container .row #form input:focus {
+main #contact .container .row #form form input:focus {
   border: 0;
   outline: none;
   border-bottom: 1px solid var(--neutral);
 }
 
-main #contact .container .row #form input::-webkit-input-placeholder {
+main #contact .container .row #form form input::-webkit-input-placeholder {
   color: #dfe6ef85;
 }
 
-main #contact .container .row #form input:-ms-input-placeholder {
+main #contact .container .row #form form input:-ms-input-placeholder {
   color: #dfe6ef85;
 }
 
-main #contact .container .row #form input::-ms-input-placeholder {
+main #contact .container .row #form form input::-ms-input-placeholder {
   color: #dfe6ef85;
 }
 
-main #contact .container .row #form input::placeholder {
+main #contact .container .row #form form input::placeholder {
   color: #dfe6ef85;
 }
 
-main #contact .container .row #form input[type="submit"] {
+main #contact .container .row #form form input[type="submit"] {
   width: 25% !important;
   font-family: Mitr;
   font-style: normal;
@@ -109,16 +112,16 @@ main #contact .container .row #form input[type="submit"] {
           transition-duration: 200ms;
 }
 
-main #contact .container .row #form input[type="submit"]:hover {
+main #contact .container .row #form form input[type="submit"]:hover {
   background-color: var(--secondary-color-0);
   color: var(--neutral);
 }
 
-main #contact .container .row #form .wpcf7-not-valid-tip {
+main #contact .container .row #form form .wpcf7-not-valid-tip {
   color: var(--error);
 }
 
-main #contact .container .row #form .wpcf7-response-output {
+main #contact .container .row #form form .wpcf7-response-output {
   color: var(--neutral);
 }
 

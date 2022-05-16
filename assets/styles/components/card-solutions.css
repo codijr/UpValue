@@ -5,10 +5,4 @@
 .card-solutions button::after {
   margin-left: 8px !important;
 }
-
-@media (min-width: 768px) {
-  .card-solutions {
-    width: 100% !important;
-  }
-}
 /*# sourceMappingURL=card-solutions.css.map */
