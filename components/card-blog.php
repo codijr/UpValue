@@ -1,5 +1,5 @@
 <div class="card-blog">
-    <div class="d-flex">
+    <div class="d-flex <?php echo $class ?>">
         <div id="image">
             <img class="me-3 rounded-3" <?php if(!has_post_thumbnail( $imgUrl )){
                 echo "no-thumbnail";

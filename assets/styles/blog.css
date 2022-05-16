@@ -84,3 +84,51 @@
     background-color: var(--neutral);
     border-radius: 50%;
 }
+
+
+/*--------------------------------------------------------
+| Most Recenter : Post single
+|---------------------------------------------------------*/
+.post-content h1, .post-content h2, .post-content h3, .post-content h4{
+    margin-bottom: 0.5rem;
+}
+
+.post-content p, .post-content a{
+    margin-bottom: 1rem;
+}
+
+.cat-div{
+    margin-right: 5%;
+    margin-bottom: 1rem;
+}
+
+/*--------------------------------------------------------
+| Most Recenter : Banner
+|---------------------------------------------------------*/
+.banner h4,.banner h2{
+    color: white;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 28rem;
+    overflow: hidden;
+}
+
+.banner img{
+    min-height: 22rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.filtro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}

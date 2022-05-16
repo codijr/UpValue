@@ -4,7 +4,7 @@
     <section class="d-flex flex-column justify-content-center" id="banner">
         <div class="container">
             <div class="w-100">
-                <h1 class="mb-2 f-neutral">Potencializamos negócios</h1>
+                <h1 class="mb-3 f-neutral">Potencializamos negócios</h1>
                 <h4 class="mb-4 f-neutral">Aliados a tecnologia, estruturamos dados e geramos visões que auxiliam na gestão do seu negócio, guiando a transformação de processos e pessoas para alavancar os resultados.</h4>
                 <a href="#contact">
                     <button class="neutral">Fale conosco</button>
@@ -323,42 +323,44 @@
                 </div>
 
                 <div class="col-12 col-md-6 p-3" id="cards-blog"> 
-                <?php
+                    <?php
                         $count = 1;
                         $args = array(
                             'post_type' => 'post',
-                            'posts_per_page' => 3,
-                            'offset' => 1
+                            'posts_per_page' => 3
                         );
                         $relate_query = new WP_Query($args);
                         if($relate_query->have_posts()) : while ($relate_query->have_posts()) : $relate_query->the_post();
                     ?>
-                    <div class="col-12 ">
-                        <?php 
-                            $titulo = '';
-                            if (strlen($post->post_title) > 53) {
-                                $titulo = substr(the_title($before = '', $after = '', FALSE), 0, 56) . '...'; } 
-                            else {
-                                $titulo= esc_html( get_the_title() );
-                            }
-                            if($count == 2){
-                                echo '<hr class="w-100 mt-4 mb-4" style="border: 0; height: 2px;
-                                background-color: var(--neutral);">';
-                            }
-                            includeFile('components/card-blog.php', array(
-                                'imgUrl' => $post->ID,
-                                'title' => $titulo,
-                                'author' => esc_html( get_the_author() ),
-                                'date' => get_the_date('d-m-Y'),
-                                'readingTime' => '?',
-                                'color' => 'f-neutral',
-                            ));
-                            if($count == 2){
-                                echo '<hr class="w-100 mt-4 mb-4" style="border: 0; height: 2px;
-                                background-color: var(--neutral); ">';
-                            }
-                            $count+=1;
-                        ?>
+                    <div class="col-12">
+                        <a href="<?php echo get_permalink();?>">
+                            <?php 
+                                $titulo = '';
+                                if (strlen($post->post_title) > 53) {
+                                    $titulo = substr(the_title($before = '', $after = '', FALSE), 0, 56) . '...'; } 
+                                else {
+                                    $titulo= esc_html( get_the_title() );
+                                }
+                                if($count == 2){
+                                    echo '<hr class="w-100 mt-4 mb-4" style="border: 0; height: 2px;
+                                    background-color: var(--neutral);">';
+                                }
+                                includeFile('components/card-blog.php', array(
+                                    'imgUrl' => $post->ID,
+                                    'title' => $titulo,
+                                    'author' => esc_html( get_the_author() ),
+                                    'date' => get_the_date('d-m-Y'),
+                                    'readingTime' => '?',
+                                    'color' => 'f-neutral',
+                                    'class' => 'dif'
+                                ));
+                                if($count == 2){
+                                    echo '<hr class="w-100 mt-4 mb-4" style="border: 0; height: 2px;
+                                    background-color: var(--neutral); ">';
+                                }
+                                $count+=1;
+                            ?>
+                        <a href="<?php echo get_permalink();?>">
                     </div>
                     <?php endwhile; else: endif; wp_reset_postdata();?>
                 </div>
