@@ -15,15 +15,33 @@ footer {
         }
 
         #middle-section {
-            .d-flex {
-                p {
-                    color: var(--neutral);
+            .col-12 {
+                .d-flex {
+                    p {
+                        color: var(--neutral);
+                    }
                 }
             }
         }
 
         #bottom-section {
             color: var(--neutral);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        .container {
+            #top-section {
+                justify-content: flex-start !important;
+            }
+
+            #middle-section {
+                .col-12 {
+                    margin-bottom: 0 !important;
+                }
+            }
         }
     }
 }

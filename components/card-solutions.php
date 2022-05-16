@@ -6,7 +6,6 @@
     
     <ul class="mb-2 ps-0">
         <li>
-            <p class="body-2">Comercial</p>
             <p class="body-2">Financeiro</p>
             <p class="body-2">Estoque</p>
             <p class="body-2">Compras</p>

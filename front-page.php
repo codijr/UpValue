@@ -93,10 +93,98 @@
                 Os UpCombos são compostos por painéis gerenciais que permitem o acompanhamento dos resultados do seu negócio, sem restrição de horário e lugar, sem a necessidade de estar exportando e tratando dados de sistemas.
             </p>
 
-            <?php includeFile('components/card-solutions.php', array(
-                'title' => 'Distribuidoras',
-                'imgUrl' => get_template_directory_uri() . '/assets/icons/transport.svg',
-            )) ?>
+            <div class="swiper swiper-solutions">
+                <div class="swiper-wrapper d-flex mb-2">
+                    <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
+                        <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
+                            <div class="my-2 py-2  d-flex flex-column align-items-center">
+                                <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/varejo.svg" alt="">
+                                <h4>Varejo</h4>
+                            </div>
+                            
+                            <ul class="mb-2 ps-0">
+                                <li>
+                                    <p class="body-2">Comercial</p>
+                                    <p class="body-2">Financeiro</p>
+                                    <p class="body-2">Estoque</p>
+                                    <p class="body-2">Compras</p>
+                                    <div class="collapse" id="varejo">
+                                        <p class="body-2">Curadoria</p>
+                                        <p class="body-2">Gestão de indicadores</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#varejo" aria-expanded="false" aria-controls="collapse">
+                                <p class="caption">Ver mais</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
+                        <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
+                            <div class="my-2 py-2  d-flex flex-column align-items-center">
+                                <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/transport.svg" alt="">
+                                <h4>Distribuidoras</h4>
+                            </div>
+                            
+                            <ul class="mb-2 ps-0">
+                                <li>
+                                    <p class="body-2">Comercial</p>
+                                    <p class="body-2">Financeiro</p>
+                                    <p class="body-2">Estoque</p>
+                                    <p class="body-2">Compras</p>
+                                    <div class="collapse" id="distribuidora">
+                                        <p class="body-2">Curadoria</p>
+                                        <p class="body-2">Gestão de indicadores</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#distribuidora" aria-expanded="false" aria-controls="collapse">
+                                <p class="caption">Ver mais</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
+                        <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
+                            <div class="my-2 py-2  d-flex flex-column align-items-center">
+                                <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/transport.svg" alt="">
+                                <h4>ISP Telecom</h4>
+                            </div>
+                            
+                            <ul class="mb-2 ps-0">
+                                <li>
+                                    <p class="body-2">Comercial</p>
+                                    <p class="body-2">Cancelamento</p>
+                                    <p class="body-2">Base Contratos</p>
+                                    <p class="body-2">Financeiro </p>
+                                    <div class="collapse" id="telecom">
+                                        <p class="body-2">Operação</p>
+                                        <p class="body-2">Atendimento</p>
+                                        <p class="body-2">Curadoria</p>
+                                        <p class="body-2">Gestão de indicadores</p>
+                                        <p class="body-2">Outros</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#telecom" aria-expanded="false" aria-controls="collapse">
+                                <p class="caption">Ver mais</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-navigation w-100 d-flex justify-content-end">
+                    <div class="swiper-button-prev me-3">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/icons/prev.svg" alt="">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/icons/next.svg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -125,6 +213,15 @@
             </div>
         </div>
     </section>
+
+    <script>
+        let message = 
+        $('.wpcf7-select').change(() => { 
+            const segment = $('.wpcf7-select').val();
+            const system = $('input[name="segmento"]').val();
+            $('input[name="message"]').val(`Olá, sou uma empresa de ${segment} e utilizo um sistema de ${system} e gostaria de um orçamento para `);
+        });
+    </script>
     
     <section id="partners">
         <div class="container py-5">
@@ -139,50 +236,25 @@
 
             <div class="swiper swiper-partners w-100">
                 <div class="swiper-wrapper d-flex">
-                    <div class="swiper-slide d-flex justify-content-center">
-                        <?php 
-                            includeFile('components/card-partners.php', array(
-                                'imgUrl' => get_template_directory_uri() . '/assets/img/executive.jpg',
-                                'partner' => 'Brisanet'
-                            ))
-                        ?>
-                    </div>
+                    <?php
+                        $args = array (
+                        'post_type' => 'parceiros',
+                        'orderby' => 'title',
+                        'order' => 'ASC',
+                    );
+                    $partners_query = new WP_Query($args);
 
-                    <div class="swiper-slide d-flex justify-content-center">
-                        <?php 
-                            includeFile('components/card-partners.php', array(
-                                'imgUrl' => get_template_directory_uri() . '/assets/img/executive.jpg',
-                                'partner' => 'Brisanet'
-                            ))
-                        ?>
-                    </div>
-
-                    <div class="swiper-slide d-flex justify-content-center">
-                        <?php 
-                            includeFile('components/card-partners.php', array(
-                                'imgUrl' => get_template_directory_uri() . '/assets/img/executive.jpg',
-                                'partner' => 'Brisanet'
-                            ))
-                        ?>
-                    </div>
-
-                    <div class="swiper-slide d-flex justify-content-center">
-                        <?php 
-                            includeFile('components/card-partners.php', array(
-                                'imgUrl' => get_template_directory_uri() . '/assets/img/executive.jpg',
-                                'partner' => 'Brisanet'
-                            ))
-                        ?>
-                    </div>
-
-                    <div class="swiper-slide d-flex justify-content-center">
-                        <?php 
-                            includeFile('components/card-partners.php', array(
-                                'imgUrl' => get_template_directory_uri() . '/assets/img/executive.jpg',
-                                'partner' => 'Brisanet'
-                            ))
-                        ?>
-                    </div>
+                    if($partners_query->have_posts()) : 
+                        while ($partners_query->have_posts()) : $partners_query->the_post(); ?>
+                            <div class="swiper-slide d-flex justify-content-center">
+                                <?php 
+                                    includeFile('components/card-partners.php', array(
+                                        'imgUrl' => get_the_post_thumbnail_url($post->ID),
+                                        'partner' => get_the_title($post->ID)
+                                    ))
+                                ?>
+                            </div>
+                    <?php endwhile; endif; wp_reset_postdata();?>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -205,29 +277,28 @@
 
             <div class="swiper swiper-testimonial w-100">
                 <div class="swiper-wrapper d-flex">
-                    <div class="swiper-slide d-flex justify-content-center p-3">
-                        <?php 
-                            includeFile('components/card-testimonial.php', array(
-                                'testimonial' => '“ Com a visão do faturamento dos contratos pude entender o real motivo da queda na arrecadação. Eu não sabia por onde começar, até que com os gráficos e comparativos mês a mês, pude entender que por um descuido alguns contratos não estavam sendo faturados. Problema resolvido e agora, de forma fácil, posso realizar o monitoramento. ”',
-                                'imgUrl' => get_template_directory_uri() . '/assets/img/executive.jpg',
-                                'person' => 'Gustavo Alex',
-                                'occupation' => 'Analista',
-                                'location' => 'Fortaleza - CE'
-                            ))
-                        ?>
-                    </div>
+                    <?php
+                        $args = array (
+                        'post_type' => 'depoimentos',
+                        'orderby' => 'title',
+                        'order' => 'ASC',
+                    );
+                    $testimonial_query = new WP_Query($args);
 
-                    <div class="swiper-slide d-flex justify-content-center p-3">
-                        <?php 
-                            includeFile('components/card-testimonial.php', array(
-                                'testimonial' => '“ Com a visão do faturamento dos contratos pude entender o real motivo da queda na arrecadação. Eu não sabia por onde começar, até que com os gráficos e comparativos mês a mês, pude entender que por um descuido alguns contratos não estavam sendo faturados. Problema resolvido e agora, de forma fácil, posso realizar o monitoramento. ”',
-                                'imgUrl' => get_template_directory_uri() . '/assets/img/executive.jpg',
-                                'person' => 'Gustavo Alex',
-                                'occupation' => 'Analista',
-                                'location' => 'Fortaleza - CE'
-                            ))
-                        ?>
-                    </div>
+                    if($testimonial_query->have_posts()) : 
+                        while ($testimonial_query->have_posts()) : $testimonial_query->the_post(); ?>
+                            <div class="swiper-slide d-flex justify-content-center p-3">
+                                <?php 
+                                    includeFile('components/card-testimonial.php', array(
+                                        'testimonial' => get_the_content($post->ID),
+                                        'imgUrl' => get_the_post_thumbnail_url($post->ID),
+                                        'person' => get_the_title($post->ID),
+                                        'location' => get_the_excerpt($post->ID)
+                                    ))
+                                ?>
+                            </div>
+                    <?php endwhile; endif; wp_reset_postdata();?>
+                    
                 </div>
                 <div class="swiper-pagination"></div>
             </div>

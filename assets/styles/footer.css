@@ -10,11 +10,22 @@ footer .container #top-section .col-3 .navbar-brand img {
   width: 90%;
 }
 
-footer .container #middle-section .d-flex p {
+footer .container #middle-section .col-12 .d-flex p {
   color: var(--neutral);
 }
 
 footer .container #bottom-section {
   color: var(--neutral);
+}
+
+@media (min-width: 768px) {
+  footer .container #top-section {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  footer .container #middle-section .col-12 {
+    margin-bottom: 0 !important;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

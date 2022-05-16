@@ -1,4 +1,6 @@
 main {
+    overflow-x: hidden;
+
     #banner {
         height: 100vh;
         background-image: url('../img/banner.jpg');
@@ -51,7 +53,21 @@ main {
                 #form {
                     background-color: var(--secondary-color);
 
-                    input {
+                    select {
+                        cursor: pointer;
+                        appearance: none;
+                        
+                        option {
+                            background-color: var(--neutral);
+                            color: var(--secondary-color);
+                        }
+                    }
+
+                    select:focus {
+                        outline: none;
+                    }
+
+                    input, select {
                         font-size: 16px;
                         font-weight: 200;
                         width: 100% !important;

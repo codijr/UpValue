@@ -9,7 +9,14 @@
      object-fit: cover;
 }
 
-.card-testimonial h4 {
+.card-testimonial h4, .card-testimonial p {
   font-weight: 100;
+  color: var(--neutral);
+}
+
+@media (min-width: 768px) {
+  .card-testimonial {
+    width: 75% !important;
+  }
 }
 /*# sourceMappingURL=card-testimonial.css.map */

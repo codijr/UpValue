@@ -1,3 +1,24 @@
+var swiper = new Swiper('.swiper-solutions', {
+  effect: 'slide',
+  speed: 800,
+  fadeEffect: {
+    crossFade: false
+  },
+  observeParents: true,
+  setWrapperSize:true,
+  centeredSlides: true,
+  slidesPerView: 1,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    }
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 var swiper = new Swiper('.swiper-partners', {
   effect: 'slide',
   speed: 800,
@@ -5,8 +26,6 @@ var swiper = new Swiper('.swiper-partners', {
     crossFade: false
   },
   loop: true,
-  // observer: true,
-  // observeParents: true,
   setWrapperSize:true,
   centeredSlides: true,
   slidesPerView: 2,
@@ -34,7 +53,6 @@ var swiper = new Swiper('.swiper-testimonial', {
     crossFade: false
   },
   observer: true,
-  loop: true,
   observeParents: true,
   setWrapperSize:true,
   centeredSlides: true,

@@ -1,3 +1,7 @@
+main {
+  overflow-x: hidden;
+}
+
 main #banner {
   height: 100vh;
   background-image: url("../img/banner.jpg");
@@ -36,7 +40,23 @@ main #contact .container .row #form {
   background-color: var(--secondary-color);
 }
 
-main #contact .container .row #form input {
+main #contact .container .row #form select {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+main #contact .container .row #form select option {
+  background-color: var(--neutral);
+  color: var(--secondary-color);
+}
+
+main #contact .container .row #form select:focus {
+  outline: none;
+}
+
+main #contact .container .row #form input, main #contact .container .row #form select {
   font-size: 16px;
   font-weight: 200;
   width: 100% !important;

@@ -7,7 +7,14 @@
         object-fit: cover;
     }
 
-    h4 {
+    h4, p {
         font-weight: 100;
+        color: var(--neutral);
+    }
+}
+
+@media (min-width: 768px) {
+    .card-testimonial {
+        width: 75% !important;
     }
 }
