@@ -118,12 +118,14 @@ main #contact .container .row #form .wpcf7-not-valid-tip {
   color: var(--error);
 }
 
+main #contact .container .row #form .wpcf7-response-output {
+  color: var(--neutral);
+}
+
 main #partners {
   background-image: url("../img/partners-bgc.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-backdrop-filter: opacity(10%);
-          backdrop-filter: opacity(10%);
 }
 
 main #blog {

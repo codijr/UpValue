@@ -150,7 +150,7 @@
                     <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
                         <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
                             <div class="my-2 py-2  d-flex flex-column align-items-center">
-                                <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/transport.svg" alt="">
+                                <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/telecom.svg" alt="">
                                 <h4>ISP Telecom</h4>
                             </div>
                             
@@ -215,11 +215,10 @@
     </section>
 
     <script>
-        let message = 
         $('.wpcf7-select').change(() => { 
-            const segment = $('.wpcf7-select').val();
-            const system = $('input[name="segmento"]').val();
-            $('input[name="message"]').val(`Olá, sou uma empresa de ${segment} e utilizo um sistema de ${system} e gostaria de um orçamento para `);
+            const segment = $('select[name="segment"]').val();
+            const system = $('select[name="system"]').val();
+            $('input[name="message"]').val(`Olá, sou uma empresa de ${segment}, utilizo um sistema de ${system} e gostaria de realizar um orçamento`);
         });
     </script>
     

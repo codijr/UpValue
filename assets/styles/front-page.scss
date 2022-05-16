@@ -113,6 +113,10 @@ main {
                     .wpcf7-not-valid-tip {
                         color: var(--error);
                     }
+
+                    .wpcf7-response-output {
+                        color: var(--neutral);
+                    }
                 }
             }
         }
@@ -122,7 +126,6 @@ main {
         background-image: url('../img/partners-bgc.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        backdrop-filter: opacity(10%);
     }
 
     #blog {
