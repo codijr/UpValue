@@ -7,12 +7,6 @@
             border: 1px solid var(--neutral);
         }
     }
-
-    #info {
-        h4 {
-            text-align: justify;
-        }
-    }
 }
 
 .card-blog:hover {
@@ -47,6 +41,27 @@
             img {
                 height: 200px;
                 width: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .card-blog{
+        #image {
+            img {
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px){
+    .card-blog {
+        #info {
+            h4 {
+                text-align: justify;
             }
         }
     }

@@ -5,9 +5,10 @@
      object-fit: cover;
   border: 1px solid var(--neutral);
 }
-
-.card-blog #info h4 {
-  text-align: justify;
+@media (min-width: 576px){
+  .card-blog #info h4 {
+    text-align: justify;
+  }
 }
 
 .card-blog:hover {
@@ -32,6 +33,13 @@
   .card-blog #image img{
     height: 200px;
     width: 200px;
+  }
+}
+
+@media (max-width:420px) {
+  .card-blog #image img{
+    height: 100px;
+    width: 100px;
   }
 }
 /*# sourceMappingURL=card-blog.css.map */
