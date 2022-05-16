@@ -6,6 +6,17 @@
   border: 1px solid var(--neutral);
 }
 
+#image{
+  position: relative;
+  transition: all 1s;
+}
+
+@media (min-width: 576px){
+  .card-blog #info h4 {
+    text-align: justify;
+  }
+}
+
 .card-blog:hover {
   cursor: pointer;
 }
@@ -43,9 +54,38 @@
   }
 }
 
-@media (min-width: 576px) {
-  .card-blog #info h4 {
-    text-align: justify;
-  }
+.card-blog:hover #image{
+    transition: all 1s;
+    background-color: rgb(66, 109, 169, 0.5);
+}
+
+.bt-h{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+}
+
+.bt-h button{
+    bottom: 0%;
+    visibility: hidden;
+    position: absolute;
+    transition: visibility 0.7s, bottom 1s;
+}
+
+.card-blog:hover .bt-h button{
+    visibility: visible;
+    position: absolute;
+    bottom: 50%;
+    transition: all 1s;
+    transition: visibility 0.7s, bottom 1s;
+}
+
+.card-blog:hover .bt-h{
+  background-color: rgb(66, 109, 169, 0.5);
+  transition: all 1s;
 }
 /*# sourceMappingURL=card-blog.css.map */

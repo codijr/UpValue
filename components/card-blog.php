@@ -1,7 +1,7 @@
 <div class="card-blog">
     <div class="d-flex <?php echo $class ?>">
         <div id="image">
-            <img class="me-3 rounded-3" <?php if(!has_post_thumbnail( $imgUrl )){
+            <img class="rounded-3" <?php if(!has_post_thumbnail( $imgUrl )){
                 echo "no-thumbnail";
                 }?>" 
                 src="<?php if(has_post_thumbnail( $imgUrl )){
@@ -14,9 +14,12 @@
                 " 
                 alt="<?php echo $title ?>"
             >
+            <div class="bt-h">
+                <button>Ver</button>
+            </div>
         </div>
 
-        <div class="d-flex flex-column justify-content-between" id="info">
+        <div class="d-flex flex-column justify-content-between ms-3" id="info">
             <h4 class="<?php echo $color ?>"><?php echo $title ?></h4>
 
             <div class="d-flex mt-3 mb-3" id="author">
@@ -27,7 +30,7 @@
 
             <div class="d-flex justify-content-between">
                 <p class="overline <?php echo $color ?>"><?php echo $date ?></p>
-                <p class="overline <?php echo $color ?>"><?php echo $readingTime ?> de leitura</p>
+                <p class="overline <?php echo $color ?>"><?php echo $readingTime ?></p>
             </div>
         </div>
     </div>

@@ -200,20 +200,33 @@ global $post;?>
                                 " 
                                 alt="<?php the_title();?>"
                             >
+                            <div class="bt-h">
+                                <button>Ver postagem</button>
+                            </div>
                         </div>
 
                         <div class="d-flex flex-column justify-content-between col-12 mt-3" id="post-info">
 
                             <div class="d-flex flex-wrap justify-content-between mb-2">
-
-                                <div class="d-flex justify-content-between">
-                                    <p class="body-2">
-                                        <?php setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
-                                        date_default_timezone_set('America/Sao_Paulo');
-                                        echo strftime('%d/%m/%Y', strtotime($post->post_date));?>
-                                    </p>
-                                    <p class="body-2">? de leitura</p>
-                                </div>
+                                <p class="body-2">
+                                    <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/icons/calendar.svg" alt="Calendario icone">
+                                    <?php setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+                                    date_default_timezone_set('America/Sao_Paulo');
+                                    echo strftime('%d/%m/%Y', strtotime($post->post_date));?>
+                                </p>
+                                <p class="body-2">
+                                    <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/icons/clock.svg" alt="Relogio icone">
+                                    <?php $content = get_post_field( 'post_content', $post->ID );
+                                        $quantidade_palavras = str_word_count( strip_tags( $content ) );
+                                        $tempo_leitura = ceil($quantidade_palavras / 250);
+                                        if($tempo_leitura == 1){
+                                            echo $tempo_leitura."min de leitura";
+                                        }
+                                        else{
+                                            echo strval($tempo_leitura)."min de leitura";
+                                        }
+                                    ?>
+                                </p>
                             </div>
 
                             <h4 class="first-title">
@@ -229,7 +242,15 @@ global $post;?>
                     </div>
                 </a>
             </div>
-            <?php endwhile; else: endif; wp_reset_postdata();?>
+            <?php endwhile; else: 
+            echo '
+            <div class="container mb-5">
+                <h4 class="not-found">
+                    Desculpe, não encontramos posts relacionados :(
+                </h4>
+            </div>
+            ' 
+            ;endif; wp_reset_postdata();?>
         </div>
 
     </section>
