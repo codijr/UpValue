@@ -2,12 +2,17 @@
     <!------------------
     | Banner
     |------------------>
-    <section id="blog-banner">
-        <div class="container" style="height: 5rem;">
-
-
-        </div>
-    </section>
+    <?php 
+        #ALTERE AQUI O TITULO E O NOME DA IMAGEM DO BANNER
+        $img = get_template_directory_uri().'/assets/img/blog-img.png';
+        includeFile('components/banner.php', 
+            array(
+                'title'=>'Blog', 
+                'imagem'=> $img,
+                'subtitle' => 'Acompanhe as novidades da UpValue'
+            )
+        ); 
+    ?>
 
     <!------------------
     | Destaques
@@ -53,7 +58,7 @@
                                         }
                                         else{
                                             //alterar a imagem para um placeholder feito
-                                            echo get_template_directory_uri()."/assets/images/";
+                                            echo get_template_directory_uri()."/assets/img/";
                                         }?>
                                     " 
                                     alt="<?php the_title();?>"
@@ -124,6 +129,7 @@
                                     'date' => get_the_date('d-m-Y'),
                                     'readingTime' => '?',
                                     'color' => '',
+                                    'class' => '',
                                 ));
                                 if($count == 2){
                                     echo '<hr class="w-100 mt-4 mb-4" style="border: 0; height: 2px;
@@ -200,7 +206,7 @@
                                         }
                                         else{
                                             //alterar a imagem para um placeholder feito
-                                            echo get_template_directory_uri()."/assets/images/";
+                                            echo get_template_directory_uri()."/assets/img/";
                                         }?>
                                     " 
                                     alt="<?php the_title();?>"
