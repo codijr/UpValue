@@ -6,6 +6,11 @@
     width: 100%;
 }
 
+.post-frame{
+    position: relative;
+    transition: all 1s;
+}
+
 .thumb{
     object-fit: cover;
     position: relative;
@@ -131,4 +136,69 @@
     height: 100%;
     z-index: 1;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+
+/*--------------------------------------------------------
+| Hover posts
+|---------------------------------------------------------*/
+#highlight-post:hover .post-frame,
+#most-recent-post:hover .post-frame{
+    transition: all 1s;
+    background-color: rgb(66, 109, 169, 0.5);
+}
+
+.bt-h{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+}
+
+.bt-h button{
+    bottom: 0%;
+    visibility: hidden;
+    position: absolute;
+    transition: visibility 0.7s, bottom 1s;
+}
+
+#highlight-post:hover .bt-h button,
+#most-recent-post:hover .bt-h button{
+    visibility: visible;
+    position: absolute;
+    bottom: 50%;
+    transition: all 1s;
+    transition: visibility 0.7s, bottom 1s;
+}
+
+
+/*--------------------------------------------------------
+| Single social hover
+|---------------------------------------------------------*/
+.social-facebook:hover svg{
+    transition: all .3s ease;
+    fill: #3b5998 ;
+}
+
+.social-twitter:hover svg{
+    transition: all .3s ease;
+    fill: #00acee ;
+}
+
+.social-linkedin:hover svg{
+    transition: all .3s ease;
+    fill: #0e76a8 ;
+}
+
+.social-whatsapp:hover svg{
+    transition: all .3s ease;
+    fill: #34af23 ;
+}
+
+.social-insta:hover svg{
+    transition: all .3s ease;
+    fill: #e83f49;
 }
