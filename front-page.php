@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main class="py-5">
     <section class="d-flex flex-column justify-content-center" id="banner">
         <div class="container">
             <div class="w-100">
@@ -59,14 +59,14 @@
                     <div class="card-concepts py-3 px-4 rounded-3">
                         <h4 class="mb-3 f-neutral">Valores</h4>
                         <ul class="row p-0">
-                            <div class="col-6 d-flex flex-column align-items-start">
+                            <div class="col-12 d-flex flex-column align-items-start">
                                 <p class="body-2 f-neutral"><li>Criatividade</li></p>
                                 <p class="body-2 f-neutral"><li>Confiança</li></p>
                                 <p class="body-2 f-neutral"><li>Profissionalismo</li></p>
                                 <p class="body-2 f-neutral"><li>Inovação</li></p>
                             </div>
 
-                            <div class="col-6 d-flex flex-column align-items-start">
+                            <div class="col-12 d-flex flex-column align-items-start">
                                 <p class="body-2 f-neutral"><li>Agilidade</li></p>
                                 <p class="body-2 f-neutral"><li>Resiliência</li></p>
                                 <p class="body-2 f-neutral"><li>Ética</li></p>
