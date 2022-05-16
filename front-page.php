@@ -317,7 +317,7 @@
 
                     <h3 class="mb-4 f-neutral" id="title">Acompanhe as novidades da UpValue</h3>
                     
-                    <a href="<?php echo get_home_url(); ?>/blog">
+                    <a href="<?php echo get_home_url(); ?>/category/geral">
                         <button>Acesse nosso Blog</button>
                     </a>
                 </div>

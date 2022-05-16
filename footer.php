@@ -11,28 +11,28 @@
         <hr class="neutral thin"/>
 
         <div class="row w-100 m-0" id="middle-section">
-            <div class="col-12 col-md-3 mb-3">
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
                 <div class="d-flex justify-content-center">
                     <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/map-pointer.svg" alt="Endereço ícone">
                     <p>Fortaleza-CE</p>
                 </div>
             </div>
 
-            <div class="col-12 col-md-3 mb-3">
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
                 <div class="d-flex justify-content-center">
                     <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/email.svg" alt="Email ícone">
                     <p>atendimento@upvalue.com.br</p>
                 </div>
             </div>
 
-            <div class="col-12 col-md-3 mb-3">
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
                 <div class="d-flex justify-content-center">
                     <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/phone.svg" alt="Telefone ícone">
                     <p>85 9974338590</p>
                 </div>
             </div>
 
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="d-flex justify-content-center">
                     <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram.svg" alt="Instagram ícone">
                     <p>@up_value</p>
