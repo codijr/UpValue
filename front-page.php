@@ -367,6 +367,10 @@
             </div>
         </div>
     </section>
+
+    <a href="" id="whatsapp-button">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/whatsapp-button.svg" alt="whatsapp">
+    </a>
 </main>
 
 <?php get_footer(); ?>

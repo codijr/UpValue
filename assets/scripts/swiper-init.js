@@ -6,7 +6,6 @@ var swiper = new Swiper('.swiper-solutions', {
   },
   observeParents: true,
   setWrapperSize:true,
-  centeredSlides: true,
   slidesPerView: 1,
   breakpoints: {
     768: {

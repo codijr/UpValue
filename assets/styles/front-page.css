@@ -135,6 +135,18 @@ main #blog {
   background-color: var(--primary-color-0);
 }
 
+main #whatsapp-button {
+  position: fixed;
+  z-index: 3;
+  bottom: 3vh;
+  right: 3vh;
+}
+
+main #whatsapp-button img {
+  width: 60px;
+  height: 60px;
+}
+
 @media (min-width: 768px) {
   main #banner .container .w-100 {
     width: 60% !important;
