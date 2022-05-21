@@ -36,8 +36,26 @@ main #solutions {
   background-color: var(--secondary-color);
 }
 
-main #contact .container .row #form form {
+main #solutions .nav .nav-item .nav-link h4 {
+  -webkit-filter: opacity(0.7);
+          filter: opacity(0.7);
+}
+
+main #solutions .nav .nav-item .nav-link.active {
+  background-color: transparent;
+  border-bottom: 1px solid var(--neutral) !important;
+}
+
+main #solutions .nav .nav-item .nav-link.active h4 {
+  color: white !important;
+}
+
+main #contact {
   background-color: var(--secondary-color);
+}
+
+main #contact .container .row #form form {
+  background-color: var(--neutral);
   border-radius: 7px;
   padding: 10px 25px;
   margin: 0 auto;
@@ -65,31 +83,35 @@ main #contact .container .row #form form input, main #contact .container .row #f
   width: 100% !important;
   background-color: transparent;
   border: 0;
-  border-bottom: 1px solid var(--neutral);
-  color: var(--neutral);
+  border-bottom: 1px solid var(--text-color);
+  color: var(--text-color);
   padding: 3px 1px;
 }
 
 main #contact .container .row #form form input:focus {
   border: 0;
   outline: none;
-  border-bottom: 1px solid var(--neutral);
+  border-bottom: 1px solid var(--text-color);
 }
 
 main #contact .container .row #form form input::-webkit-input-placeholder {
-  color: #dfe6ef85;
+  color: #2c3949;
+  opacity: 0.7;
 }
 
 main #contact .container .row #form form input:-ms-input-placeholder {
-  color: #dfe6ef85;
+  color: #2c3949;
+  opacity: 0.7;
 }
 
 main #contact .container .row #form form input::-ms-input-placeholder {
-  color: #dfe6ef85;
+  color: #2c3949;
+  opacity: 0.7;
 }
 
 main #contact .container .row #form form input::placeholder {
-  color: #dfe6ef85;
+  color: #2c3949;
+  opacity: 0.7;
 }
 
 main #contact .container .row #form form input[type="submit"] {
@@ -101,20 +123,20 @@ main #contact .container .row #form form input[type="submit"] {
   height: fit-content;
   font-weight: 400;
   font-size: 14px;
-  background-color: var(--neutral);
+  background-color: var(--text-color);
   margin-bottom: 5%;
   border-radius: 4px;
   padding: 12px 16px;
   letter-spacing: 1px;
   border: 0;
-  color: var(--secondary-color);
+  color: var(--neutral);
   -webkit-transition-duration: 200ms;
           transition-duration: 200ms;
 }
 
 main #contact .container .row #form form input[type="submit"]:hover {
   background-color: var(--secondary-color-0);
-  color: var(--neutral);
+  color: var(--text-color);
 }
 
 main #contact .container .row #form form .wpcf7-not-valid-tip {
@@ -129,10 +151,6 @@ main #partners {
   background-image: url("../img/partners-bgc.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-main #blog {
-  background-color: var(--primary-color-0);
 }
 
 main #whatsapp-button {
