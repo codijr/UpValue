@@ -43,7 +43,7 @@
         <hr class="neutral thin"/>
 
         <p class="text-center mb-0" id="bottom-section">
-            ©UpValue 2019-2022. Todos os Direitos reservados. Desenvolvido pela <a class="f-neutral" href="http://www.codijr.ufc.br" target="_blank">Container Digital Jr.</a>
+            © UP Value Soluções LTDA 2022. CNPJ 45.592.823/0001-91. Todos os direitos reservados. Desenvolvido pela <a class="f-neutral" href="http://www.codijr.ufc.br" target="_blank">Container Digital Jr.</a>
         </p>
     </div>
 </footer>

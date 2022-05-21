@@ -81,147 +81,348 @@
     <section id="solutions">
         <div class="container py-5">
             <div class="mb-5" id="category">
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center w-75">
                     <h4 class="me-3 f-neutral">NOSSAS SOLUÇÕES</h4>
                     <hr class="w-25 neutral"> 
                 </div>
             </div>
 
-            <h3 class="mb-4 f-neutral" id="title">Conheça os UPCombos</h3>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h3 class="mb-5 f-neutral" id="title">Título que resume um pouco das soluções</h3>
+                </div>
+            </div>
 
-            <p class="body f-neutral mb-5">
-                Os UpCombos são compostos por painéis gerenciais que permitem o acompanhamento dos resultados do seu negócio, sem restrição de horário e lugar, sem a necessidade de estar exportando e tratando dados de sistemas.
-            </p>
+            <ul class="nav nav-tabs d-flex justify-content-center mb-4 border-0" id="solutions-tab" role="tablist">
+                <li class="nav-item border-0" role="presentation">
+                    <button class="nav-link border-0 rounded-0 active" id="varejo-tab" data-bs-toggle="tab" data-bs-target="#combos-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><h4>Varejo</h4></button>
+                </li>
 
-            <div class="swiper swiper-solutions">
-                <div class="swiper-wrapper d-flex mb-2">
-                    <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
-                        <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
-                            <div class="my-2 py-2  d-flex flex-column align-items-center">
-                                <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/varejo.svg" alt="">
-                                <h4>Varejo</h4>
-                            </div>
-                            
-                            <ul class="mb-2 ps-0">
-                                <li>
-                                    <p class="body-2">Comercial</p>
-                                    <p class="body-2">Financeiro</p>
-                                    <p class="body-2">Estoque</p>
-                                    <p class="body-2">Compras</p>
-                                    <div class="collapse" id="varejo">
-                                        <p class="body-2">Curadoria</p>
-                                        <p class="body-2">Gestão de indicadores</p>
+                <li class="nav-item border-0" role="presentation">
+                    <button class="nav-link border-0 rounded-0" id="distribuidoras-tab" data-bs-toggle="tab" data-bs-target="#process-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><h4>Distribuidoras</h4></button>
+                </li>
+
+                <li class="nav-item border-0" role="presentation">
+                    <button class="nav-link border-0 rounded-0" id="telecom-tab" data-bs-toggle="tab" data-bs-target="#indicators-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"><h4>ISP Telecom</h4></button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="solutions-tab-content">
+                <div class="tab-pane fade show active" id="combos-tab-pane" role="tabpanel" aria-labelledby="tab de combos" tabindex="0">
+                    <div class="swiper swiper-solutions">
+                        <div class="swiper-wrapper d-flex mb-2">
+                            <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
+                                <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
+                                    <div class="my-2 py-2  d-flex flex-column align-items-center">
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/varejo.svg" alt="">
+                                        <h4>Varejo</h4>
                                     </div>
-                                </li>
-                            </ul>
+                                    
+                                    <ul class="mb-2 ps-0">
+                                        <li>
+                                            <p class="body-2">Comercial</p>
+                                            <p class="body-2">Financeiro</p>
+                                            <p class="body-2">Estoque</p>
+                                            <p class="body-2">Compras</p>
+                                            <div class="collapse" id="varejo">
+                                                <p class="body-2">Curadoria</p>
+                                                <p class="body-2">Gestão de indicadores</p>
+                                            </div>
+                                        </li>
+                                    </ul>
 
-                            <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#varejo" aria-expanded="false" aria-controls="collapse">
-                                <p class="caption">Ver mais</p>
-                            </button>
+                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#varejo" aria-expanded="false" aria-controls="collapse">
+                                        <p class="caption">Ver mais</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
+                                <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
+                                    <div class="my-2 py-2  d-flex flex-column align-items-center">
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/transport.svg" alt="">
+                                        <h4>Distribuidoras</h4>
+                                    </div>
+                                    
+                                    <ul class="mb-2 ps-0">
+                                        <li>
+                                            <p class="body-2">Comercial</p>
+                                            <p class="body-2">Financeiro</p>
+                                            <p class="body-2">Estoque</p>
+                                            <p class="body-2">Compras</p>
+                                            <div class="collapse" id="distribuidora">
+                                                <p class="body-2">Curadoria</p>
+                                                <p class="body-2">Gestão de indicadores</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#distribuidora" aria-expanded="false" aria-controls="collapse">
+                                        <p class="caption">Ver mais</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
+                                <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
+                                    <div class="my-2 py-2  d-flex flex-column align-items-center">
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/telecom.svg" alt="">
+                                        <h4>ISP Telecom</h4>
+                                    </div>
+                                    
+                                    <ul class="mb-2 ps-0">
+                                        <li>
+                                            <p class="body-2">Comercial</p>
+                                            <p class="body-2">Cancelamento</p>
+                                            <p class="body-2">Base Contratos</p>
+                                            <p class="body-2">Financeiro </p>
+                                            <div class="collapse" id="telecom">
+                                                <p class="body-2">Operação</p>
+                                                <p class="body-2">Atendimento</p>
+                                                <p class="body-2">Curadoria</p>
+                                                <p class="body-2">Gestão de indicadores</p>
+                                                <p class="body-2">Outros</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#telecom" aria-expanded="false" aria-controls="collapse">
+                                        <p class="caption">Ver mais</p>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
-                        <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
-                            <div class="my-2 py-2  d-flex flex-column align-items-center">
-                                <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/transport.svg" alt="">
-                                <h4>Distribuidoras</h4>
+                        <div class="swiper-navigation w-100 d-flex justify-content-end">
+                            <div class="swiper-button-prev me-3">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/icons/prev.svg" alt="">
                             </div>
-                            
-                            <ul class="mb-2 ps-0">
-                                <li>
-                                    <p class="body-2">Comercial</p>
-                                    <p class="body-2">Financeiro</p>
-                                    <p class="body-2">Estoque</p>
-                                    <p class="body-2">Compras</p>
-                                    <div class="collapse" id="distribuidora">
-                                        <p class="body-2">Curadoria</p>
-                                        <p class="body-2">Gestão de indicadores</p>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#distribuidora" aria-expanded="false" aria-controls="collapse">
-                                <p class="caption">Ver mais</p>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
-                        <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
-                            <div class="my-2 py-2  d-flex flex-column align-items-center">
-                                <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/telecom.svg" alt="">
-                                <h4>ISP Telecom</h4>
+                            <div class="swiper-button-next">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/icons/next.svg" alt="">
                             </div>
-                            
-                            <ul class="mb-2 ps-0">
-                                <li>
-                                    <p class="body-2">Comercial</p>
-                                    <p class="body-2">Cancelamento</p>
-                                    <p class="body-2">Base Contratos</p>
-                                    <p class="body-2">Financeiro </p>
-                                    <div class="collapse" id="telecom">
-                                        <p class="body-2">Operação</p>
-                                        <p class="body-2">Atendimento</p>
-                                        <p class="body-2">Curadoria</p>
-                                        <p class="body-2">Gestão de indicadores</p>
-                                        <p class="body-2">Outros</p>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#telecom" aria-expanded="false" aria-controls="collapse">
-                                <p class="caption">Ver mais</p>
-                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-navigation w-100 d-flex justify-content-end">
-                    <div class="swiper-button-prev me-3">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/icons/prev.svg" alt="">
+
+                <div class="tab-pane fade" id="process-tab-pane" role="tabpanel" aria-labelledby="tab de processos" tabindex="0">
+                    <div class="swiper swiper-solutions">
+                        <div class="swiper-wrapper d-flex mb-2">
+                            <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
+                                <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
+                                    <div class="my-2 py-2  d-flex flex-column align-items-center">
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/varejo.svg" alt="">
+                                        <h4>Varejo</h4>
+                                    </div>
+                                    
+                                    <ul class="mb-2 ps-0">
+                                        <li>
+                                            <p class="body-2">Comercial</p>
+                                            <p class="body-2">Financeiro</p>
+                                            <p class="body-2">Estoque</p>
+                                            <p class="body-2">Compras</p>
+                                            <div class="collapse" id="varejo">
+                                                <p class="body-2">Curadoria</p>
+                                                <p class="body-2">Gestão de indicadores</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#varejo" aria-expanded="false" aria-controls="collapse">
+                                        <p class="caption">Ver mais</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
+                                <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
+                                    <div class="my-2 py-2  d-flex flex-column align-items-center">
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/transport.svg" alt="">
+                                        <h4>Distribuidoras</h4>
+                                    </div>
+                                    
+                                    <ul class="mb-2 ps-0">
+                                        <li>
+                                            <p class="body-2">Comercial</p>
+                                            <p class="body-2">Financeiro</p>
+                                            <p class="body-2">Estoque</p>
+                                            <p class="body-2">Compras</p>
+                                            <div class="collapse" id="distribuidora">
+                                                <p class="body-2">Curadoria</p>
+                                                <p class="body-2">Gestão de indicadores</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#distribuidora" aria-expanded="false" aria-controls="collapse">
+                                        <p class="caption">Ver mais</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
+                                <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
+                                    <div class="my-2 py-2  d-flex flex-column align-items-center">
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/telecom.svg" alt="">
+                                        <h4>ISP Telecom</h4>
+                                    </div>
+                                    
+                                    <ul class="mb-2 ps-0">
+                                        <li>
+                                            <p class="body-2">Comercial</p>
+                                            <p class="body-2">Cancelamento</p>
+                                            <p class="body-2">Base Contratos</p>
+                                            <p class="body-2">Financeiro </p>
+                                            <div class="collapse" id="telecom">
+                                                <p class="body-2">Operação</p>
+                                                <p class="body-2">Atendimento</p>
+                                                <p class="body-2">Curadoria</p>
+                                                <p class="body-2">Gestão de indicadores</p>
+                                                <p class="body-2">Outros</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#telecom" aria-expanded="false" aria-controls="collapse">
+                                        <p class="caption">Ver mais</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-navigation w-100 d-flex justify-content-end">
+                            <div class="swiper-button-prev me-3">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/icons/prev.svg" alt="">
+                            </div>
+                            <div class="swiper-button-next">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/icons/next.svg" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <div class="swiper-button-next">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/icons/next.svg" alt="">
+                </div>
+
+                <div class="tab-pane fade" id="indicators-tab-pane" role="tabpanel" aria-labelledby="tab de indicadores" tabindex="0">
+                    <div class="swiper swiper-solutions">
+                        <div class="swiper-wrapper d-flex mb-2">
+                            <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
+                                <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
+                                    <div class="my-2 py-2  d-flex flex-column align-items-center">
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/varejo.svg" alt="">
+                                        <h4>Varejo</h4>
+                                    </div>
+                                    
+                                    <ul class="mb-2 ps-0">
+                                        <li>
+                                            <p class="body-2">Comercial</p>
+                                            <p class="body-2">Financeiro</p>
+                                            <p class="body-2">Estoque</p>
+                                            <p class="body-2">Compras</p>
+                                            <div class="collapse" id="varejo">
+                                                <p class="body-2">Curadoria</p>
+                                                <p class="body-2">Gestão de indicadores</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#varejo" aria-expanded="false" aria-controls="collapse">
+                                        <p class="caption">Ver mais</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
+                                <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
+                                    <div class="my-2 py-2  d-flex flex-column align-items-center">
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/transport.svg" alt="">
+                                        <h4>Distribuidoras</h4>
+                                    </div>
+                                    
+                                    <ul class="mb-2 ps-0">
+                                        <li>
+                                            <p class="body-2">Comercial</p>
+                                            <p class="body-2">Financeiro</p>
+                                            <p class="body-2">Estoque</p>
+                                            <p class="body-2">Compras</p>
+                                            <div class="collapse" id="distribuidora">
+                                                <p class="body-2">Curadoria</p>
+                                                <p class="body-2">Gestão de indicadores</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#distribuidora" aria-expanded="false" aria-controls="collapse">
+                                        <p class="caption">Ver mais</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
+                                <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
+                                    <div class="my-2 py-2  d-flex flex-column align-items-center">
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/telecom.svg" alt="">
+                                        <h4>ISP Telecom</h4>
+                                    </div>
+                                    
+                                    <ul class="mb-2 ps-0">
+                                        <li>
+                                            <p class="body-2">Comercial</p>
+                                            <p class="body-2">Cancelamento</p>
+                                            <p class="body-2">Base Contratos</p>
+                                            <p class="body-2">Financeiro </p>
+                                            <div class="collapse" id="telecom">
+                                                <p class="body-2">Operação</p>
+                                                <p class="body-2">Atendimento</p>
+                                                <p class="body-2">Curadoria</p>
+                                                <p class="body-2">Gestão de indicadores</p>
+                                                <p class="body-2">Outros</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#telecom" aria-expanded="false" aria-controls="collapse">
+                                        <p class="caption">Ver mais</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-navigation w-100 d-flex justify-content-end">
+                            <div class="swiper-button-prev me-3">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/icons/prev.svg" alt="">
+                            </div>
+                            <div class="swiper-button-next">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/icons/next.svg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            
         </div>
     </section>
 
-    <section id="contact">
+    <section id="our-processes">
         <div class="container py-5">
-            <div class="mb-5" id="category">
-                <div class="w-50 d-flex align-items-center">
-                    <h4 class="me-3">CONTATO</h4>
-                    <hr class="w-25"> 
-                </div>
-            </div>
+            <div class="row mb-3" id="info-about">
+                <div class="col-12 col-md-6" id="info">
+                    <div class="mb-5" id="category">
+                        <div class="d-flex align-items-center">
+                            <h4 class="me-3">NOSSOS PROCESSOS</h4>
+                            <hr class="w-25"> 
+                        </div>
+                    </div>
 
-            <div class="row w-100 justify-content-center">
-                <div class="col-12 col-lg-6" id="info-contact">
-                    <h3 class="mb-4" id="title">Temos soluções que irão 
-                    ajudar o seu negócio a alcançar resultados exponenciais!</h3>
+                    <h3 class="mb-4" id="title">Título que resume um pouco do processo</h3>
 
-                    <p class="body mb-4">
-                        Preencha o formulário para entrar em contato.
+                    <p class="body">
+                        A UP Value entende que a base para o sucesso de um negócio está em 5 pilares (Fornecedores, Processos, Pessoas, Sistemas e Clientes). Assim, a UP Value recebe os dados gerados por essas partes, as quais interagem entre si, e produz informações necessárias para formar um negócio de sucesso, gerando oportunidades, resolução de problemas e tomada de decisão.
                     </p>
                 </div>
-                
-                <div class="col-12 col-lg-6 d-flex justify-content-center" id="form">
-                    <?php echo do_shortcode('[contact-form-7 id="7" title="Formulário de contato"]');?>
+
+                <div class="col-12 col-md-4 p-3" id="image"> 
+                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/process.png" alt="Equipe imagem">
                 </div>
             </div>
         </div>
     </section>
 
-    <script>
-        $('.wpcf7-select').change(() => { 
-            const segment = $('select[name="segment"]').val();
-            const system = $('select[name="system"]').val();
-            $('input[name="message"]').val(`Olá, sou uma empresa de ${segment}, utilizo um sistema de ${system} e gostaria de realizar um orçamento`);
-        });
-    </script>
-    
     <section id="partners">
         <div class="container py-5">
             <div class="mb-5" id="category">
@@ -304,25 +505,59 @@
         </div>
     </section>
 
+    <section id="contact">
+        <div class="container py-5">
+            <div class="mb-5" id="category">
+                <div class="w-50 d-flex align-items-center">
+                    <h4 class="me-3 f-neutral">CONTATO</h4>
+                    <hr class="w-25 neutral"> 
+                </div>
+            </div>
+
+            <div class="row w-100 justify-content-center">
+                <div class="col-12 col-lg-6" id="info-contact">
+                    <h3 class="mb-4 f-neutral" id="title">Temos soluções que irão 
+                    ajudar o seu negócio a alcançar resultados exponenciais!</h3>
+
+                    <p class="body mb-4 f-neutral">
+                        Preencha o formulário para entrar em contato.
+                    </p>
+                </div>
+                
+                <div class="col-12 col-lg-6 d-flex justify-content-center" id="form">
+                    <?php echo do_shortcode('[contact-form-7 id="7" title="Formulário de contato"]');?>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $('.wpcf7-select').change(() => { 
+            const segment = $('select[name="segment"]').val();
+            const system = $('select[name="system"]').val();
+            $('input[name="message"]').val(`Olá, sou uma empresa de ${segment}, utilizo um sistema de ${system} e gostaria de realizar um orçamento`);
+        });
+    </script>
+
     <section id="blog">
         <div class="container py-5">
             <div class="row mb-3" id="info-blog">
                 <div class="col-12 col-md-6" id="info">
                     <div class="mb-5" id="category">
                         <div class="d-flex align-items-center">
-                            <h4 class="me-3 f-neutral">BLOG</h4>
-                            <hr class="w-25 neutral"> 
+                            <h4 class="me-3">BLOG</h4>
+                            <hr class="w-25"> 
                         </div>
                     </div>
 
-                    <h3 class="mb-4 f-neutral" id="title">Acompanhe as novidades da UpValue</h3>
+                    <h3 class="mb-4" id="title">Acompanhe as novidades da UpValue</h3>
                     
-                    <a href="<?php echo get_home_url(); ?>/category/geral">
-                        <button>Acesse nosso Blog</button>
-                    </a>
+                    <div class="w-100 d-flex">
+                        <a href="<?php echo get_home_url(); ?>/category/geral" class="">Acesse nosso Blog</a>
+                    </div>
                 </div>
 
-                <div class="col-12 col-md-6 p-3" id="cards-blog"> 
+                <div class="col-12 col-md-12 p-3" id="cards-blog"> 
                     <?php
                         $count = 1;
                         $args = array(
@@ -367,6 +602,10 @@
             </div>
         </div>
     </section>
+
+    <a href="" id="whatsapp-button">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/whatsapp-button.svg" alt="whatsapp">
+    </a>
 </main>
 
 <?php get_footer(); ?>
