@@ -9,6 +9,12 @@ main #banner {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 400px) {
+  main #banner {
+    height: 80vh;
+  }
+}
+
 main #banner .container h4 {
   font-weight: 300;
 }
@@ -170,6 +176,20 @@ main #whatsapp-button {
 main #whatsapp-button img {
   width: 60px;
   height: 60px;
+}
+
+@media (max-width: 991.98px) {
+  #our-processes #image > img {
+    margin-top: 2rem;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #our-processes #image > img {
+    margin-top: 2rem;
+    width: 75% !important;
+  }
 }
 
 @media (min-width: 768px) {

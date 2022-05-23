@@ -9,6 +9,30 @@
     }
 }
 
+#cards-blog {
+    div{
+        :nth-child(2){
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+}
+
+#image{
+    position: relative;
+    transition: all 1s;
+}
+
+@media (min-width: 576px){
+    .card-blog {
+        #info {
+            h4 {
+                text-align: justify;
+            }
+        }
+    }
+}
+
 .card-blog:hover {
     cursor: pointer;
 }
@@ -22,6 +46,16 @@
             }
         }
     }
+    .card-blog{
+        .dif {
+            #image {
+                img{
+                    height: 120px;
+                    width: 120px;
+                }
+            }
+        }
+    }
 }
   
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -30,6 +64,25 @@
             img {
                 height: 130px;
                 width: 130px;
+            }
+        }
+
+        .dif {
+            #image{ 
+                img{
+                    height: 150px;
+                    width: 150px;
+                }   
+            }   
+        }
+    }
+
+    
+    #cards-blog{
+        div{
+            :nth-child(2){
+                padding-left: 1.5rem;
+                padding-right: 0rem;
             }
         }
     }
@@ -48,10 +101,29 @@
 
 @media (max-width: 420px) {
     .card-blog{
+        .dif{
+            #image {
+                img {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+    .card-blog{     
         #image {
             img {
-                height: 100px;
-                width: 100px;
+                height: 90px;
+                width: 90px;
+            }
+        }  
+    }
+
+    #cards-blog {
+        div{
+            :nth-child(2){
+                padding-left: 1.5rem;
+                padding-right: 0rem;
             }
         }
     }
@@ -63,6 +135,57 @@
             h4 {
                 text-align: justify;
             }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #cards-blog {
+        div{
+            :nth-child(2){
+                padding-left: 0rem;
+                padding-right: 0rem;
+            }
+        }
+    }
+}
+
+
+
+.bt-h{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+
+    button{
+        bottom: 0%;
+        visibility: hidden;
+        position: absolute;
+        transition: visibility 0.7s, bottom 1s;
+    }
+}
+
+.card-blog{
+    :hover{
+        #image{
+            transition: all 1s;
+            background-color: rgb(66, 109, 169, 0.5);
+        }
+
+        .bt-h{ 
+            button{
+                visibility: visible;
+                position: absolute;
+                bottom: 50%;
+                transition: all 1s;
+                transition: visibility 0.7s, bottom 1s;
+            }  
+            background-color: rgb(66, 109, 169, 0.5);
+            transition: all 1s; 
         }
     }
 }
