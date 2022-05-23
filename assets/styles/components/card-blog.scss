@@ -6,6 +6,11 @@
             object-fit: cover;
             border: 1px solid var(--neutral);
         }
+        .frame{
+            position: relative;
+            height: 150px;
+            overflow: hidden;
+        }
     }
 }
 
@@ -44,6 +49,9 @@
                 height: 130px;
                 width: 130px;
             }
+            .frame{
+                height: 130px;
+            }
         }
     }
     .card-blog{
@@ -52,6 +60,9 @@
                 img{
                     height: 120px;
                     width: 120px;
+                }
+                .frame{
+                    height: 120px;
                 }
             }
         }
@@ -65,6 +76,9 @@
                 height: 130px;
                 width: 130px;
             }
+            .frame{
+                height: 130px;
+            }
         }
 
         .dif {
@@ -72,7 +86,10 @@
                 img{
                     height: 150px;
                     width: 150px;
-                }   
+                }  
+                .frame{
+                    height: 150px;
+                } 
             }   
         }
     }
@@ -95,6 +112,9 @@
                 height: 200px;
                 width: 200px;
             }
+            .frame{
+                height: 200px;
+            }
         }
     }
     .card-blog{
@@ -103,6 +123,9 @@
                 img {
                     height: 120px;
                     width: 120px;
+                }
+                .frame{
+                    height: 120px;
                 }
             }
         }
@@ -117,6 +140,9 @@
                     height: 100px;
                     width: 100px;
                 }
+                .frame{
+                    height: 100px;
+                }
             }
         }
     }
@@ -125,6 +151,9 @@
             img {
                 height: 90px;
                 width: 90px;
+            }
+            .frame{
+                height: 90px;
             }
         }  
     }
@@ -183,7 +212,6 @@
     :hover{
         #image{
             transition: all 1s;
-            background-color: rgb(66, 109, 169, 0.5);
         }
 
         .bt-h{ 
