@@ -1,21 +1,23 @@
 <div class="card-blog">
     <div class="d-flex <?php echo $class ?>">
         <div id="image">
-            <img class="rounded-3" <?php if(!has_post_thumbnail( $imgUrl )){
-                echo "no-thumbnail";
-                }?>" 
-                src="<?php if(has_post_thumbnail( $imgUrl )){
-                    echo get_the_post_thumbnail_url( $imgUrl );
-                    }
-                    else{
-                        //alterar a imagem para um placeholder feito
-                        echo get_template_directory_uri()."/assets/images/";
-                    }?>
-                " 
-                alt="<?php echo $title ?>"
-            >
-            <div class="bt-h">
-                <button>Ver</button>
+            <div class="frame" >
+                <img class="rounded-3" <?php if(!has_post_thumbnail( $imgUrl )){
+                    echo "no-thumbnail";
+                    }?>" 
+                    src="<?php if(has_post_thumbnail( $imgUrl )){
+                        echo get_the_post_thumbnail_url( $imgUrl );
+                        }
+                        else{
+                            //alterar a imagem para um placeholder feito
+                            echo get_template_directory_uri()."/assets/img/banner.jpg";
+                        }?>
+                    " 
+                    alt="<?php echo $title ?>"
+                >
+                <div class="bt-h">
+                    <button>Ver</button>
+                </div>
             </div>
         </div>
 
