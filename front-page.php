@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="py-5">
+<main class="pt-5">
     <section class="d-flex flex-column justify-content-center" id="banner">
         <div class="container">
             <div class="w-100">
@@ -400,7 +400,7 @@
 
     <section id="our-processes">
         <div class="container py-5">
-            <div class="row mb-3" id="info-about">
+            <div class="row mb-3 justify-content-between" id="info-about">
                 <div class="col-12 col-md-6" id="info">
                     <div class="mb-5" id="category">
                         <div class="d-flex align-items-center">
@@ -416,8 +416,8 @@
                     </p>
                 </div>
 
-                <div class="col-12 col-md-4 p-3" id="image"> 
-                    <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/process.png" alt="Equipe imagem">
+                <div class="col-12 col-md-6 col-xl-5 p-3 text-center" id="image"> 
+                    <img class="w-75" src="<?php echo get_template_directory_uri(); ?>/assets/img/process.png" alt="Nosso processo">
                 </div>
             </div>
         </div>
@@ -541,8 +541,8 @@
 
     <section id="blog">
         <div class="container py-5">
-            <div class="row mb-3" id="info-blog">
-                <div class="col-12 col-md-6" id="info">
+            <div class="row" id="info-blog">
+                <div class="col-12" id="info">
                     <div class="mb-5" id="category">
                         <div class="d-flex align-items-center">
                             <h4 class="me-3">BLOG</h4>
@@ -550,16 +550,22 @@
                         </div>
                     </div>
 
-                    <h3 class="mb-4" id="title">Acompanhe as novidades da UpValue</h3>
                     
-                    <div class="w-100 d-flex">
-                        <a href="<?php echo get_home_url(); ?>/category/geral" class="">Acesse nosso Blog</a>
+                    <div class="w-100 d-flex flex-wrap">
+                        <div class="col-12 col-md-8">
+                            <h3 class="mb-4" id="title">Acompanhe as novidades da UpValue</h3>
+                        </div>
+
+                        <div class="col-12 col-md-4 ">
+                            <a href="<?php echo get_home_url(); ?>/category/geral" class="fw-normal" style="float: right;">
+                                Acesse nosso Blog  >
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-12 p-3" id="cards-blog"> 
+                <div class="col-12 col-md-12 p-3 d-flex flex-wrap justify-content-between mt-3" id="cards-blog"> 
                     <?php
-                        $count = 1;
                         $args = array(
                             'post_type' => 'post',
                             'posts_per_page' => 3
@@ -567,7 +573,7 @@
                         $relate_query = new WP_Query($args);
                         if($relate_query->have_posts()) : while ($relate_query->have_posts()) : $relate_query->the_post();
                     ?>
-                    <div class="col-12">
+                    <div class="col-12 col-md-6 col-xl-4 pb-4">
                         <a href="<?php echo get_permalink();?>">
                             <?php 
                                 $titulo = '';
@@ -576,26 +582,32 @@
                                 else {
                                     $titulo= esc_html( get_the_title() );
                                 }
-                                if($count == 2){
-                                    echo '<hr class="w-100 mt-4 mb-4" style="border: 0; height: 2px;
-                                    background-color: var(--neutral);">';
+
+                                /*------------------
+                                | Tempo de leitura
+                                |------------------*/
+                                $tempo = '';
+                                $content = get_post_field( 'post_content', $post->ID );
+                                $quantidade_palavras = str_word_count( strip_tags( $content ) );
+                                $tempo_leitura = ceil($quantidade_palavras / 250);
+                                if($tempo_leitura == 1){
+                                    $tempo = $tempo_leitura." min de leitura";
                                 }
+                                else{
+                                    $tempo = strval($tempo_leitura)." min de leitura";
+                                }
+
                                 includeFile('components/card-blog.php', array(
                                     'imgUrl' => $post->ID,
                                     'title' => $titulo,
                                     'author' => esc_html( get_the_author() ),
                                     'date' => get_the_date('d-m-Y'),
-                                    'readingTime' => '?',
-                                    'color' => 'f-neutral',
+                                    'readingTime' => $tempo,
+                                    'color' => '',
                                     'class' => 'dif'
                                 ));
-                                if($count == 2){
-                                    echo '<hr class="w-100 mt-4 mb-4" style="border: 0; height: 2px;
-                                    background-color: var(--neutral); ">';
-                                }
-                                $count+=1;
                             ?>
-                        <a href="<?php echo get_permalink();?>">
+                        </a>
                     </div>
                     <?php endwhile; else: endif; wp_reset_postdata();?>
                 </div>
