@@ -114,22 +114,16 @@
                             <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
                                 <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
                                     <div class="my-2 py-2  d-flex flex-column align-items-center">
-                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/varejo.svg" alt="">
-                                        <h4>Varejo</h4>
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/up-combos.svg" alt="">
+                                        <h4>UP Combos</h4>
                                     </div>
-                                    
-                                    <ul class="mb-2 ps-0">
-                                        <li>
-                                            <p class="body-2">Comercial</p>
-                                            <p class="body-2">Financeiro</p>
-                                            <p class="body-2">Estoque</p>
-                                            <p class="body-2">Compras</p>
-                                            <div class="collapse" id="varejo">
-                                                <p class="body-2">Curadoria</p>
-                                                <p class="body-2">Gestão de indicadores</p>
-                                            </div>
-                                        </li>
-                                    </ul>
+
+                                    <div class="mb-2 ps-0">
+                                        <p class="body-2">Painéis gerenciais que permitem o acompanhamento dos resultados do seu negócio, sem restrição de horário e lugar, sem a necessidade de estar</p>
+                                        <div class="collapse" id="varejo">
+                                            <p class="body-2"> exportando e tratando dados de sistemas.</p>
+                                        </div>
+                                    </div>
 
                                     <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#varejo" aria-expanded="false" aria-controls="collapse">
                                         <p class="caption">Ver mais</p>
@@ -140,22 +134,16 @@
                             <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
                                 <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
                                     <div class="my-2 py-2  d-flex flex-column align-items-center">
-                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/transport.svg" alt="">
-                                        <h4>Distribuidoras</h4>
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/process.svg" alt="">
+                                        <h4>Processos</h4>
                                     </div>
                                     
-                                    <ul class="mb-2 ps-0">
-                                        <li>
-                                            <p class="body-2">Comercial</p>
-                                            <p class="body-2">Financeiro</p>
-                                            <p class="body-2">Estoque</p>
-                                            <p class="body-2">Compras</p>
-                                            <div class="collapse" id="distribuidora">
-                                                <p class="body-2">Curadoria</p>
-                                                <p class="body-2">Gestão de indicadores</p>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <div class="mb-2 ps-0">
+                                        <p class="body-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At massa consectetur faucibus nullam. Ultrices in venenatis </p>
+                                        <div class="collapse" id="distribuidora">
+                                            <p class="body-2">pharetra, lobortis fusce.</p>
+                                        </div>
+                                    </div>
 
                                     <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#distribuidora" aria-expanded="false" aria-controls="collapse">
                                         <p class="caption">Ver mais</p>
@@ -166,25 +154,16 @@
                             <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
                                 <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
                                     <div class="my-2 py-2  d-flex flex-column align-items-center">
-                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/telecom.svg" alt="">
-                                        <h4>ISP Telecom</h4>
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/indicators.svg" alt="">
+                                        <h4>Gestão de indicadores</h4>
                                     </div>
                                     
-                                    <ul class="mb-2 ps-0">
-                                        <li>
-                                            <p class="body-2">Comercial</p>
-                                            <p class="body-2">Cancelamento</p>
-                                            <p class="body-2">Base Contratos</p>
-                                            <p class="body-2">Financeiro </p>
-                                            <div class="collapse" id="telecom">
-                                                <p class="body-2">Operação</p>
-                                                <p class="body-2">Atendimento</p>
-                                                <p class="body-2">Curadoria</p>
-                                                <p class="body-2">Gestão de indicadores</p>
-                                                <p class="body-2">Outros</p>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <div class="mb-2 ps-0">
+                                        <p class="body-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At massa consectetur faucibus nullam. Ultrices in venenatis </p>
+                                        <div class="collapse" id="telecom">
+                                            <p class="body-2">pharetra, lobortis fusce.</p>
+                                        </div>
+                                    </div>
 
                                     <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#telecom" aria-expanded="false" aria-controls="collapse">
                                         <p class="caption">Ver mais</p>
@@ -534,8 +513,8 @@
     <script>
         $('.wpcf7-select').change(() => { 
             const segment = $('select[name="segment"]').val();
-            const system = $('select[name="system"]').val();
-            $('input[name="message"]').val(`Olá, sou uma empresa de ${segment}, utilizo um sistema de ${system} e gostaria de realizar um orçamento`);
+            const system = $('input[name="system"]').val();
+            $('textarea').val(`Olá, sou uma empresa de ${segment}, utilizo um sistema de ${system} e gostaria de realizar um orçamento`);
         });
     </script>
 
