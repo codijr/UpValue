@@ -97,6 +97,16 @@
             }
         }
     }
+    .card-blog{
+        .dif{
+            #image {
+                img {
+                    height: 120px;
+                    width: 120px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 420px) {
