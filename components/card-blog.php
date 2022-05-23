@@ -10,7 +10,7 @@
                         }
                         else{
                             //alterar a imagem para um placeholder feito
-                            echo get_template_directory_uri()."/assets/images/";
+                            echo get_template_directory_uri()."/assets/img/banner.jpg";
                         }?>
                     " 
                     alt="<?php echo $title ?>"
