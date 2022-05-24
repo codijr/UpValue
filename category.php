@@ -17,7 +17,11 @@
     <!------------------
     | Destaques
     |------------------>
-    <section id="highlight">
+    <section class="position-relative" id="highlight">
+        <img class="position-absolute" id="pattern-roxo" src="<?php echo get_template_directory_uri(); ?>/assets/icons/pattern-roxo.svg"/>
+
+        <img class="position-absolute" id="pattern-azul" src="<?php echo get_template_directory_uri(); ?>/assets/icons/pattern-azul.svg"/>
+
         <div class="container py-5">  
             <div class="col-12" id="highlight-header">
                 <div class="mb-4">

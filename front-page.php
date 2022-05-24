@@ -88,8 +88,8 @@
             </div>
 
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <h3 class="mb-5 f-neutral" id="title">Título que resume um pouco das soluções</h3>
+                <div class="col-12">
+                    <h3 class="mb-5 f-neutral" id="title">Entendendo o processo, estruturando os dados e construindo visões para se ter uma gestão de indicadores.</h3>
                 </div>
             </div>
 
@@ -114,39 +114,37 @@
                             <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
                                 <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
                                     <div class="my-2 py-2  d-flex flex-column align-items-center">
-                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/up-combos.svg" alt="">
-                                        <h4>UP Combos</h4>
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/process.svg" alt="">
+                                        <h4>Processos</h4>
                                     </div>
-
+                                    
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Painéis gerenciais que permitem o acompanhamento dos resultados do seu negócio, sem restrição de horário e lugar, sem a necessidade de estar</p>
-                                        <div class="collapse" id="varejo">
-                                            <p class="body-2"> exportando e tratando dados de sistemas.</p>
-                                        </div>
+                                        <p class="body-2">Entendimento das atividades que fazem o negócio funcionar, as quais são responsáveis por gerar os dados que irão irão alimentar as áreas, momento esse em que também se discute sobre oportunidades de melhoria nos processos.</p>
                                     </div>
-
-                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#varejo" aria-expanded="false" aria-controls="collapse">
-                                        <p class="caption">Ver mais</p>
-                                    </button>
                                 </div>
                             </div>
 
                             <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
                                 <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
                                     <div class="my-2 py-2  d-flex flex-column align-items-center">
-                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/process.svg" alt="">
-                                        <h4>Processos</h4>
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/up-combos.svg" alt="">
+                                        <h4>UP Combos</h4>
                                     </div>
-                                    
+
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At massa consectetur faucibus nullam. Ultrices in venenatis </p>
-                                        <div class="collapse" id="distribuidora">
-                                            <p class="body-2">pharetra, lobortis fusce.</p>
+                                        <p class="body-2">Painéis gerenciais que permitem o acompanhamento dos resultados do seu negócio, sem restrição de horário e lugar,</p>
+                                        <div class="collapse" id="varejo">
+                                            <p class="body-2">sem a necessidade de estar exportando e tratando dados de sistemas.
+                                            <br>
+                                            <br>Comercial 
+                                            <br>Financeiro 
+                                            <br>Estoque
+                                            <br>Compras</p>
                                         </div>
                                     </div>
 
-                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#distribuidora" aria-expanded="false" aria-controls="collapse">
-                                        <p class="caption">Ver mais</p>
+                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#varejo" aria-expanded="false" aria-controls="collapse">
+                                        <p class="caption">Exibir mais</p>
                                     </button>
                                 </div>
                             </div>
@@ -159,15 +157,8 @@
                                     </div>
                                     
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At massa consectetur faucibus nullam. Ultrices in venenatis </p>
-                                        <div class="collapse" id="telecom">
-                                            <p class="body-2">pharetra, lobortis fusce.</p>
-                                        </div>
+                                        <p class="body-2">Realize o monitoramento dos processos como forma de potencializar a tomada de decisão da gestão e então avalie os fatores que garantiram o sucesso do seu negócio!</p>
                                     </div>
-
-                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#telecom" aria-expanded="false" aria-controls="collapse">
-                                        <p class="caption">Ver mais</p>
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -188,25 +179,37 @@
                             <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
                                 <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
                                     <div class="my-2 py-2  d-flex flex-column align-items-center">
-                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/varejo.svg" alt="">
-                                        <h4>Varejo</h4>
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/process.svg" alt="">
+                                        <h4>Processos</h4>
                                     </div>
                                     
-                                    <ul class="mb-2 ps-0">
-                                        <li>
-                                            <p class="body-2">Comercial</p>
-                                            <p class="body-2">Financeiro</p>
-                                            <p class="body-2">Estoque</p>
-                                            <p class="body-2">Compras</p>
-                                            <div class="collapse" id="varejo">
-                                                <p class="body-2">Curadoria</p>
-                                                <p class="body-2">Gestão de indicadores</p>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <div class="mb-2 ps-0">
+                                        <p class="body-2">Entendimento das atividades que fazem o negócio funcionar, as quais são responsáveis por gerar os dados que irão irão alimentar as áreas, momento esse em que também se discute sobre oportunidades de melhoria nos processos.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
+                                <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
+                                    <div class="my-2 py-2  d-flex flex-column align-items-center">
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/up-combos.svg" alt="">
+                                        <h4>UP Combos</h4>
+                                    </div>
+
+                                    <div class="mb-2 ps-0">
+                                        <p class="body-2">Painéis gerenciais que permitem o acompanhamento dos resultados do seu negócio, sem restrição de horário e lugar,</p>
+                                        <div class="collapse" id="varejo">
+                                            <p class="body-2">sem a necessidade de estar exportando e tratando dados de sistemas.
+                                            <br>
+                                            <br>Comercial 
+                                            <br>Financeiro 
+                                            <br>Estoque
+                                            <br>Compras</p>
+                                        </div>
+                                    </div>
 
                                     <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#varejo" aria-expanded="false" aria-controls="collapse">
-                                        <p class="caption">Ver mais</p>
+                                        <p class="caption">Exibir mais</p>
                                     </button>
                                 </div>
                             </div>
@@ -214,55 +217,13 @@
                             <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
                                 <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
                                     <div class="my-2 py-2  d-flex flex-column align-items-center">
-                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/transport.svg" alt="">
-                                        <h4>Distribuidoras</h4>
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/indicators.svg" alt="">
+                                        <h4>Gestão de indicadores</h4>
                                     </div>
                                     
-                                    <ul class="mb-2 ps-0">
-                                        <li>
-                                            <p class="body-2">Comercial</p>
-                                            <p class="body-2">Financeiro</p>
-                                            <p class="body-2">Estoque</p>
-                                            <p class="body-2">Compras</p>
-                                            <div class="collapse" id="distribuidora">
-                                                <p class="body-2">Curadoria</p>
-                                                <p class="body-2">Gestão de indicadores</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-
-                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#distribuidora" aria-expanded="false" aria-controls="collapse">
-                                        <p class="caption">Ver mais</p>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
-                                <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
-                                    <div class="my-2 py-2  d-flex flex-column align-items-center">
-                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/telecom.svg" alt="">
-                                        <h4>ISP Telecom</h4>
+                                    <div class="mb-2 ps-0">
+                                        <p class="body-2">Realize o monitoramento dos processos como forma de potencializar a tomada de decisão da gestão e então avalie os fatores que garantiram o sucesso do seu negócio!</p>
                                     </div>
-                                    
-                                    <ul class="mb-2 ps-0">
-                                        <li>
-                                            <p class="body-2">Comercial</p>
-                                            <p class="body-2">Cancelamento</p>
-                                            <p class="body-2">Base Contratos</p>
-                                            <p class="body-2">Financeiro </p>
-                                            <div class="collapse" id="telecom">
-                                                <p class="body-2">Operação</p>
-                                                <p class="body-2">Atendimento</p>
-                                                <p class="body-2">Curadoria</p>
-                                                <p class="body-2">Gestão de indicadores</p>
-                                                <p class="body-2">Outros</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-
-                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#telecom" aria-expanded="false" aria-controls="collapse">
-                                        <p class="caption">Ver mais</p>
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -283,25 +244,40 @@
                             <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
                                 <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
                                     <div class="my-2 py-2  d-flex flex-column align-items-center">
-                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/varejo.svg" alt="">
-                                        <h4>Varejo</h4>
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/process.svg" alt="">
+                                        <h4>Processos</h4>
                                     </div>
                                     
-                                    <ul class="mb-2 ps-0">
-                                        <li>
-                                            <p class="body-2">Comercial</p>
-                                            <p class="body-2">Financeiro</p>
-                                            <p class="body-2">Estoque</p>
-                                            <p class="body-2">Compras</p>
-                                            <div class="collapse" id="varejo">
-                                                <p class="body-2">Curadoria</p>
-                                                <p class="body-2">Gestão de indicadores</p>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <div class="mb-2 ps-0">
+                                        <p class="body-2">Entendimento das atividades que fazem o negócio funcionar, as quais são responsáveis por gerar os dados que irão irão alimentar as áreas, momento esse em que também se discute sobre oportunidades de melhoria nos processos.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
+                                <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
+                                    <div class="my-2 py-2  d-flex flex-column align-items-center">
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/up-combos.svg" alt="">
+                                        <h4>UP Combos</h4>
+                                    </div>
+
+                                    <div class="mb-2 ps-0">
+                                        <p class="body-2">Painéis gerenciais que permitem o acompanhamento dos resultados do seu negócio, sem restrição de horário e lugar,</p>
+                                        <div class="collapse" id="varejo">
+                                            <p class="body-2">sem a necessidade de estar exportando e tratando dados de sistemas.
+                                            <br>
+                                            <br>Comercial 
+                                            <br>Cancelamento 
+                                            <br>Base Contratos 
+                                            <br>Financeiro 
+                                            <br>Operação
+                                            <br>Atendimento
+                                            <br>Outros</p>
+                                        </div>
+                                    </div>
 
                                     <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#varejo" aria-expanded="false" aria-controls="collapse">
-                                        <p class="caption">Ver mais</p>
+                                        <p class="caption">Exibir mais</p>
                                     </button>
                                 </div>
                             </div>
@@ -309,55 +285,13 @@
                             <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
                                 <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
                                     <div class="my-2 py-2  d-flex flex-column align-items-center">
-                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/transport.svg" alt="">
-                                        <h4>Distribuidoras</h4>
+                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/indicators.svg" alt="">
+                                        <h4>Gestão de indicadores</h4>
                                     </div>
                                     
-                                    <ul class="mb-2 ps-0">
-                                        <li>
-                                            <p class="body-2">Comercial</p>
-                                            <p class="body-2">Financeiro</p>
-                                            <p class="body-2">Estoque</p>
-                                            <p class="body-2">Compras</p>
-                                            <div class="collapse" id="distribuidora">
-                                                <p class="body-2">Curadoria</p>
-                                                <p class="body-2">Gestão de indicadores</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-
-                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#distribuidora" aria-expanded="false" aria-controls="collapse">
-                                        <p class="caption">Ver mais</p>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide d-flex justify-content-center w-100 mx-4">
-                                <div class="card-solutions bg-neutral d-flex flex-column align-items-center text-center px-3 w-100 rounded-3">
-                                    <div class="my-2 py-2  d-flex flex-column align-items-center">
-                                        <img class="mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/telecom.svg" alt="">
-                                        <h4>ISP Telecom</h4>
+                                    <div class="mb-2 ps-0">
+                                        <p class="body-2">Realize o monitoramento dos processos como forma de potencializar a tomada de decisão da gestão e então avalie os fatores que garantiram o sucesso do seu negócio!</p>
                                     </div>
-                                    
-                                    <ul class="mb-2 ps-0">
-                                        <li>
-                                            <p class="body-2">Comercial</p>
-                                            <p class="body-2">Cancelamento</p>
-                                            <p class="body-2">Base Contratos</p>
-                                            <p class="body-2">Financeiro </p>
-                                            <div class="collapse" id="telecom">
-                                                <p class="body-2">Operação</p>
-                                                <p class="body-2">Atendimento</p>
-                                                <p class="body-2">Curadoria</p>
-                                                <p class="body-2">Gestão de indicadores</p>
-                                                <p class="body-2">Outros</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-
-                                    <button class="accordion-button shadow-none collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#telecom" aria-expanded="false" aria-controls="collapse">
-                                        <p class="caption">Ver mais</p>
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -377,10 +311,12 @@
         </div>
     </section>
 
-    <section id="our-processes">
+    <section class="position-relative" id="our-processes">
+        <img class="position-absolute" id="pattern-roxo" src="<?php echo get_template_directory_uri(); ?>/assets/icons/pattern-roxo.svg"/>
+
         <div class="container py-5">
             <div class="row mb-3 justify-content-between" id="info-about">
-                <div class="col-12 col-md-6" id="info">
+                <div class="col-12 col-md-7" id="info">
                     <div class="mb-5" id="category">
                         <div class="d-flex align-items-center">
                             <h4 class="me-3">NOSSOS PROCESSOS</h4>
@@ -395,7 +331,7 @@
                     </p>
                 </div>
 
-                <div class="col-12 col-md-6 col-xl-5 p-3 text-center" id="image"> 
+                <div class="col-12 col-md-5 col-xl-5 p-3 text-center" id="image"> 
                     <img class="w-75" src="<?php echo get_template_directory_uri(); ?>/assets/img/process.png" alt="Nosso processo">
                 </div>
             </div>
@@ -440,7 +376,9 @@
         </div>
     </section>
 
-    <section id="clients">
+    <section class="position-relative" id="clients">
+        <img class="position-absolute" id="pattern-azul" src="<?php echo get_template_directory_uri(); ?>/assets/icons/pattern-azul.svg"/>
+
         <div class="container py-5">
             <div class="row">
                 <div class="col-12 col-md-6" id="info-clients">
@@ -501,6 +439,14 @@
                     <p class="body mb-4 f-neutral">
                         Preencha o formulário para entrar em contato.
                     </p>
+
+                    <div class="w-100">
+                        <div class="d-flex justify-content-around">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/contact-icon-1.png">
+
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/contact-icon-2.png">
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="col-12 col-lg-6 d-flex justify-content-center" id="form">
@@ -516,9 +462,15 @@
             const system = $('input[name="system"]').val();
             $('textarea').val(`Olá, sou uma empresa de ${segment}, utilizo um sistema de ${system} e gostaria de realizar um orçamento`);
         });
+
+        $(document).ready(() => {
+            $('.wpcf7-textarea').attr('oninput', 'if(this.scrollHeight > this.offsetHeight) this.rows += 1');
+        });
     </script>
 
-    <section id="blog">
+    <section class="position-relative" id="blog">
+        <img class="position-absolute" id="pattern-roxo" src="<?php echo get_template_directory_uri(); ?>/assets/icons/pattern-roxo.svg"/>
+
         <div class="container py-5">
             <div class="row" id="info-blog">
                 <div class="col-12" id="info">
@@ -529,7 +481,7 @@
                         </div>
                     </div>
 
-                    
+
                     <div class="w-100 d-flex flex-wrap">
                         <div class="col-12 col-md-8">
                             <h3 class="mb-4" id="title">Acompanhe as novidades da UpValue</h3>

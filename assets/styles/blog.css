@@ -1,6 +1,10 @@
 /*--------------------------------------------------------
 | Highlight - Most Recenter : thumb and frame
 |---------------------------------------------------------*/
+body {
+    overflow-x: hidden;
+}
+
 #highlight .post-frame{
     height: 420px;
     width: 100%;
@@ -21,6 +25,18 @@
 #most-recent .post-frame{
     height: 260px;
     width: 100%;
+}
+
+#pattern-roxo {
+    top: 30%;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+#pattern-azul {
+    top: 100%;
+    right: 0;
+    transform: translateX(50%);
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {

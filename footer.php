@@ -35,7 +35,7 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="d-flex justify-content-center">
                     <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram.svg" alt="Instagram ícone">
-                    <p>@up_value</p>
+                    <a href="https://www.instagram.com/up_value/" target="_blank"><p>@up_value</p></a>
                 </div>
             </div>
         </div>
