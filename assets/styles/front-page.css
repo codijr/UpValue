@@ -9,12 +9,6 @@ main #banner {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 400px) {
-  main #banner {
-    height: 80vh;
-  }
-}
-
 main #banner .container h4 {
   font-weight: 300;
 }
@@ -166,35 +160,29 @@ main #partners {
   background-size: cover;
 }
 
-main #whatsapp-button {
-  position: fixed;
-  z-index: 3;
-  bottom: 3vh;
-  right: 3vh;
+@media (min-width: 768px) {
+  main #banner .container .w-100 {
+    width: 60% !important;
+  }
 }
 
-main #whatsapp-button img {
-  width: 60px;
-  height: 60px;
+@media (max-width: 400px) {
+  main #banner {
+    height: 80vh;
+  }
 }
 
 @media (max-width: 991.98px) {
-  #our-processes #image > img {
+  #our-processes #image img {
     margin-top: 2rem;
     width: 100% !important;
   }
 }
 
 @media (max-width: 767.98px) {
-  #our-processes #image > img {
+  #our-processes #image img {
     margin-top: 2rem;
     width: 75% !important;
-  }
-}
-
-@media (min-width: 768px) {
-  main #banner .container .w-100 {
-    width: 60% !important;
   }
 }
 /*# sourceMappingURL=front-page.css.map */

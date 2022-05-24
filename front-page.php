@@ -593,10 +593,6 @@
             </div>
         </div>
     </section>
-
-    <a href="https://wa.me/5585997438590" target="_blank" id="whatsapp-button">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/whatsapp-button.svg" alt="whatsapp">
-    </a>
 </main>
 
 <?php get_footer(); ?>

@@ -18,6 +18,18 @@ footer .container #bottom-section {
   color: var(--neutral);
 }
 
+#whatsapp-button {
+  position: fixed;
+  z-index: 3;
+  bottom: 3vh;
+  right: 3vh;
+}
+
+#whatsapp-button img {
+  width: 60px;
+  height: 60px;
+}
+
 @media (min-width: 768px) {
   footer .container #top-section {
     -webkit-box-pack: start !important;
