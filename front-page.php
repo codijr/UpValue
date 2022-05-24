@@ -324,7 +324,7 @@
                         </div>
                     </div>
 
-                    <h3 class="mb-4" id="title">Título que resume um pouco do processo</h3>
+                    <h3 class="mb-4" id="title">Saiba no que acreditamos e como juntos poderemos potencializar o seu negócio!</h3>
 
                     <p class="body">
                         A UP Value entende que a base para o sucesso de um negócio está em 5 pilares (Fornecedores, Processos, Pessoas, Sistemas e Clientes). Assim, a UP Value recebe os dados gerados por essas partes, as quais interagem entre si, e produz informações necessárias para formar um negócio de sucesso, gerando oportunidades, resolução de problemas e tomada de decisão.
