@@ -21,7 +21,7 @@
             </div>
         </div>
 
-        <div class="d-flex flex-column justify-content-between ms-3" id="info">
+        <div class="d-flex flex-column justify-content-between ms-3 pe-4" id="info">
             <h4 class="<?php echo $color ?>"><?php echo $title ?></h4>
 
             <div class="d-flex mt-3 mb-3" id="author">

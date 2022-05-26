@@ -503,7 +503,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-12 p-3 d-flex flex-wrap justify-content-between mt-3" id="cards-blog"> 
+                <div class="row gx-3 mt-3" id="cards-blog"> 
                     <?php
                         $args = array(
                             'post_type' => 'post',
@@ -512,7 +512,7 @@
                         $relate_query = new WP_Query($args);
                         if($relate_query->have_posts()) : while ($relate_query->have_posts()) : $relate_query->the_post();
                     ?>
-                    <div class="col-12 col-md-6 col-xl-4 pb-4">
+                    <div class="col-12 col-md-6 col-xl-4 pb-4 p-0">
                         <a href="<?php echo get_permalink();?>">
                             <?php 
                                 $titulo = '';

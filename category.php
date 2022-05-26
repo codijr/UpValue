@@ -7,7 +7,7 @@
         $img = get_template_directory_uri().'/assets/img/blog-img.png';
         includeFile('components/banner.php', 
             array(
-                'title'=>'Blog', 
+                'title'=>'BLOG', 
                 'imagem'=> $img,
                 'subtitle' => 'Acompanhe as novidades da UpValue'
             )
