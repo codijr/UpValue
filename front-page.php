@@ -465,9 +465,19 @@
             $('textarea').val(`Olá, sou uma empresa de ${segment}, utilizo um sistema ${system} e gostaria de realizar um orçamento`);
         });
 
-        $(document).ready(() => {
-            $('.wpcf7-textarea').attr('oninput', 'if(this.scrollHeight > this.offsetHeight && this.rows <= 5) this.rows += 1;');
+        $("textarea").bind("input", function(e) {
+            while( $(this).outerHeight() < this.scrollHeight +
+                                        parseFloat($(this).css("borderTopWidth")) +
+                                        parseFloat($(this).css("borderBottomWidth"))
+                && $(this).height() < 100 // Altura máxima
+            ) {
+                $(this).height($(this).height()+1);
+            };
         });
+
+        // $(document).ready(() => {
+        //     $('.wpcf7-textarea').attr('oninput', 'if(this.scrollHeight > this.offsetHeight && this.rows <= 5) this.style.height += "40px";');
+        // });
     </script>
 
     <section class="position-relative" id="blog">
