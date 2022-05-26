@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg py-3 navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
                     <img id="neutral-logo" src="<?php echo get_template_directory_uri(); ?>/assets/icons/neutral-logo.svg" alt="UpValue Logo">

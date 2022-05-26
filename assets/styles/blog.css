@@ -30,13 +30,13 @@ body {
 #pattern-roxo {
     top: 30%;
     left: 0;
-    transform: translateX(-50%);
+    transform: translateX(-25%);
 }
 
 #pattern-azul {
     top: 100%;
     right: 0;
-    transform: translateX(50%);
+    transform: translateX(25%);
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {

@@ -3,19 +3,23 @@ main {
 }
 
 main #banner {
-  height: 70vh;
   background-image: url("../img/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+main #banner .container h1 {
+  padding-top: 20% !important;
+}
+
 main #banner .container h4 {
   font-weight: 300;
+  width: 108%;
 }
 
 main #about .container #info-about #image img {
   border-radius: 7px;
-  border: 1px solid var(--text-color);
+  width: 95%;
 }
 
 main #about .container #concepts .col-12 {
@@ -24,7 +28,7 @@ main #about .container #concepts .col-12 {
 
 main #about .container #concepts .col-12 .card-concepts {
   background-color: var(--primary-color);
-  min-height: 200px;
+  min-height: 180px;
 }
 
 main #about .container #concepts .col-12 .card-concepts ul, main #about .container #concepts .col-12 .card-concepts li {
@@ -36,7 +40,12 @@ main #solutions {
   background-color: var(--secondary-color);
 }
 
+main #solutions .nav .nav-item {
+  width: 20%;
+}
+
 main #solutions .nav .nav-item .nav-link h4 {
+  color: var(--neutral) !important;
   -webkit-filter: opacity(0.7);
           filter: opacity(0.7);
 }
@@ -47,18 +56,35 @@ main #solutions .nav .nav-item .nav-link.active {
 }
 
 main #solutions .nav .nav-item .nav-link.active h4 {
-  color: white !important;
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
 }
 
 main #our-processes #pattern-roxo {
   top: 0;
   left: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-25%, -50%);
+          transform: translate(-25%, -50%);
+}
+
+main #our-processes .container #image img {
+  width: 80%;
 }
 
 main #contact {
   background-color: var(--secondary-color);
+}
+
+main #contact .container .row #info-contact p {
+  width: 90%;
+}
+
+main #contact .container .row #info-contact svg {
+  width: 45%;
+}
+
+main #contact .container .row #info-contact svg path, main #contact .container .row #info-contact svg rect {
+  fill: var(--neutral);
 }
 
 main #contact .container .row #form form {
@@ -165,15 +191,19 @@ main #partners {
 main #clients #pattern-azul {
   top: 0;
   right: 0;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+  -webkit-transform: translate(25%, -50%);
+          transform: translate(25%, -50%);
 }
 
 main #blog #pattern-roxo {
   top: 0;
   left: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-25%, -50%);
+          transform: translate(-25%, -50%);
+}
+
+#pattern-roxo, #pattern-azul {
+  width: 10vw;
 }
 
 @media (min-width: 768px) {

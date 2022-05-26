@@ -18,6 +18,12 @@
           box-sizing: border-box;
 }
 
+@media (min-width: 992px) {
+  .container {
+    padding: 6% 5vw !important;
+  }
+}
+
 h1, h2, h3, h4 {
   font-family: MuseoModerno;
   margin-bottom: 0;
@@ -27,26 +33,30 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 64px;
   font-weight: 500;
+  line-height: 90px;
 }
 
 h2 {
   font-size: 48px;
   font-weight: 300;
+  line-height: 76px;
 }
 
 h3 {
   font-size: 32px;
   font-weight: 500;
+  line-height: 50px;
 }
 
 h4 {
   font-size: 20px;
   font-weight: 500;
+  line-height: 31.8px;
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   h1 {
-      font-size: 60px;
+      font-size: 59px;
   }
   
   h2 {
@@ -54,7 +64,19 @@ h4 {
   }
   
   h3 {
-      font-size: 32px;
+      font-size: 29px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+  
+  p.body {
+    font-size: 12px;
+  }
+
+  p.body-2 {
+    font-size: 10px;
   }
 }
 
@@ -129,8 +151,8 @@ p.body {
 }
 
 p.body-2 {
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 13px;
+  font-weight: 200;
 }
 
 p.caption {
@@ -149,7 +171,7 @@ ul, li {
 
 hr {
   border: 0px;
-  border-top: 3px solid var(--text-color);
+  border-top: 2px solid var(--text-color);
   opacity: 1;
 }
 

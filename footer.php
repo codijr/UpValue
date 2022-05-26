@@ -14,35 +14,35 @@
             <div class="col-12 col-md-6 col-lg-3 mb-3">
                 <div class="d-flex justify-content-center">
                     <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/map-pointer.svg" alt="Endereço ícone">
-                    <p>Fortaleza-CE</p>
+                    <p class="body">Fortaleza-CE</p>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-3 mb-3">
                 <div class="d-flex justify-content-center">
                     <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/email.svg" alt="Email ícone">
-                    <p>atendimento@upvalue.com.br</p>
+                    <p class="body">atendimento@upvalue.com.br</p>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-3 mb-3">
                 <div class="d-flex justify-content-center">
                     <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/phone.svg" alt="Telefone ícone">
-                    <p>85 9974338590</p>
+                    <p class="body">85 9974338590</p>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="d-flex justify-content-center">
                     <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram.svg" alt="Instagram ícone">
-                    <a href="https://www.instagram.com/up_value/" target="_blank"><p>@up_value</p></a>
+                    <a href="https://www.instagram.com/up_value/" target="_blank"><p class="body">@up_value</p></a>
                 </div>
             </div>
         </div>
 
         <hr class="neutral thin"/>
 
-        <p class="text-center mb-0" id="bottom-section">
+        <p class="text-center mb-0 body" id="bottom-section">
             © UP Value Soluções LTDA 2022. CNPJ 45.592.823/0001-91. Todos os direitos reservados. Desenvolvido pela <a class="f-neutral" href="http://www.codijr.ufc.br" target="_blank">Container Digital Jr.</a>
         </p>
     </div>

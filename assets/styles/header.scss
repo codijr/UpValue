@@ -1,3 +1,13 @@
+@media (min-width: 992px) {
+  header {
+    nav {
+        .container {
+            padding: 1% 5vw !important;
+        }
+    }
+  }
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -7,7 +17,7 @@ header {
     nav {
         .container {
             .navbar-brand {
-                width: 15%;
+                width: 20%;
                 
                 img {
                     width: 100%; 
