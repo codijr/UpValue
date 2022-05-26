@@ -426,7 +426,7 @@
 
     <section id="contact">
         <div class="container">
-            <div class="mb-5" id="category">
+            <div class="mb-4" id="category">
                 <div class="w-50 d-flex align-items-center">
                     <h4 class="me-3 f-neutral">CONTATO</h4>
                     <hr class="w-25 neutral"> 
@@ -474,10 +474,6 @@
                 $(this).height($(this).height()+1);
             };
         });
-
-        // $(document).ready(() => {
-        //     $('.wpcf7-textarea').attr('oninput', 'if(this.scrollHeight > this.offsetHeight && this.rows <= 5) this.style.height += "40px";');
-        // });
     </script>
 
     <section class="position-relative" id="blog">
@@ -486,7 +482,7 @@
         <div class="container py-5">
             <div class="row" id="info-blog">
                 <div class="col-12 mb-4" id="info">
-                    <div class="mb-5" id="category">
+                    <div class="mb-4" id="category">
                         <div class="d-flex align-items-center">
                             <h4 class="me-3">BLOG</h4>
                             <hr class="w-25"> 
@@ -520,8 +516,8 @@
                         <a href="<?php echo get_permalink();?>">
                             <?php 
                                 $titulo = '';
-                                if (strlen($post->post_title) > 53) {
-                                    $titulo = substr(the_title($before = '', $after = '', FALSE), 0, 56) . '...'; } 
+                                if (strlen($post->post_title) > 36) {
+                                    $titulo = substr(the_title($before = '', $after = '', FALSE), 0, 36) . '...'; } 
                                 else {
                                     $titulo= esc_html( get_the_title() );
                                 }
