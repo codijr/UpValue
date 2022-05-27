@@ -39,7 +39,7 @@
                 | ultimos posts
                 |------------------>
 
-                <div class="row" id="highlight-content">
+                <div class="row d-lg-flex justify-content-lg-between" id="highlight-content">
                     <!------------------
                     | Post único
                     |------------------>
@@ -176,10 +176,7 @@
                                         'color' => '',
                                         'class' => '',
                                     ));
-                                    if($count == 2){
-                                        echo '<hr class="w-100 mt-4 mb-4" style="border: 0; height: 2px;
-                                        background-color: var(--neutral); ">';
-                                    }
+                                    
                                     $count+=1;
                                 ?>
                             </a>
