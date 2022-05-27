@@ -36,7 +36,7 @@ global $post;?>
         ); 
     ?>
 
-    <div class="container">
+    <div class="container py-5">
         <section>
             <!-- CATEGORIAS DO POST -->
             <div class="col-12" id="highlight-header">
