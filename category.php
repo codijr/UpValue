@@ -51,7 +51,7 @@
                         $relate_query = new WP_Query($args);
                         if($relate_query->have_posts()) : while ($relate_query->have_posts()) : $relate_query->the_post();
                     ?>
-                    <div class="col-12 col-lg-7">
+                    <div class="col-12 col-lg-8">
                         <a href="<?php echo get_permalink();?>">
                             <!------------------
                             | Featured Image
@@ -126,7 +126,7 @@
                     <!------------------
                     | Trio de posts
                     |------------------>
-                    <div class="col-12 col-lg-5">
+                    <div class="col-12 col-lg-4">
                         <?php
                             $count = 1;
                             $args = array(
