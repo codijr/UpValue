@@ -176,7 +176,10 @@
                                         'color' => '',
                                         'class' => '',
                                     ));
-                                    
+                                    if($count == 2){
+                                        echo '<hr class="w-100 mt-4 mb-4" style="border: 0; height: 2px;
+                                        background-color: var(--neutral); ">';
+                                    }
                                     $count+=1;
                                 ?>
                             </a>
