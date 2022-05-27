@@ -144,8 +144,8 @@
                                     | Titulo
                                     |------------------*/
                                     $titulo = '';
-                                    if (strlen($post->post_title) > 56) {
-                                        $titulo = substr(the_title($before = '', $after = '', FALSE), 0, 56) . '...'; } 
+                                    if (strlen($post->post_title) > 36) {
+                                        $titulo = substr(the_title($before = '', $after = '', FALSE), 0, 36) . '...'; } 
                                     else {
                                         $titulo= esc_html( get_the_title() );
                                     }
