@@ -27,7 +27,7 @@
 h1, h2, h3, h4 {
   font-family: MuseoModerno;
   margin-bottom: 0;
-  color: var(--text-color);
+  color: var(--text-color) ;
 }
 
 h1 {
@@ -178,6 +178,10 @@ hr {
   color: var(--neutral);
 }
 
+.f-primary {
+  color: var(--primary-color);
+}
+
 .bg-neutral {
   background-color: var(--neutral);
 }
@@ -211,12 +215,12 @@ button:hover {
 
 button.neutral {
   background-color: var(--neutral);
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+  border: 1px solid var(--primary-color-0);
+  color: var(--primary-color-0);
 }
 
 button.neutral:hover {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-0);
   color: var(--neutral);
 }
 
@@ -226,4 +230,12 @@ button.neutral:hover {
 
 .not-found-light{
   color: var(--neutral);
+}
+
+.border-bottom-neutral {
+  border-bottom: 1px solid var(--neutral);
+}
+
+.border-bottom-primary {
+  border-bottom: 1px solid var(--primary-color);
 }

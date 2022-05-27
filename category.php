@@ -322,6 +322,15 @@
                 </div>
         </section>
     </div>
+
+    <section id="contact-cta">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center">
+                <h3 class="mb-5 f-neutral text-center px-5">Temos soluções que irão ajudar o seu negócio a alcançar resultados exponenciais!</h3>
+                <a href="<?php echo get_home_url()?>/#contact"><button class="neutral">Entrar em contato</button></a>
+            </div>
+        </div>
+    </section>
 </main>
     
 

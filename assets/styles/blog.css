@@ -233,3 +233,20 @@ body {
     transition: all .3s ease;
     fill: #e83f49;
 }
+
+#contact-cta {
+    background-color: var(--primary-color-0);
+    padding: 8% 5vw !important;
+}
+
+@media (min-width: 992px) {
+    #contact-cta {
+        background-color: var(--primary-color-0);
+        padding: 1% 5vw !important;
+    }
+}
+
+#contact-cta button.neutral:hover {
+  background-color: var(--primary-color);
+  color: var(--neutral);
+}

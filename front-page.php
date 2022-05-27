@@ -4,7 +4,7 @@
     <section class="d-flex flex-column justify-content-center" id="banner">
         <div class="container mb-5">
             <div class="w-100">
-                <h1 class="mb-3 f-neutral">Potencializamos negócios</h1>
+                <h1 class="mb-3 f-neutral w-100">Potencializamos negócios</h1>
                 <h4 class="mb-5 f-neutral">Aliados a tecnologia, estruturamos dados e geramos visões que auxiliam na gestão do seu negócio, guiando a transformação de processos e pessoas para alavancar os resultados.</h4>
                 <a href="#contact">
                     <button class="neutral">Fale conosco</button>
@@ -500,7 +500,7 @@
                     </div>
                 </div>
 
-                <div class="row gx-3 mt-3" id="cards-blog"> 
+                <div class="row gx-3 mt-3 ms-2" id="cards-blog"> 
                     <?php
                         $args = array(
                             'post_type' => 'post',

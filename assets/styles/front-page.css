@@ -14,7 +14,15 @@ main #banner .container h1 {
 
 main #banner .container h4 {
   font-weight: 300;
-  width: 108%;
+}
+
+@media (max-width: 768px) {
+  main #banner .container h1 {
+    width: 100%;
+  }
+  main #banner .container h4 {
+    width: 100%;
+  }
 }
 
 main #about .container #info-about #image img {
