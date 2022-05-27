@@ -23,7 +23,7 @@
     <img class="position-absolute d-none d-xl-block" id="pattern-azul" src="<?php echo get_template_directory_uri(); ?>/assets/icons/pattern-azul.svg"/>
 
     <div class="container py-5">
-        <section class="mb-5 pb-3" id="highlight">
+        <section class="mb-5 pb-4" id="highlight">
                 <div class="col-12 mb-5 pb-3" id="highlight-header">
                     <div class="mb-4">
                         <div class="d-flex align-items-center">
@@ -189,7 +189,7 @@
                 </div>
         </section>
 
-        <hr class="w-100 neutral"> 
+        <hr class="w-100 neutral d-none d-lg-block"> 
 
         <section class="mt-5" id="most-recent">
                 <div class="col-12 d-flex flex-wrap justify-content-between" id="posts-header">
