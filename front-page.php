@@ -31,7 +31,7 @@
                     </p>
                 </div>
 
-                <div class="col-12 col-md-6 p-3 d-flex justify-content-end" id="image"> 
+                <div class="col-12 col-md-6 p-3 d-flex justify-content-center justify-content-xl-end" id="image"> 
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/team.jpg" alt="Equipe imagem">
                 </div>
             </div>
@@ -60,16 +60,13 @@
                         <h4 class="mb-3 f-neutral">Valores</h4>
                         <ul class="row p-0">
                             <div class="col-6 col-md-12 col-xl-6 mb-0 d-flex flex-column align-items-start">
-                                <li class="d-flex"><p class="body-2 f-neutral">Criatividade</p></li>
-                                <li class="d-flex"><p class="body-2 f-neutral">Confiança</p></li>
-                                <li class="d-flex"><p class="body-2 f-neutral">Profissionalismo</p></li>
-                                <li class="d-flex"><p class="body-2 f-neutral">Inovação</p></li>
+                                <li class="body-2 f-neutral">Profissionalismo</li>
+                                <li class="body-2 f-neutral">Inovação</li>
                             </div>
 
                             <div class="col-6 col-md-12 col-xl-6 d-flex flex-column align-items-start">
-                                <li class="d-flex"><p class="body-2 f-neutral">Agilidade</p></li>
-                                <li class="d-flex"><p class="body-2 f-neutral">Resiliência</p></li>
-                                <li class="d-flex"><p class="body-2 f-neutral">Ética</p></li>
+                                <li class="body-2 f-neutral">Confiança</li>
+                                <li class="body-2 f-neutral">Ética</li>
                             </div>
                         </ul>
                     </div>
@@ -93,16 +90,16 @@
                 </div>
             </div>
 
-            <ul class="nav nav-tabs d-flex justify-content-center mb-4 border-0" id="solutions-tab" role="tablist">
-                <li class="nav-item d-flex justify-content-center border-0" role="presentation">
+            <ul class="nav nav-tabs d-flex flex-column align-items-center flex-md-row justify-content-md-center mb-4 border-0" id="solutions-tab" role="tablist">
+                <li class="nav-item d-flex justify-content-center border-0 mb-2" role="presentation">
                     <button class="nav-link border-0 rounded-0 active" id="varejo-tab" data-bs-toggle="tab" data-bs-target="#combos-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><h4>Varejo</h4></button>
                 </li>
 
-                <li class="nav-item d-flex justify-content-center border-0" role="presentation">
+                <li class="nav-item d-flex justify-content-center border-0 mb-2" role="presentation">
                     <button class="nav-link border-0 rounded-0" id="distribuidoras-tab" data-bs-toggle="tab" data-bs-target="#process-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><h4>Distribuidoras</h4></button>
                 </li>
 
-                <li class="nav-item d-flex justify-content-center border-0" role="presentation">
+                <li class="nav-item d-flex justify-content-center border-0 mb-2" role="presentation">
                     <button class="nav-link border-0 rounded-0" id="telecom-tab" data-bs-toggle="tab" data-bs-target="#indicators-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"><h4>ISP Telecom</h4></button>
                 </li>
             </ul>
@@ -331,7 +328,7 @@
                     </p>
                 </div>
 
-                <div class="col-12 col-md-5 col-xl-5 p-3 text-center d-flex justify-content-end" id="image"> 
+                <div class="col-12 col-md-5 col-xl-5 p-3 text-center d-flex justify-content-center justify-content-xl-end" id="image"> 
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/processes.svg" alt="Nosso processo">
                 </div>
             </div>
@@ -425,7 +422,7 @@
     </section>
 
     <section id="contact">
-        <div class="container">
+        <div class="container py-5">
             <div class="mb-4" id="category">
                 <div class="w-50 d-flex align-items-center">
                     <h4 class="me-3 f-neutral">CONTATO</h4>
@@ -442,7 +439,7 @@
                         Preencha o formulário para entrar em contato.
                     </p>
 
-                    <div class="w-100">
+                    <div class="w-100 px-0 ps-5">
                         <div class="d-flex justify-content-evenlyn">
                             <?php includeFile('assets/icons/Fornecedores.svg', array()); ?>
 
@@ -451,7 +448,7 @@
                     </div>
                 </div>
                 
-                <div class="col-12 col-lg-7 d-flex justify-content-center px-0" id="form">
+                <div class="col-12 col-lg-7 d-flex justify-content-center px-0 ps-4" id="form">
                     <?php echo do_shortcode('[contact-form-7 id="7" title="Formulário de contato"]');?>
                 </div>
             </div>

@@ -33,19 +33,19 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 64px;
   font-weight: 500;
-  line-height: 90px;
+  line-height: 80px;
 }
 
 h2 {
   font-size: 48px;
   font-weight: 300;
-  line-height: 76px;
+  line-height: 69px;
 }
 
 h3 {
   font-size: 32px;
   font-weight: 500;
-  line-height: 50px;
+  line-height: 35px;
 }
 
 h4 {
@@ -59,7 +59,7 @@ h4 {
   }
   
   h2 {
-      font-size: 48px;
+      font-size: 42px;
   }
   
   h3 {
@@ -70,11 +70,11 @@ h4 {
     font-size: 18px;
   }
   
-  p.body {
+  .body {
     font-size: 12px;
   }
 
-  p.body-2 {
+  .body-2 {
     font-size: 12px !important;
   }
 }
@@ -135,7 +135,7 @@ h4 {
   }
 }
 
-a, p {
+a, p, .body, .body-2 {
   font-family: Mitr;
   font-style: normal;
   font-weight: 300;
@@ -144,12 +144,12 @@ a, p {
   color: var(--text-color);
 }
 
-p.body {
+.body {
   font-size: 16px;
   font-weight: 300;
 }
 
-p.body-2 {
+.body-2 {
   font-size: 13px;
   font-weight: 300;
 }
@@ -211,13 +211,12 @@ button:hover {
 
 button.neutral {
   background-color: var(--neutral);
-  border: 0;
-  color: var(--primary-color-0);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 button.neutral:hover {
-  background-color: var(--primary-color-0);
-  border: 0;
+  background-color: var(--primary-color);
   color: var(--neutral);
 }
 

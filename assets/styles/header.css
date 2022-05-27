@@ -1,6 +1,6 @@
 @media (min-width: 992px) {
   header nav .container {
-    padding: 1% 5vw !important;
+    padding: 0.8% 5vw !important;
   }
 }
 
@@ -19,12 +19,24 @@ header nav .container .navbar-brand img {
   width: 100%;
 }
 
-header nav .container .navbar-brand #reduced-logo, header nav .container .navbar-brand #logo, header nav .container .navbar-brand #neutral-logo {
+header nav .container .navbar-brand #reduced-logo, header nav .container .navbar-brand #reduced-neutral-logo {
+  display: block;
+}
+
+header nav .container .navbar-brand #logo, header nav .container .navbar-brand #neutral-logo {
   display: none;
+}
+
+header nav .container .navbar-toggler:hover {
+  background-color: transparent;
 }
 
 header nav .container .navbar-collapse .navbar-nav .nav-item {
   padding: 12px 16px;
+}
+
+header nav .container .navbar-collapse .navbar-nav .nav-item a h4 {
+  color: var(--primary-color);
 }
 
 header nav .container .navbar-collapse .navbar-nav .nav-item:hover a h4 {
@@ -32,11 +44,11 @@ header nav .container .navbar-collapse .navbar-nav .nav-item:hover a h4 {
 }
 
 @media (min-width: 768px) {
-  header nav .container .navbar-brand #neutral-logo {
-    display: block;
-  }
-  header nav .container .navbar-brand #reduced-neutral-logo, header nav .container .navbar-brand #reduced-logo, header nav .container .navbar-brand #logo {
+  header nav .container .navbar-brand #reduced-logo, header nav .container .navbar-brand #reduced-neutral-logo {
     display: none;
+  }
+  header nav .container .navbar-brand #logo, header nav .container .navbar-brand #neutral-logo {
+    display: block;
   }
 }
 /*# sourceMappingURL=header.css.map */

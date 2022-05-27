@@ -19,4 +19,12 @@
     width: 94% !important;
   }
 }
+
+@media (max-width: 768px) {
+  .card-testimonial {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 /*# sourceMappingURL=card-testimonial.css.map */

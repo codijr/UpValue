@@ -1,7 +1,7 @@
 <footer>
     <div class="container py-5">
         <div class="row d-flex justify-content-center" id="top-section">
-            <div class="col-3 col-md-3">
+            <div class="col-7 col-md-3">
                 <a class="navbar-brand w-100" href="<?php echo get_home_url(); ?>">
                     <img class="w-100" src="<?php echo get_template_directory_uri(); ?>/assets/icons/neutral-logo.svg" alt="UpValue Logo">
                 </a>
