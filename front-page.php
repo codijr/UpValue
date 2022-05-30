@@ -335,91 +335,90 @@
         </div>
     </section>
 
-    <section id="partners">
-        <div class="container py-5">
-            <div class="mb-4" id="category">
-                <div class="d-flex align-items-center">
-                    <h4 class="me-3 f-neutral">NOSSOS PARCEIROS</h4>
-                    <hr class="w-25 neutral"> 
-                </div>
-            </div>
-
-            <h3 class="mb-5 f-neutral" id="title">Conheça as empresas que estão alinhadas ao nosso propósito e que nos ajudam a entregar as melhores soluções.</h3>
-
-            <div class="swiper swiper-partners w-100 mb-3">
-                <div class="swiper-wrapper d-flex">
-                    <?php
-                        $args = array (
-                        'post_type' => 'parceiros',
-                        'orderby' => 'title',
-                        'order' => 'ASC',
-                    );
-                    $partners_query = new WP_Query($args);
-
-                    if($partners_query->have_posts()) : 
-                        while ($partners_query->have_posts()) : $partners_query->the_post(); ?>
-                            <div class="swiper-slide d-flex justify-content-center">
-                                <?php 
-                                    includeFile('components/card-partners.php', array(
-                                        'imgUrl' => get_the_post_thumbnail_url($post->ID),
-                                        'partner' => get_the_title($post->ID)
-                                    ))
-                                ?>
-                            </div>
-                    <?php endwhile; endif; wp_reset_postdata();?>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="position-relative" id="clients">
-        <img class="position-absolute" id="pattern-azul" src="<?php echo get_template_directory_uri(); ?>/assets/icons/pattern-azul.svg"/>
-
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 col-md-6" id="info-clients">
-                    <div class="mb-4" id="category">
-                        <div class="d-flex align-items-center">
-                            <h4 class="me-3 ">NOSSOS CLIENTES</h4>
-                            <hr class="w-25"> 
-                        </div>
+    <?php $args = array (
+        'post_type' => 'parceiros',
+        'orderby' => 'title',
+        'order' => 'ASC',
+    );
+    $partners_query = new WP_Query($args); 
+    if($partners_query->have_posts()) : ?>
+        <section id="partners">
+            <div class="container py-5">
+                <div class="mb-4" id="category">
+                    <div class="d-flex align-items-center">
+                        <h4 class="me-3 f-neutral">NOSSOS PARCEIROS</h4>
+                        <hr class="w-25 neutral"> 
                     </div>
-                    <h3 class="mb-4" id="title">Acompanhe a opinião de clientes parceiros</h3>
+                </div>
+
+                <h3 class="mb-5 f-neutral" id="title">Conheça as empresas que estão alinhadas ao nosso propósito e que nos ajudam a entregar as melhores soluções.</h3>
+
+                <div class="swiper swiper-partners w-100 mb-3">
+                    <div class="swiper-wrapper d-flex">
+                        <?php while ($partners_query->have_posts()) : $partners_query->the_post(); ?>
+                                <div class="swiper-slide d-flex justify-content-center">
+                                    <?php 
+                                        includeFile('components/card-partners.php', array(
+                                            'imgUrl' => get_the_post_thumbnail_url($post->ID),
+                                            'partner' => get_the_title($post->ID)
+                                        ))
+                                    ?>
+                                </div>
+                        <?php endwhile; ?>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
+        </section>
+    <?php endif; wp_reset_postdata(); ?>
 
-            <div class="swiper swiper-testimonial w-100">
-                <div class="swiper-wrapper d-flex">
-                    <?php
-                        $args = array (
-                        'post_type' => 'depoimentos',
-                        'orderby' => 'title',
-                        'order' => 'ASC',
-                    );
-                    $testimonial_query = new WP_Query($args);
+    <?php $args = array (
+        'post_type' => 'depoimentos',
+        'orderby' => 'title',
+        'order' => 'ASC',
+    );
+    $testimonial_query = new WP_Query($args);
+    if($testimonial_query->have_posts()) : ?>
+        <section class="position-relative" id="clients">
+            <img class="position-absolute" id="pattern-azul" src="<?php echo get_template_directory_uri(); ?>/assets/icons/pattern-azul.svg"/>
 
-                    if($testimonial_query->have_posts()) : 
-                        while ($testimonial_query->have_posts()) : $testimonial_query->the_post(); ?>
-                            <div class="swiper-slide d-flex justify-content-center p-3">
-                                <?php 
-                                    includeFile('components/card-testimonial.php', array(
-                                        'testimonial' => get_the_content($post->ID),
-                                        'imgUrl' => get_the_post_thumbnail_url($post->ID),
-                                        'person' => get_the_title($post->ID),
-                                        'location' => get_the_excerpt($post->ID)
-                                    ))
-                                ?>
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 col-md-6" id="info-clients">
+                        <div class="mb-4" id="category">
+                            <div class="d-flex align-items-center">
+                                <h4 class="me-3 ">NOSSOS CLIENTES</h4>
+                                <hr class="w-25"> 
                             </div>
-                    <?php endwhile; endif; wp_reset_postdata();?>
-                    
+                        </div>
+                        <h3 class="mb-4" id="title">Acompanhe a opinião de clientes parceiros</h3>
+                    </div>
                 </div>
-                <div class="swiper-pagination">
 
+                <div class="swiper swiper-testimonial w-100">
+                    <div class="swiper-wrapper d-flex">
+                        
+                            <?php while ($testimonial_query->have_posts()) : $testimonial_query->the_post(); ?>
+                                <div class="swiper-slide d-flex justify-content-center p-3">
+                                    <?php 
+                                        includeFile('components/card-testimonial.php', array(
+                                            'testimonial' => get_the_content($post->ID),
+                                            'imgUrl' => get_the_post_thumbnail_url($post->ID),
+                                            'person' => get_the_title($post->ID),
+                                            'location' => get_the_excerpt($post->ID)
+                                        ))
+                                    ?>
+                                </div>
+                        <?php endwhile; ?>
+                        
+                    </div>
+                    <div class="swiper-pagination">
+
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php endif; wp_reset_postdata();?>
 
     <section id="contact">
         <div class="container py-5">
