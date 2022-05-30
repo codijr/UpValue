@@ -5,7 +5,7 @@
         <div class="container mb-5">
             <div class="w-100">
                 <h1 class="mb-3 f-neutral w-100">Potencializamos negócios</h1>
-                <h4 class="mb-5 f-neutral">Aliados a tecnologia, estruturamos dados e geramos visões que auxiliam na gestão do seu negócio, guiando a transformação de processos e pessoas para alavancar os resultados.</h4>
+                <h4 class="mb-5 f-neutral">Aliados a tecnologia, estruturamos dados e geramos visões que auxiliam na gestão do seu negócio, orientando a transformação de processos e pessoas para alavancar os resultados.</h4>
                 <a href="#contact">
                     <button class="neutral">Fale conosco</button>
                 </a>
@@ -86,7 +86,7 @@
 
             <div class="row">
                 <div class="col-12">
-                    <h3 class="mb-5 f-neutral" id="title">Entendendo o processo, estruturando os dados e construindo visões para se ter uma gestão de indicadores.</h3>
+                    <h3 class="mb-5 f-neutral" id="title">Saiba como juntos podemos potencializar seu negócio!</h3>
                 </div>
             </div>
 
@@ -116,7 +116,7 @@
                                     </div>
                                     
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Entendimento das atividades que fazem o negócio funcionar, as quais são responsáveis por gerar os dados que irão irão alimentar as áreas, momento esse em que também se discute sobre oportunidades de melhoria nos processos.</p>
+                                        <p class="body-2">Entendimento das atividades que são responsáveis por gerar os dados com o objetivo de identificar oportunidades de melhoria nos processos e viabilizar uma visão detalhada dos resultados.</p>
                                     </div>
                                 </div>
                             </div>
@@ -129,10 +129,9 @@
                                     </div>
 
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Painéis gerenciais que permitem o acompanhamento dos resultados do seu negócio, sem restrição de horário e lugar,</p>
+                                        <p class="body-2">Dashboards disponíveis em uma plataforma segura e exclusiva que permitem o acompanhamento dos resultados sema necessidade de exportar e tratar dados diariamente.</p>
                                         <div class="collapse" id="varejo">
-                                            <p class="body-2">sem a necessidade de estar exportando e tratando dados de sistemas.
-                                            <br>
+                                            <p class="body-2">
                                             <br>Comercial 
                                             <br>Financeiro 
                                             <br>Estoque
@@ -154,7 +153,7 @@
                                     </div>
                                     
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Realize o monitoramento dos processos como forma de potencializar a tomada de decisão da gestão e então avalie os fatores que garantiram o sucesso do seu negócio!</p>
+                                        <p class="body-2">Com a utilização dos dashboards, realize o monitoramento dos indicadores como forma de potencializar a tomada de decisão e avaliar os fatores que garantirão o sucesso do seu negócio!</p>
                                     </div>
                                 </div>
                             </div>
@@ -181,7 +180,7 @@
                                     </div>
                                     
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Entendimento das atividades que fazem o negócio funcionar, as quais são responsáveis por gerar os dados que irão irão alimentar as áreas, momento esse em que também se discute sobre oportunidades de melhoria nos processos.</p>
+                                        <p class="body-2">Entendimento das atividades que são responsáveis por gerar os dados com o objetivo de identificar oportunidades de melhoria nos processos e viabilizar uma visão detalhada dos resultados.</p>
                                     </div>
                                 </div>
                             </div>
@@ -194,10 +193,9 @@
                                     </div>
 
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Painéis gerenciais que permitem o acompanhamento dos resultados do seu negócio, sem restrição de horário e lugar,</p>
+                                        <p class="body-2">Dashboards disponíveis em uma plataforma segura e exclusiva que permitem o acompanhamento dos resultados sema necessidade de exportar e tratar dados diariamente.</p>
                                         <div class="collapse" id="varejo">
-                                            <p class="body-2">sem a necessidade de estar exportando e tratando dados de sistemas.
-                                            <br>
+                                            <p class="body-2">
                                             <br>Comercial 
                                             <br>Financeiro 
                                             <br>Estoque
@@ -219,7 +217,7 @@
                                     </div>
                                     
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Realize o monitoramento dos processos como forma de potencializar a tomada de decisão da gestão e então avalie os fatores que garantiram o sucesso do seu negócio!</p>
+                                        <p class="body-2">Com a utilização dos dashboards, realize o monitoramento dos indicadores como forma de potencializar a tomada de decisão e avaliar os fatores que garantirão o sucesso do seu negócio!</p>
                                     </div>
                                 </div>
                             </div>
@@ -246,7 +244,7 @@
                                     </div>
                                     
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Entendimento das atividades que fazem o negócio funcionar, as quais são responsáveis por gerar os dados que irão irão alimentar as áreas, momento esse em que também se discute sobre oportunidades de melhoria nos processos.</p>
+                                        <p class="body-2">Entendimento das atividades que são responsáveis por gerar os dados com o objetivo de identificar oportunidades de melhoria nos processos e viabilizar uma visão detalhada dos resultados.</p>
                                     </div>
                                 </div>
                             </div>
@@ -259,10 +257,9 @@
                                     </div>
 
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Painéis gerenciais que permitem o acompanhamento dos resultados do seu negócio, sem restrição de horário e lugar,</p>
+                                        <p class="body-2">Dashboards disponíveis em uma plataforma segura e exclusiva que permitem o acompanhamento dos resultados sema necessidade de exportar e tratar dados diariamente.</p>
                                         <div class="collapse" id="varejo">
-                                            <p class="body-2">sem a necessidade de estar exportando e tratando dados de sistemas.
-                                            <br>
+                                            <p class="body-2">
                                             <br>Comercial 
                                             <br>Cancelamento 
                                             <br>Base Contratos 
@@ -287,7 +284,7 @@
                                     </div>
                                     
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Realize o monitoramento dos processos como forma de potencializar a tomada de decisão da gestão e então avalie os fatores que garantiram o sucesso do seu negócio!</p>
+                                        <p class="body-2">Com a utilização dos dashboards, realize o monitoramento dos indicadores como forma de potencializar a tomada de decisão e avaliar os fatores que garantirão o sucesso do seu negócio!</p>
                                     </div>
                                 </div>
                             </div>
@@ -316,15 +313,15 @@
                 <div class="col-12 col-md-7" id="info">
                     <div class="mb-3" id="category">
                         <div class="d-flex align-items-center">
-                            <h4 class="me-3">NOSSOS PROCESSOS</h4>
+                            <h4 class="me-3">COMO ATUAMOS</h4>
                             <hr class="w-25"> 
                         </div>
                     </div>
 
-                    <h3 class="mb-3" id="title">Saiba no que acreditamos e como juntos poderemos potencializar o seu negócio!</h3>
+                    <h3 class="mb-3" id="title">Entendendo o processo, construindo dashboards e orientando a gestão de indicadores!</h3>
 
                     <p class="body">
-                        A UP Value entende que a base para o sucesso de um negócio está em 5 pilares (Fornecedores, Processos, Pessoas, Sistemas e Clientes). Assim, a UP Value recebe os dados gerados por essas partes, as quais interagem entre si, e produz informações necessárias para formar um negócio de sucesso, gerando oportunidades, resolução de problemas e tomada de decisão.
+                        Acreditamos que a base para o sucesso de um negócio está em 5 pilares: Fornecedores, Processos, Pessoas, Sistemas e Clientes. As interações entre eles geram dados os quais devem ser tratados, estruturados e transformados em dashboards. Isso auxilia no acompanhamento dos processos, tomada de decisões e análise de resultados, contribuindo para a gestão de uma empresa de sucesso.
                     </p>
                 </div>
 
@@ -391,7 +388,7 @@
                                 <hr class="w-25"> 
                             </div>
                         </div>
-                        <h3 class="mb-4" id="title">Acompanhe a opinião de clientes parceiros</h3>
+                        <h3 class="mb-4" id="title">Veja os depoimento</h3>
                     </div>
                 </div>
 
