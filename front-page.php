@@ -472,83 +472,84 @@
         });
     </script>
 
-    <section class="position-relative" id="blog">
-        <img class="position-absolute" id="pattern-roxo" src="<?php echo get_template_directory_uri(); ?>/assets/icons/pattern-roxo.svg"/>
+    <?php
+    $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => 3
+    );
+    $relate_query = new WP_Query($args);
+    if($relate_query->have_posts()) : ?>
+        <section class="position-relative" id="blog">
+            <img class="position-absolute" id="pattern-roxo" src="<?php echo get_template_directory_uri(); ?>/assets/icons/pattern-roxo.svg"/>
 
-        <div class="container py-5">
-            <div class="row" id="info-blog">
-                <div class="col-12 mb-4" id="info">
-                    <div class="mb-4" id="category">
-                        <div class="d-flex align-items-center">
-                            <h4 class="me-3">BLOG</h4>
-                            <hr class="w-25"> 
+            <div class="container py-5">
+                <div class="row" id="info-blog">
+                    <div class="col-12 mb-4" id="info">
+                        <div class="mb-4" id="category">
+                            <div class="d-flex align-items-center">
+                                <h4 class="me-3">BLOG</h4>
+                                <hr class="w-25"> 
+                            </div>
+                        </div>
+
+
+                        <div class="w-100 d-flex flex-wrap">
+                            <div class="col-12 col-md-8">
+                                <h3 id="title">Acompanhe as novidades<br> da UpValue</h3>
+                            </div>
+
+                            <div class="col-12 col-md-4 d-flex justify-content-end align-items-end">
+                                <a href="<?php echo get_home_url(); ?>/category/geral" class="fw-normal">
+                                    Acesse nosso Blog  >
+                                </a>
+                            </div>
                         </div>
                     </div>
 
+                    <div class="row gx-3 mt-3 ms-2" id="cards-blog"> 
+                    <?php while ($relate_query->have_posts()) : $relate_query->the_post(); ?>
+                        <div class="col-12 col-md-6 col-xl-4 pb-4 p-0">
+                            <a href="<?php echo get_permalink();?>">
+                                <?php 
+                                    $titulo = '';
+                                    if (strlen($post->post_title) > 36) {
+                                        $titulo = substr(the_title($before = '', $after = '', FALSE), 0, 36) . '...'; } 
+                                    else {
+                                        $titulo= esc_html( get_the_title() );
+                                    }
 
-                    <div class="w-100 d-flex flex-wrap">
-                        <div class="col-12 col-md-8">
-                            <h3 id="title">Acompanhe as novidades<br> da UpValue</h3>
-                        </div>
+                                    /*------------------
+                                    | Tempo de leitura
+                                    |------------------*/
+                                    $tempo = '';
+                                    $content = get_post_field( 'post_content', $post->ID );
+                                    $quantidade_palavras = str_word_count( strip_tags( $content ) );
+                                    $tempo_leitura = ceil($quantidade_palavras / 250);
+                                    if($tempo_leitura == 1){
+                                        $tempo = $tempo_leitura." min de leitura";
+                                    }
+                                    else{
+                                        $tempo = strval($tempo_leitura)." min de leitura";
+                                    }
 
-                        <div class="col-12 col-md-4 d-flex justify-content-end align-items-end">
-                            <a href="<?php echo get_home_url(); ?>/category/geral" class="fw-normal">
-                                Acesse nosso Blog  >
+                                    includeFile('components/card-blog.php', array(
+                                        'imgUrl' => $post->ID,
+                                        'title' => $titulo,
+                                        'author' => esc_html( get_the_author() ),
+                                        'date' => get_the_date('d-m-Y'),
+                                        'readingTime' => $tempo,
+                                        'color' => '',
+                                        'class' => 'dif'
+                                    ));
+                                ?>
                             </a>
                         </div>
+                        <?php endwhile; ?>
                     </div>
-                </div>
-
-                <div class="row gx-3 mt-3 ms-2" id="cards-blog"> 
-                    <?php
-                        $args = array(
-                            'post_type' => 'post',
-                            'posts_per_page' => 3
-                        );
-                        $relate_query = new WP_Query($args);
-                        if($relate_query->have_posts()) : while ($relate_query->have_posts()) : $relate_query->the_post();
-                    ?>
-                    <div class="col-12 col-md-6 col-xl-4 pb-4 p-0">
-                        <a href="<?php echo get_permalink();?>">
-                            <?php 
-                                $titulo = '';
-                                if (strlen($post->post_title) > 36) {
-                                    $titulo = substr(the_title($before = '', $after = '', FALSE), 0, 36) . '...'; } 
-                                else {
-                                    $titulo= esc_html( get_the_title() );
-                                }
-
-                                /*------------------
-                                | Tempo de leitura
-                                |------------------*/
-                                $tempo = '';
-                                $content = get_post_field( 'post_content', $post->ID );
-                                $quantidade_palavras = str_word_count( strip_tags( $content ) );
-                                $tempo_leitura = ceil($quantidade_palavras / 250);
-                                if($tempo_leitura == 1){
-                                    $tempo = $tempo_leitura." min de leitura";
-                                }
-                                else{
-                                    $tempo = strval($tempo_leitura)." min de leitura";
-                                }
-
-                                includeFile('components/card-blog.php', array(
-                                    'imgUrl' => $post->ID,
-                                    'title' => $titulo,
-                                    'author' => esc_html( get_the_author() ),
-                                    'date' => get_the_date('d-m-Y'),
-                                    'readingTime' => $tempo,
-                                    'color' => '',
-                                    'class' => 'dif'
-                                ));
-                            ?>
-                        </a>
-                    </div>
-                    <?php endwhile; else: endif; wp_reset_postdata();?>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php endif; wp_reset_postdata();?>
 </main>
 
 <?php get_footer(); ?>
