@@ -34,6 +34,10 @@
             wp_enqueue_style('blog', get_template_directory_uri() . '/assets/styles/blog.css');
         } 
 
+        if ( is_page('up_plataforma') ) {
+            wp_enqueue_style('up_plataforma', get_template_directory_uri() . '/assets/styles/up_plataforma.css');
+        }
+
         //components
         wp_enqueue_style('card-blog', get_template_directory_uri().'/assets/styles/components/card-blog.css');
         wp_enqueue_style('card-testimonial', get_template_directory_uri().'/assets/styles/components/card-testimonial.css');
