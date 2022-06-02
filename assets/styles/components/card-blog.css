@@ -54,8 +54,8 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .card-blog #image img {
-    height: 130px;
-    width: 130px;
+    height: 90px;
+    width: 90px;
   }
   .card-blog .dif #image img{
     height: 150px;
