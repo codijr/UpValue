@@ -154,8 +154,9 @@
 
 .card-blog:hover .bt-h button{
     visibility: visible;
-    position: absolute;
+    height: auto;
     bottom: 50%;
+    transform: translateY(50%);
     transition: all 1s;
     transition: visibility 0.7s, bottom 1s;
 }
