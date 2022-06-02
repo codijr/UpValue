@@ -148,6 +148,7 @@
 .bt-h button{
     bottom: 0%;
     visibility: hidden;
+    height: auto;
     position: absolute;
     transition: visibility 0.7s, bottom 1s;
 }
