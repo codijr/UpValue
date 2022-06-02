@@ -44,10 +44,20 @@
                     | Post único
                     |------------------>
                     <?php
-                        $args = array(
-                            'post_type' => 'post',
-                            'posts_per_page' => 1
-                        );
+                        $sticky = get_option('sticky_posts');
+                        if (!empty($sticky)) {
+                            $args = array(
+                                'post_type' => 'post',
+                                'posts_per_page' => 1,
+                                'post__in' => $sticky
+                            ); 
+                        }
+                        else{
+                            $args = array(
+                                'post_type' => 'post',
+                                'posts_per_page' => 1
+                            );
+                        }
                         $relate_query = new WP_Query($args);
                         if($relate_query->have_posts()) : while ($relate_query->have_posts()) : $relate_query->the_post();
                     ?>
@@ -128,12 +138,22 @@
                     |------------------>
                     <div class="col-12 col-lg-4">
                         <?php
+                            $sticky = get_option('sticky_posts');
                             $count = 1;
+                            if (!empty($sticky)) {
                             $args = array(
                                 'post_type' => 'post',
                                 'posts_per_page' => 3,
-                                'offset' => 1
+                                'post__not_in' => $sticky
                             );
+                            }
+                            else{
+                                $args = array(
+                                    'post_type' => 'post',
+                                    'posts_per_page' => 3,
+                                    'offset' => 1
+                                );
+                            }
                             $relate_query = new WP_Query($args);
                             if($relate_query->have_posts()) : while ($relate_query->have_posts()) : $relate_query->the_post();
                         ?>
