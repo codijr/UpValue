@@ -54,8 +54,8 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .card-blog #image img {
-    height: 130px;
-    width: 130px;
+    height: 90px;
+    width: 90px;
   }
   .card-blog .dif #image img{
     height: 150px;
@@ -148,14 +148,16 @@
 .bt-h button{
     bottom: 0%;
     visibility: hidden;
+    height: auto;
     position: absolute;
     transition: visibility 0.7s, bottom 1s;
 }
 
 .card-blog:hover .bt-h button{
     visibility: visible;
-    position: absolute;
+    height: auto;
     bottom: 50%;
+    transform: translateY(50%);
     transition: all 1s;
     transition: visibility 0.7s, bottom 1s;
 }
