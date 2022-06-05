@@ -60,6 +60,7 @@
     add_action('wp_enqueue_scripts', 'scripts_files'); 
 
     //CUstom Post Types
+    require_once(get_template_directory().'/app/cpt/home_texts-cpt.php');
     require_once(get_template_directory().'/app/cpt/partners-cpt.php');
     require_once(get_template_directory().'/app/cpt/testimonial-cpt.php');
 

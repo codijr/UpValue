@@ -1,17 +1,24 @@
-<?php get_header(); ?>
+<?php get_header();?>
 
 <main>
+    <?php
+        $args = array(
+            'post_type' => 'textos_da_home',
+        );
+        $banner_query = new WP_Query($args);
+    ?>
     <section class="d-flex flex-column justify-content-center" id="banner">
         <div class="container mb-5">
             <div class="w-100">
-                <h1 class="mb-3 f-neutral w-100">Potencializamos negócios</h1>
-                <h4 class="mb-5 f-neutral">Aliados a tecnologia, estruturamos dados e geramos visões que auxiliam na gestão do seu negócio, orientando a transformação de processos e pessoas para alavancar os resultados.</h4>
+                <h1 class="mb-3 f-neutral w-100"><?php echo get_field('titulo'); ?></h1>
+                <h4 class="mb-5 f-neutral"><?php echo get_field('subtitulo'); ?></h4>
                 <a href="#contact">
-                    <button class="neutral">Fale conosco</button>
+                    <button class="neutral"><?php echo get_field('texto_botao_cta'); ?></button>
                 </a>
             </div>
         </div>
     </section>
+    
 
     <section id="about">
         <div class="container py-5">
@@ -19,15 +26,15 @@
                 <div class="col-12 col-md-6" id="info">
                     <div class="mb-3" id="category">
                         <div class="d-flex align-items-center">
-                            <h4 class="me-3">QUEM SOMOS</h4>
+                            <h4 class="me-3"><?php echo get_field('quem_somos'); ?></h4>
                             <hr class="w-25"> 
                         </div>
                     </div>
 
-                    <h3 class="mb-4" id="title">Somos os principais parceiros da transformação do seu negócio!</h3>
+                    <h3 class="mb-4" id="title"><?php echo get_field('titulo_do_quem_somos'); ?></h3>
 
                     <p class="body">
-                        Entendemos que ter dados confiáveis e visões dinâmicas dos resultados são a base para a gestão de um negócio e auxiliam na tomada de decisão. Assim, as oportunidades são identificadas e priorizadas, dando lugar a transformação de processos e melhorando a utilização dos recursos. Para isso, a tecnologia deve ser uma das principais aliadas e estamos aqui para lhe ajudar a viver essa mudança.
+                        <?php echo get_field('corpo_do_quem_somos'); ?>
                     </p>
                 </div>
 
@@ -79,14 +86,14 @@
         <div class="container py-5">
             <div class="mb-5" id="category">
                 <div class="d-flex align-items-center w-75">
-                    <h4 class="me-3 f-neutral">NOSSAS SOLUÇÕES</h4>
+                    <h4 class="me-3 f-neutral"><?php echo get_field('nossas_solucoes'); ?></h4>
                     <hr class="w-25 neutral"> 
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-12">
-                    <h3 class="mb-5 f-neutral" id="title">Saiba como juntos podemos potencializar seu negócio!</h3>
+                    <h3 class="mb-5 f-neutral" id="title"><?php echo get_field('titulo_nossas_solucoes'); ?></h3>
                 </div>
             </div>
 
@@ -300,8 +307,6 @@
                     </div>
                 </div>
             </div>
-
-            
         </div>
     </section>
 
@@ -313,15 +318,15 @@
                 <div class="col-12 col-md-7" id="info">
                     <div class="mb-3" id="category">
                         <div class="d-flex align-items-center">
-                            <h4 class="me-3">COMO ATUAMOS</h4>
+                            <h4 class="me-3"><?php echo get_field('como_atuamos'); ?></h4>
                             <hr class="w-25"> 
                         </div>
                     </div>
 
-                    <h3 class="mb-3" id="title">Entendendo o processo, construindo dashboards e orientando a gestão de indicadores!</h3>
+                    <h3 class="mb-3" id="title"><?php echo get_field('titulo_como_atuamos'); ?></h3>
 
                     <p class="body">
-                        Acreditamos que a base para o sucesso de um negócio está em 5 pilares: Fornecedores, Processos, Pessoas, Sistemas e Clientes. As interações entre eles geram dados os quais devem ser tratados, estruturados e transformados em dashboards. Isso auxilia no acompanhamento dos processos, tomada de decisões e análise de resultados, contribuindo para a gestão de uma empresa de sucesso.
+                        <?php echo get_field('corpo_como_atuamos'); ?>
                     </p>
                 </div>
 
@@ -343,12 +348,12 @@
             <div class="container py-5">
                 <div class="mb-4" id="category">
                     <div class="d-flex align-items-center">
-                        <h4 class="me-3 f-neutral">NOSSOS PARCEIROS</h4>
+                        <h4 class="me-3 f-neutral"><?php echo get_field('nossos_parceiros'); ?></h4>
                         <hr class="w-25 neutral"> 
                     </div>
                 </div>
 
-                <h3 class="mb-5 f-neutral" id="title">Conheça as empresas que estão alinhadas ao nosso propósito e que nos ajudam a entregar as melhores soluções.</h3>
+                <h3 class="mb-5 f-neutral" id="title"><?php echo get_field('titulo_nossos_parceiros'); ?></h3>
 
                 <div class="swiper swiper-partners w-100 mb-3">
                     <div class="swiper-wrapper d-flex">
@@ -367,7 +372,7 @@
                 </div>
             </div>
         </section>
-    <?php endif; wp_reset_postdata(); ?>
+    <?php endif; ?>
 
     <?php $args = array (
         'post_type' => 'depoimentos',
@@ -384,11 +389,11 @@
                     <div class="col-12 col-md-6" id="info-clients">
                         <div class="mb-4" id="category">
                             <div class="d-flex align-items-center">
-                                <h4 class="me-3 ">NOSSOS CLIENTES</h4>
+                                <h4 class="me-3 "><?php echo get_field('nossos_clientes'); ?></h4>
                                 <hr class="w-25"> 
                             </div>
                         </div>
-                        <h3 class="mb-4" id="title">Veja os depoimento</h3>
+                        <h3 class="mb-4" id="title"><?php echo get_field('titulo_dos_depoimentos'); ?></h3>
                     </div>
                 </div>
 
@@ -415,24 +420,23 @@
                 </div>
             </div>
         </section>
-    <?php endif; wp_reset_postdata();?>
+    <?php endif; ?>
 
     <section id="contact">
         <div class="container py-5">
             <div class="mb-4" id="category">
                 <div class="w-50 d-flex align-items-center">
-                    <h4 class="me-3 f-neutral">CONTATO</h4>
+                    <h4 class="me-3 f-neutral"><?php echo get_field('contato'); ?></h4>
                     <hr class="w-25 neutral"> 
                 </div>
             </div>
 
             <div class="row w-100 justify-content-center">
                 <div class="col-12 col-lg-5" id="info-contact">
-                    <h3 class="mb-4 f-neutral" id="title">Temos soluções que irão 
-                    ajudar o seu negócio a alcançar resultados exponenciais!</h3>
+                    <h3 class="mb-4 f-neutral" id="title"><?php echo get_field('titulo_de_contato'); ?></h3>
 
                     <p class="body mb-5 f-neutral">
-                        Preencha o formulário para entrar em contato.
+                        <?php echo get_field('descricao_de_contatos'); ?>
                     </p>
 
                     <div class="w-100 px-0 ps-5">
@@ -484,7 +488,7 @@
                     <div class="col-12 mb-4" id="info">
                         <div class="mb-4" id="category">
                             <div class="d-flex align-items-center">
-                                <h4 class="me-3">BLOG</h4>
+                                <h4 class="me-3"><?php echo get_field('blog'); ?></h4>
                                 <hr class="w-25"> 
                             </div>
                         </div>
@@ -492,7 +496,7 @@
 
                         <div class="w-100 d-flex flex-wrap">
                             <div class="col-12 col-md-8">
-                                <h3 id="title">Acompanhe as novidades<br> da UpValue</h3>
+                                <h3 id="title"><?php echo get_field('titulo_do_blog'); ?></h3>
                             </div>
 
                             <div class="col-12 col-md-4 d-flex justify-content-end align-items-end">
@@ -546,7 +550,7 @@
                 </div>
             </div>
         </section>
-    <?php endif; wp_reset_postdata();?>
+    <?php endif;?>
 </main>
 
 <?php get_footer(); ?>
