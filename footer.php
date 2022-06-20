@@ -1,4 +1,12 @@
 <footer>
+    <?php
+        $args = array(
+            'post_type' => 'textos_da_home',
+            'name'      => 'footer',
+        );
+        $postr = new WP_Query($args);
+        if($postr->have_posts()) : while ($postr->have_posts()) : $postr->the_post();
+    ?>
     <div class="container py-5">
         <div class="row d-flex justify-content-center" id="top-section">
             <div class="col-7 col-md-3">
@@ -14,28 +22,28 @@
             <div class="col-12 col-md-6 col-lg-3 mb-3">
                 <div class="d-flex justify-content-center">
                     <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/map-pointer.svg" alt="Endereço ícone">
-                    <p class="body">Fortaleza-CE</p>
+                    <p class="body"><?php echo get_field('footer_local'); ?></p>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-3 mb-3">
                 <div class="d-flex justify-content-center">
                     <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/email.svg" alt="Email ícone">
-                    <p class="body">atendimento@upvalue.com.br</p>
+                    <p class="body"><?php echo get_field('footer_email'); ?></p>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-3 mb-3">
                 <div class="d-flex justify-content-center">
                     <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/phone.svg" alt="Telefone ícone">
-                    <p class="body">85 9974338590</p>
+                    <p class="body"><?php echo get_field('footer_telefone'); ?></p>
                 </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="d-flex justify-content-center">
                     <img class="me-3" src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram.svg" alt="Instagram ícone">
-                    <a href="https://www.instagram.com/up_value/" target="_blank"><p class="body">@up_value</p></a>
+                    <a href="<?php echo get_field('url_instagram'); ?>" target="_blank"><p class="body"><?php echo get_field('footer_instagram'); ?></p></a>
                 </div>
             </div>
         </div>
@@ -51,7 +59,7 @@
 <a href="https://wa.me/5585997438590" target="_blank" id="whatsapp-button">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/whatsapp-button.svg" alt="whatsapp">
 </a>
-
+<?php endwhile; else: endif; wp_reset_postdata();?>
 <?php wp_footer(); ?>
 </body>
 </html>

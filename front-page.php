@@ -1,40 +1,58 @@
 <?php get_header();?>
 
 <main>
+    <!------------------
+    | Banner Inicial
+    |------------------>
     <?php
         $args = array(
             'post_type' => 'textos_da_home',
+            'name'      => 'banner-inicial',
         );
-        $banner_query = new WP_Query($args);
+        $postr = new WP_Query($args);
+        if($postr->have_posts()) : while ($postr->have_posts()) : $postr->the_post();
     ?>
+    
     <section class="d-flex flex-column justify-content-center" id="banner">
         <div class="container mb-5">
             <div class="w-100">
-                <h1 class="mb-3 f-neutral w-100"><?php echo get_field('titulo'); ?></h1>
+                <h1 class="mb-3 f-neutral w-100"><?php echo get_field('titulob'); ?></h1>
                 <h4 class="mb-5 f-neutral"><?php echo get_field('subtitulo'); ?></h4>
                 <a href="#contact">
-                    <button class="neutral"><?php echo get_field('texto_botao_cta'); ?></button>
+                    <button class="neutral"><?php echo get_field('botao_cta'); ?></button>
                 </a>
             </div>
         </div>
     </section>
+    <?php endwhile; else: endif; wp_reset_postdata();?>
     
 
+    <!------------------
+    | Quem Somos
+    |------------------>
+    <?php
+        $args = array(
+            'post_type' => 'textos_da_home',
+            'name'      => 'quem-somos',
+        );
+        $postr = new WP_Query($args);
+        if($postr->have_posts()) : while ($postr->have_posts()) : $postr->the_post();
+    ?>
     <section id="about">
         <div class="container py-5">
             <div class="row mb-5" id="info-about">
                 <div class="col-12 col-md-6" id="info">
                     <div class="mb-3" id="category">
                         <div class="d-flex align-items-center">
-                            <h4 class="me-3"><?php echo get_field('quem_somos'); ?></h4>
+                            <h4 class="me-3"><?php echo get_field('categoria_quem_somos'); ?></h4>
                             <hr class="w-25"> 
                         </div>
                     </div>
 
-                    <h3 class="mb-4" id="title"><?php echo get_field('titulo_do_quem_somos'); ?></h3>
+                    <h3 class="mb-4" id="title"><?php echo get_field('titulo_quem_somos'); ?></h3>
 
                     <p class="body">
-                        <?php echo get_field('corpo_do_quem_somos'); ?>
+                        <?php echo get_field('corpo_quem_somos'); ?>
                     </p>
                 </div>
 
@@ -48,7 +66,7 @@
                     <div class="card-concepts pt-3 px-4 rounded-3">
                         <h4 class="mb-3 f-neutral">Missão</h4>
                         <p class="body-2 f-neutral">
-                            Potencializar negócios através da estruturação de dados, transformação de processos, pessoas e utilização de tecnologias, evoluindo a gestão e alavancando resultados.
+                            <?php echo get_field('missao'); ?>
                         </p>
                     </div>
                 </div>
@@ -57,7 +75,7 @@
                     <div class="card-concepts pt-3 px-4 rounded-3">
                         <h4 class="mb-3 f-neutral">Visão</h4>
                         <p class="body-2 f-neutral">
-                            Sermos reconhecidos por ajudar empresas a transformar seus negócios, tendo como base dados confiáveis e as soluções tecnológicas.
+                            <?php echo get_field('visao'); ?>
                         </p>
                     </div>
                 </div>
@@ -67,13 +85,13 @@
                         <h4 class="mb-3 f-neutral">Valores</h4>
                         <ul class="row p-0">
                             <div class="col-6 col-md-12 col-xl-6 mb-0 d-flex flex-column align-items-start">
-                                <li class="body-2 f-neutral">Profissionalismo</li>
-                                <li class="body-2 f-neutral">Inovação</li>
+                                <li class="body-2 f-neutral"><?php echo get_field('valor1'); ?></li>
+                                <li class="body-2 f-neutral"><?php echo get_field('valor2'); ?></li>
                             </div>
 
                             <div class="col-6 col-md-12 col-xl-6 d-flex flex-column align-items-start">
-                                <li class="body-2 f-neutral">Confiança</li>
-                                <li class="body-2 f-neutral">Ética</li>
+                                <li class="body-2 f-neutral"><?php echo get_field('valor3'); ?></li>
+                                <li class="body-2 f-neutral"><?php echo get_field('valor4'); ?></li>
                             </div>
                         </ul>
                     </div>
@@ -81,12 +99,25 @@
             </div>
         </div>
     </section>
+    <?php endwhile; else: endif; wp_reset_postdata();?>
 
+
+    <!------------------
+    | Soluções
+    |------------------>
+    <?php
+        $args = array(
+            'post_type' => 'textos_da_home',
+            'name'      => 'nossas-solucoes',
+        );
+        $postr = new WP_Query($args);
+        if($postr->have_posts()) : while ($postr->have_posts()) : $postr->the_post();
+    ?>
     <section id="solutions">
         <div class="container py-5">
             <div class="mb-5" id="category">
                 <div class="d-flex align-items-center w-75">
-                    <h4 class="me-3 f-neutral"><?php echo get_field('nossas_solucoes'); ?></h4>
+                    <h4 class="me-3 f-neutral"><?php echo get_field('categoria_nossas_solucoes'); ?></h4>
                     <hr class="w-25 neutral"> 
                 </div>
             </div>
@@ -309,7 +340,20 @@
             </div>
         </div>
     </section>
+    <?php endwhile; else: endif; wp_reset_postdata();?>
+    
 
+    <!------------------
+    | Como atuamos
+    |------------------>
+    <?php
+        $args = array(
+            'post_type' => 'textos_da_home',
+            'name'      => 'como-atuamos',
+        );
+        $postr = new WP_Query($args);
+        if($postr->have_posts()) : while ($postr->have_posts()) : $postr->the_post();
+    ?>
     <section class="position-relative" id="our-processes">
         <img class="position-absolute" id="pattern-roxo" src="<?php echo get_template_directory_uri(); ?>/assets/icons/pattern-roxo.svg"/>
 
@@ -318,7 +362,7 @@
                 <div class="col-12 col-md-7" id="info">
                     <div class="mb-3" id="category">
                         <div class="d-flex align-items-center">
-                            <h4 class="me-3"><?php echo get_field('como_atuamos'); ?></h4>
+                            <h4 class="me-3"><?php echo get_field('categoria_como_atuamos'); ?></h4>
                             <hr class="w-25"> 
                         </div>
                     </div>
@@ -336,7 +380,20 @@
             </div>
         </div>
     </section>
+    <?php endwhile; else: endif; wp_reset_postdata();?>
+    
 
+    <!------------------
+    | Nossos parceiros
+    |------------------>
+    <?php
+        $args = array(
+            'post_type' => 'textos_da_home',
+            'name'      => 'nossos-parceiros',
+        );
+        $postr = new WP_Query($args);
+        if($postr->have_posts()) : while ($postr->have_posts()) : $postr->the_post();
+    ?>
     <?php $args = array (
         'post_type' => 'parceiros',
         'orderby' => 'title',
@@ -348,7 +405,7 @@
             <div class="container py-5">
                 <div class="mb-4" id="category">
                     <div class="d-flex align-items-center">
-                        <h4 class="me-3 f-neutral"><?php echo get_field('nossos_parceiros'); ?></h4>
+                        <h4 class="me-3 f-neutral"><?php echo get_field('categoria_nossos_parceiros'); ?></h4>
                         <hr class="w-25 neutral"> 
                     </div>
                 </div>
@@ -373,7 +430,20 @@
             </div>
         </section>
     <?php endif; ?>
+    <?php endwhile; else: endif; wp_reset_postdata();?>
 
+    
+    <!------------------
+    | Nossos clientes - depoimentos
+    |------------------>
+    <?php
+        $args = array(
+            'post_type' => 'textos_da_home',
+            'name'      => 'nossos-clientes',
+        );
+        $postr = new WP_Query($args);
+        if($postr->have_posts()) : while ($postr->have_posts()) : $postr->the_post();
+    ?>
     <?php $args = array (
         'post_type' => 'depoimentos',
         'orderby' => 'title',
@@ -389,7 +459,7 @@
                     <div class="col-12 col-md-6" id="info-clients">
                         <div class="mb-4" id="category">
                             <div class="d-flex align-items-center">
-                                <h4 class="me-3 "><?php echo get_field('nossos_clientes'); ?></h4>
+                                <h4 class="me-3 "><?php echo get_field('categoria_nossos_clientes'); ?></h4>
                                 <hr class="w-25"> 
                             </div>
                         </div>
@@ -421,22 +491,35 @@
             </div>
         </section>
     <?php endif; ?>
+    <?php endwhile; else: endif; wp_reset_postdata();?>
 
+    
+    <!------------------
+    | Contato
+    |------------------>
+    <?php
+        $args = array(
+            'post_type' => 'textos_da_home',
+            'name'      => 'contato',
+        );
+        $postr = new WP_Query($args);
+        if($postr->have_posts()) : while ($postr->have_posts()) : $postr->the_post();
+    ?>
     <section id="contact">
         <div class="container py-5">
             <div class="mb-4" id="category">
                 <div class="w-50 d-flex align-items-center">
-                    <h4 class="me-3 f-neutral"><?php echo get_field('contato'); ?></h4>
+                    <h4 class="me-3 f-neutral"><?php echo get_field('categoria_contato'); ?></h4>
                     <hr class="w-25 neutral"> 
                 </div>
             </div>
 
             <div class="row w-100 justify-content-center">
                 <div class="col-12 col-lg-5" id="info-contact">
-                    <h3 class="mb-4 f-neutral" id="title"><?php echo get_field('titulo_de_contato'); ?></h3>
+                    <h3 class="mb-4 f-neutral" id="title"><?php echo get_field('titulo_contato'); ?></h3>
 
                     <p class="body mb-5 f-neutral">
-                        <?php echo get_field('descricao_de_contatos'); ?>
+                        <?php echo get_field('corpo_contato'); ?>
                     </p>
 
                     <div class="w-100 px-0 ps-5">
@@ -454,6 +537,8 @@
             </div>
         </div>
     </section>
+    <?php endwhile; else: endif; wp_reset_postdata();?>
+
 
     <script>
         $('.wpcf7-select').change(() => { 
@@ -473,6 +558,18 @@
         });
     </script>
 
+
+    <!------------------
+    | Blog
+    |------------------>
+    <?php
+        $args = array(
+            'post_type' => 'textos_da_home',
+            'name'      => 'blog',
+        );
+        $postr = new WP_Query($args);
+        if($postr->have_posts()) : while ($postr->have_posts()) : $postr->the_post();
+    ?>
     <?php
     $args = array(
         'post_type' => 'post',
@@ -488,7 +585,7 @@
                     <div class="col-12 mb-4" id="info">
                         <div class="mb-4" id="category">
                             <div class="d-flex align-items-center">
-                                <h4 class="me-3"><?php echo get_field('blog'); ?></h4>
+                                <h4 class="me-3"><?php echo get_field('categoria_blog'); ?></h4>
                                 <hr class="w-25"> 
                             </div>
                         </div>
@@ -496,7 +593,7 @@
 
                         <div class="w-100 d-flex flex-wrap">
                             <div class="col-12 col-md-8">
-                                <h3 id="title"><?php echo get_field('titulo_do_blog'); ?></h3>
+                                <h3 id="title"><?php echo get_field('titulo_blog'); ?></h3>
                             </div>
 
                             <div class="col-12 col-md-4 d-flex justify-content-end align-items-end">
@@ -551,6 +648,7 @@
             </div>
         </section>
     <?php endif;?>
+    <?php endwhile; else: endif; wp_reset_postdata();?>
 </main>
 
 <?php get_footer(); ?>

@@ -2,9 +2,9 @@
     function create_home_texts_cpt() {
 
         $labels = array(
-            'name' => _x( 'textos da home', 'Post Type General Name', 'textdomain' ),
-            'singular_name' => _x( 'texto da home', 'Post Type Singular Name', 'textdomain' ),
-            'menu_name' => _x( 'textos da home', 'Admin Menu text', 'textdomain' ),
+            'name' => _x( 'Textos da home', 'Post Type General Name', 'textdomain' ),
+            'singular_name' => _x( 'Texto da home', 'Post Type Singular Name', 'textdomain' ),
+            'menu_name' => _x( 'Textos da home', 'Admin Menu text', 'textdomain' ),
             'name_admin_bar' => _x( 'texto da home', 'Add New on Toolbar', 'textdomain' ),
             'archives' => __( 'Arquivos de texto da home', 'textdomain' ),
             'attributes' => __( 'Atributos de texto da home', 'textdomain' ),
