@@ -16,7 +16,7 @@
     <section class="d-flex flex-column justify-content-center" id="banner">
         <div class="container mb-5">
             <div class="w-100">
-                <h1 class="mb-3 f-neutral w-100"><?php echo get_field('titulob'); ?></h1>
+                <h1 class="mb-3 f-neutral w-100"><?php echo get_field('tituloo'); ?></h1>
                 <h4 class="mb-5 f-neutral"><?php echo get_field('subtitulo'); ?></h4>
                 <a href="#contact">
                     <button class="neutral"><?php echo get_field('botao_cta'); ?></button>
