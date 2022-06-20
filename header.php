@@ -43,7 +43,7 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a href="https://upvalue.dados.app.br/login" target="_blank">
+                            <a href="<?php echo get_home_url(); ?>/up_plataforma">
                                 <button class="<?php if(is_category() == true || is_single()) echo 'neutral' ?>">Área do cliente</button>
                             </a>
                         </li>
