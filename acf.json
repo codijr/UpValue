@@ -66,7 +66,7 @@
                 {
                     "param": "post",
                     "operator": "==",
-                    "value": "92"
+                    "value": "164"
                 }
             ]
         ],
@@ -128,7 +128,7 @@
                 {
                     "param": "post",
                     "operator": "==",
-                    "value": "151"
+                    "value": "157"
                 }
             ]
         ],
@@ -209,7 +209,7 @@
                 {
                     "param": "post",
                     "operator": "==",
-                    "value": "147"
+                    "value": "161"
                 }
             ]
         ],
@@ -290,7 +290,7 @@
                 {
                     "param": "post",
                     "operator": "==",
-                    "value": "150"
+                    "value": "158"
                 }
             ]
         ],
@@ -409,7 +409,7 @@
                 {
                     "param": "post",
                     "operator": "==",
-                    "value": "252"
+                    "value": "156"
                 }
             ]
         ],
@@ -464,6 +464,270 @@
                 "prepend": "",
                 "append": "",
                 "maxlength": ""
+            },
+            {
+                "key": "field_62b03e3019597",
+                "label": "Varejo processos",
+                "name": "varejo_processos",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_62b03e4819598",
+                "label": "Varejo Upcombos texto",
+                "name": "varejo_upcombos",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_62b03f1100307",
+                "label": "Varejo combos",
+                "name": "varejo_combos",
+                "type": "checkbox",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Comercial": "Comercial",
+                    "Cancelamento": "Cancelamento",
+                    "Base Contratos": "Base Contratos",
+                    "Financeiro": "Financeiro",
+                    "Estoque": "Estoque",
+                    "Compras": "Compras",
+                    "Operação": "Operação",
+                    "Atendimento": "Atendimento",
+                    "Outros": "Outros"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "vertical",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0
+            },
+            {
+                "key": "field_62b03e5219599",
+                "label": "Varejo gestao de indicadores",
+                "name": "varejo_gestao_de_indicadores",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_62b03e8a3398c",
+                "label": "Distribuidoras processos",
+                "name": "distribuidoras_processos",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_62b03ea2b43c0",
+                "label": "Distribuidoras Upcombos texto",
+                "name": "distribuidoras_upcombos",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_62b03fb82bff3",
+                "label": "Distribuidora combos",
+                "name": "distribuidora_combos",
+                "type": "checkbox",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Comercial": "Comercial",
+                    "Cancelamento": "Cancelamento",
+                    "Base Contratos": "Base Contratos",
+                    "Estoque": "Estoque",
+                    "Compras": "Compras",
+                    "Financeiro": "Financeiro",
+                    "Operação": "Operação",
+                    "Atendimento": "Atendimento",
+                    "Outros": "Outros"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "vertical",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0
+            },
+            {
+                "key": "field_62b03eb618509",
+                "label": "Distribuidoras gestão de indicadores",
+                "name": "distribuidoras_gestao_de_indicadores",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_62b03ec928763",
+                "label": "ISP telecom processos",
+                "name": "isp_telecom_processos",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_62b03ed2c5bf8",
+                "label": "ISP telecom Upcombos texto",
+                "name": "isp_telecom_upcombos",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_62b03feec113e",
+                "label": "ISP telecom combos",
+                "name": "isp_telecom_combos",
+                "type": "checkbox",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Comercial": "Comercial",
+                    "Cancelamento": "Cancelamento",
+                    "Base Contratos": "Base Contratos",
+                    "Financeiro": "Financeiro",
+                    "Estoque": "Estoque",
+                    "Compras": "Compras",
+                    "Operação": "Operação",
+                    "Atendimento": "Atendimento",
+                    "Outros": "Outros"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "vertical",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0
+            },
+            {
+                "key": "field_62b03edcb4137",
+                "label": "ISP telecom gestão de indicadores",
+                "name": "isp_telecom_gestao_de_indicadores",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
             }
         ],
         "location": [
@@ -471,7 +735,7 @@
                 {
                     "param": "post",
                     "operator": "==",
-                    "value": "146"
+                    "value": "162"
                 }
             ]
         ],
@@ -533,7 +797,7 @@
                 {
                     "param": "post",
                     "operator": "==",
-                    "value": "149"
+                    "value": "159"
                 }
             ]
         ],
@@ -595,7 +859,7 @@
                 {
                     "param": "post",
                     "operator": "==",
-                    "value": "148"
+                    "value": "160"
                 }
             ]
         ],
@@ -790,7 +1054,7 @@
                 {
                     "param": "post",
                     "operator": "==",
-                    "value": "145"
+                    "value": "163"
                 }
             ]
         ],

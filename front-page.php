@@ -154,7 +154,7 @@
                                     </div>
                                     
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Entendimento das atividades que são responsáveis por gerar os dados com o objetivo de identificar oportunidades de melhoria nos processos e viabilizar uma visão detalhada dos resultados.</p>
+                                        <p class="body-2"><?php echo get_field('varejo_processos'); ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -167,13 +167,17 @@
                                     </div>
 
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Dashboards disponíveis em uma plataforma segura e exclusiva que permitem o acompanhamento dos resultados sema necessidade de exportar e tratar dados diariamente.</p>
+                                        <p class="body-2"><?php echo get_field('varejo_upcombos'); ?></p>
                                         <div class="collapse" id="varejo">
                                             <p class="body-2">
-                                            <br>Comercial 
-                                            <br>Financeiro 
-                                            <br>Estoque
-                                            <br>Compras</p>
+                                            <?php
+                                                $varejo_combos = get_field('varejo_combos');
+                                                if( $varejo_combos ): 
+                                            ?>
+                                            <?php foreach( $varejo_combos as $combo ): ?>
+                                                <br><?php echo $combo; ?>
+                                            <?php endforeach; ?> <?php endif; ?>
+                                            </p>
                                         </div>
                                     </div>
 
@@ -191,7 +195,7 @@
                                     </div>
                                     
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Com a utilização dos dashboards, realize o monitoramento dos indicadores como forma de potencializar a tomada de decisão e avaliar os fatores que garantirão o sucesso do seu negócio!</p>
+                                        <p class="body-2"><?php echo get_field('varejo_gestao_de_indicadores'); ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -218,7 +222,7 @@
                                     </div>
                                     
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Entendimento das atividades que são responsáveis por gerar os dados com o objetivo de identificar oportunidades de melhoria nos processos e viabilizar uma visão detalhada dos resultados.</p>
+                                        <p class="body-2"><?php echo get_field('distribuidoras_processos'); ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -231,13 +235,17 @@
                                     </div>
 
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Dashboards disponíveis em uma plataforma segura e exclusiva que permitem o acompanhamento dos resultados sema necessidade de exportar e tratar dados diariamente.</p>
+                                        <p class="body-2"><?php echo get_field('distribuidoras_upcombos'); ?></p>
                                         <div class="collapse" id="varejo">
                                             <p class="body-2">
-                                            <br>Comercial 
-                                            <br>Financeiro 
-                                            <br>Estoque
-                                            <br>Compras</p>
+                                            <?php
+                                                $distribuidora_combos = get_field('distribuidora_combos');
+                                                if( $distribuidora_combos ): 
+                                            ?>
+                                            <?php foreach( $distribuidora_combos as $combo ): ?>
+                                                <br><?php echo $combo; ?>
+                                            <?php endforeach; ?> <?php endif; ?>
+                                            </p>
                                         </div>
                                     </div>
 
@@ -255,7 +263,7 @@
                                     </div>
                                     
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Com a utilização dos dashboards, realize o monitoramento dos indicadores como forma de potencializar a tomada de decisão e avaliar os fatores que garantirão o sucesso do seu negócio!</p>
+                                        <p class="body-2"><?php echo get_field('distribuidoras_gestao_de_indicadores'); ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -282,7 +290,7 @@
                                     </div>
                                     
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Entendimento das atividades que são responsáveis por gerar os dados com o objetivo de identificar oportunidades de melhoria nos processos e viabilizar uma visão detalhada dos resultados.</p>
+                                        <p class="body-2"><?php echo get_field('isp_telecom_processos'); ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -295,16 +303,17 @@
                                     </div>
 
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Dashboards disponíveis em uma plataforma segura e exclusiva que permitem o acompanhamento dos resultados sema necessidade de exportar e tratar dados diariamente.</p>
+                                        <p class="body-2"><?php echo get_field('isp_telecom_upcombos'); ?></p>
                                         <div class="collapse" id="varejo">
                                             <p class="body-2">
-                                            <br>Comercial 
-                                            <br>Cancelamento 
-                                            <br>Base Contratos 
-                                            <br>Financeiro 
-                                            <br>Operação
-                                            <br>Atendimento
-                                            <br>Outros</p>
+                                            <?php
+                                                $isp_telecom_combos = get_field('isp_telecom_combos');
+                                                if( $isp_telecom_combos ): 
+                                            ?>
+                                            <?php foreach( $isp_telecom_combos as $combo ): ?>
+                                                <br><?php echo $combo; ?>
+                                            <?php endforeach; ?> <?php endif; ?>
+                                            </p>
                                         </div>
                                     </div>
 
@@ -322,7 +331,7 @@
                                     </div>
                                     
                                     <div class="mb-2 ps-0">
-                                        <p class="body-2">Com a utilização dos dashboards, realize o monitoramento dos indicadores como forma de potencializar a tomada de decisão e avaliar os fatores que garantirão o sucesso do seu negócio!</p>
+                                        <p class="body-2"><?php echo get_field('isp_telecom_gestao_de_indicadores'); ?></p>
                                     </div>
                                 </div>
                             </div>
