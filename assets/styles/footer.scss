@@ -48,6 +48,10 @@ footer {
     }
 }
 
+.grecaptcha-badge {
+    bottom: 90px !important;
+}
+
 @media (min-width: 768px) {
     footer {
         .container {
